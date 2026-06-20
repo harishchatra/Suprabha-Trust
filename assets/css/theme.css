@@ -19,8 +19,16 @@
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
   
-  /* Layout */
-  --radius-sm: 0;
-  --radius-md: 0;
-  --radius-lg: 0;
+  /* Layout & Elevations */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  
+  --shadow-sm: 0 4px 12px rgba(74, 28, 16, 0.08);
+  --shadow-md: 0 12px 24px rgba(74, 28, 16, 0.12);
+  --shadow-lg: 0 24px 48px rgba(74, 28, 16, 0.15);
+  --shadow-hover: 0 20px 32px rgba(236, 100, 38, 0.15); /* soft orange glow for hover states */
+  
+  --glass-bg: rgba(253, 243, 234, 0.85); /* cream with opacity for glassmorphism */
+  --glass-dark-bg: rgba(74, 28, 16, 0.85); /* cocoa with opacity for dark nav */
 }
