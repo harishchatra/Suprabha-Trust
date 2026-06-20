@@ -1,0 +1,32 @@
+﻿<!-- THREE ASPECTS -->
+<section class="aspects" id="aspects">
+  <div class="container">
+    <p class="section-eyebrow">Understanding Sanatana Dharma</p>
+    <h2 class="section-title">Three Aspects of Practice</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc">We explore Sanatana Dharma through three fundamental dimensions that span the cosmic, divine, and spiritual — each offering a unique lens into ancient Indian knowledge systems.</p>
+    <div class="aspects-grid">
+      <div class="aspect-card">
+        <div class="aspect-number">01</div>
+        <p class="aspect-tag">Primary Focus</p>
+        <h3>Adhi Bhauthika</h3>
+        <p>A rare and thoroughly scientific practice relating not only to the world but also to cosmic sciences. This aspect makes our work unique and deeply rooted in scientific understanding — connecting earthly phenomena with universal principles.</p>
+      </div>
+      <div class="aspect-card">
+        <div class="aspect-number">02</div>
+        <p class="aspect-tag">The Divine Aspect</p>
+        <h3>Adhi Daivika</h3>
+        <p>The divine dimension of Sanatana Dharma practices, connecting spiritual wisdom with cosmic consciousness and universal energies. A bridge between human experience and the greater forces that govern existence.</p>
+      </div>
+      <div class="aspect-card">
+        <div class="aspect-number">03</div>
+        <p class="aspect-tag">The Spiritual Dimension</p>
+        <h3>Adhyatmika</h3>
+        <p>The innermost spiritual dimension of ancient practices, focusing on inner consciousness and the journey toward self-realization — the ultimate purpose of all Sanatana Dharma traditions and teachings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

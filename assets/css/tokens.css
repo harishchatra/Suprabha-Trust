@@ -1,0 +1,16 @@
+:root {
+  /* Color Tokens */
+  --maroon-deep: #3A0E12;
+  --garnet: #6E1E24;
+  --brass: #A8782C;
+  --gold-leaf: #C9A24B;
+  --manuscript: #F7F3E9;
+  --ink: #1C1A17;
+  --stone: #5C5648;
+  --verdigris: #2E5E4E;
+  --paper-card: #FFFFFF;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}

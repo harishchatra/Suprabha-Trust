@@ -1,0 +1,82 @@
+﻿<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="section-eyebrow">Reach Out</p>
+    <h2 class="section-title">Contact Us</h2>
+    <div class="gold-line" style="background: var(--gold);"></div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <div class="contact-detail">
+          <div>
+            <strong>Primary Office</strong>
+            <p>9/3 RT, Prakash Nagar,<br>Begumpet, Hyderabad</p>
+          </div>
+          <div>
+            <strong>Secondary Address</strong>
+            <p>Reg 34/41, Road No. 4,<br>Vivekanandapuram</p>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <p>+91 98494 46409<br>+91 83319 76555</p>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dfef8fdffecefe5ece4e3e9cdeae0ece4e1a3eee2e0">[email&#160;protected]</a></p>
+          </div>
+          <div>
+            <strong>Website</strong>
+            <p>www.suprabhaind.com</p>
+          </div>
+          <div>
+            <strong>Registration</strong>
+            <p>Registered 2016 — 176/IU/2016<br>Established 2006</p>
+          </div>
+        </div>
+        <div style="margin-top: 2rem; padding: 1.5rem; border: 1px solid rgba(201,168,76,0.15); border-radius: 2px;">
+          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--gold-light); font-style: italic; line-height: 1.6;">"The Indian system has a lot of variations, and many religions have taken shape from India — honoring this diversity is at the heart of our mission."</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1.4rem; color: var(--gold-light); margin-bottom: 1.5rem;">Send a Message</h3>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="field">
+              <label>First Name</label>
+              <input type="text" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label>Last Name</label>
+              <input type="text" placeholder="Last name">
+            </div>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="field">
+            <label>Purpose</label>
+            <select>
+              <option value="">Select a purpose</option>
+              <option>General Inquiry</option>
+              <option>Partnership / Collaboration</option>
+              <option>Article Submission</option>
+              <option>Donation / CSR</option>
+              <option>Resource Submission</option>
+              <option>Research Inquiry</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea placeholder="Tell us about your interest or inquiry..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="cursor: pointer; border: none; width: 100%; font-size: 0.8rem;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

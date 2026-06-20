@@ -1,0 +1,7 @@
+﻿<!-- ABOUT STRIP -->
+<div class="about-strip" id="about">
+  <p>Suprabha Trust has worked since <strong>2006</strong> to discover and document the mystic cultures, sciences, and rituals performed across many parts of India — honoring a civilization whose depth and diversity gave rise to <strong>Hinduism, Sikhism, Buddhism</strong>, and beyond.</p>
+</div>
+
+
+

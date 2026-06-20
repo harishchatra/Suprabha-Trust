@@ -1,0 +1,141 @@
+﻿<!-- SUBMIT VIDEOS -->
+<section id="videos" style="background: var(--earth); padding: 6rem 2rem;">
+  <div class="container">
+    <p class="section-eyebrow" style="color: var(--gold);">Share Your Knowledge</p>
+    <h2 class="section-title" style="color: var(--cream);">Submit Your Videos</h2>
+    <div class="gold-line" style="background: var(--gold);"></div>
+    <p class="section-desc" style="color: rgba(250,245,236,0.55); margin-bottom: 3rem;">Help us grow our visual archive of India's traditional and cultural sciences. Share documentary films, ritual recordings, lecture videos, field documentation, and educational content with our community.</p>
+
+    <!-- Video type cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.1); margin-bottom: 4rem;">
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center; transition: background 0.3s;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127909;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Documentary Films</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Cultural and heritage documentaries on Indian traditions</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127774;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Ritual Recordings</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Field recordings of ceremonies, pujas, and rituals</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127891;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Lectures & Discourses</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Talks by gurus, historians, and cultural scholars</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127981;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Temple & Site Tours</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Visual tours of sacred sites and heritage spaces</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127926;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Traditional Arts</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Performances, crafts, music, and folk art demonstrations</p>
+      </div>
+    </div>
+
+    <!-- Submission form -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+      <div>
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold-light); margin-bottom: 1.5rem; font-weight: 400;">Video Submission Form</h3>
+        <form onsubmit="handleVideoSubmit(event)" style="display: flex; flex-direction: column; gap: 0.9rem;">
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Your Name *</label>
+            <input type="text" placeholder="Full name" required style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Email Address *</label>
+            <input type="email" placeholder="your@email.com" required style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Video Title *</label>
+            <input type="text" placeholder="Title of your video" required style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Video Category *</label>
+            <select required style="width: 100%; background: var(--earth); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+              <option value="">Select a category</option>
+              <option>Documentary Film</option>
+              <option>Ritual Recording</option>
+              <option>Lecture / Discourse</option>
+              <option>Temple & Site Tour</option>
+              <option>Traditional Art / Performance</option>
+              <option>Field Documentation</option>
+              <option>Educational Content</option>
+              <option>Interview / Conversation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Video Link (YouTube / Vimeo / Drive)</label>
+            <input type="url" placeholder="https://..." style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Language of Video</label>
+            <input type="text" placeholder="e.g. Telugu, Hindi, English, Sanskrit..." style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Description *</label>
+            <textarea placeholder="Briefly describe the content, location, tradition, and significance of the video..." required style="width: 100%; height: 130px; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none; resize: vertical;"></textarea>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 0.25rem;">
+            <input type="checkbox" id="video-consent" style="margin-top: 3px; accent-color: var(--gold); width: 14px; height: 14px; flex-shrink: 0;">
+            <label for="video-consent" style="font-size: 0.8rem; color: rgba(250,245,236,0.45); line-height: 1.6; cursor: pointer;">I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it on their platform.</label>
+          </div>
+          <button type="submit" id="video-submit-btn" style="margin-top: 0.5rem; background: var(--gold); color: var(--deep); padding: 0.85rem 2rem; font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s;">Submit Video</button>
+        </form>
+      </div>
+
+      <!-- Guidelines panel -->
+      <div>
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold-light); margin-bottom: 1.5rem; font-weight: 400;">Submission Guidelines</h3>
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">1</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Content must be relevant</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">Videos should focus on traditional and cultural sciences of India — rituals, heritage sites, philosophy, arts, or related subjects.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">2</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Original or rights-cleared content only</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">Submit only videos you filmed yourself or have explicit permission to share and publish.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">3</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Accepted formats & platforms</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">YouTube, Vimeo, Google Drive, or Dropbox links accepted. Minimum 480p resolution. Any duration welcome.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">4</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Review process</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">All submissions are reviewed by our editorial team before publication. You will be notified by email within 7–10 working days.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">5</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Credit & attribution</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">Your name and any organisation you represent will be credited alongside the published video.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact nudge -->
+        <div style="margin-top: 2.5rem; padding: 1.5rem; border: 1px solid rgba(201,168,76,0.15); border-radius: 2px; background: rgba(201,168,76,0.04);">
+          <p style="font-size: 0.82rem; color: rgba(250,245,236,0.5); line-height: 1.7;">Have a large collection or need to send files directly? Write to us at <span style="color: var(--gold);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f08385808291929891999e94b0979d91999cde939f9d">[email&#160;protected]</a></span> or call <span style="color: var(--gold);">+91 98494 46409</span>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

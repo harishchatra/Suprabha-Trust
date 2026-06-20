@@ -1,0 +1,25 @@
+:root {
+  /* COLOR TOKENS */
+  --maroon-deep:  #3A0E12;   /* hero background, primary headings */
+  --garnet:       #6E1E24;   /* links, card top-accent (knowledge) */
+  --brass:        #A8782C;   /* PRIMARY accent: eyebrows, rules, logo stroke, active nav underline */
+  --gold-leaf:    #C9A24B;   /* used sparingly: Donate button + hero primary CTA only */
+  --manuscript:   #F7F3E9;   /* PAGE BACKGROUND (warm paper) */
+  --ink:          #1C1A17;   /* body text */
+  --stone:        #5C5648;   /* muted/secondary text */
+  --verdigris:    #2E5E4E;   /* renewable/energy content accents ONLY */
+  --paper-card:   #FFFFFF;   /* card surfaces */
+
+  /* ALIASES */
+  --accent-gold:  var(--brass);
+  --text-primary: var(--ink);
+  --text-muted:   var(--stone);
+
+  /* TYPOGRAPHY */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}

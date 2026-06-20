@@ -1,0 +1,54 @@
+﻿<!-- MISSION & APPROACH -->
+<section class="mission">
+  <div class="container">
+    <div class="mission-layout">
+      <div>
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">Mission & Vision</h2>
+        <div class="gold-line"></div>
+        <p class="section-desc" style="margin-bottom: 1.5rem;">To conserve, document, and celebrate India's traditional and cultural sciences through systematic research, heritage conservation, educational programs, and community partnerships.</p>
+        <p class="section-desc">We envision a world where India's traditional and cultural sciences are recognized, valued, and integrated into contemporary life — vibrant communities that honor their heritage while embracing innovation.</p>
+        <br><br>
+        <p style="font-size: 0.85rem; color: var(--muted);">Our discourses are shaped through discussions with <strong style="color: var(--earth);">Historians, Spiritual Gurus, Resource Persons, Scientists, and Cultus</strong> — bringing together diverse perspectives for a comprehensive view of ancient heritage.</p>
+      </div>
+      <div>
+        <p class="section-eyebrow">How We Work</p>
+        <h2 class="section-title">Our Approach</h2>
+        <div class="gold-line"></div>
+        <div class="approach-list">
+          <div class="approach-item">
+            <div class="approach-num">1</div>
+            <div>
+              <h4>Research & Documentation</h4>
+              <p>Systematic study and recording of traditional knowledge systems, practices, and cultural heritage through scholarly research and fieldwork.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-num">2</div>
+            <div>
+              <h4>Conservation</h4>
+              <p>Active preservation of monuments, manuscripts, artifacts, and intangible cultural practices through restoration and protection initiatives.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-num">3</div>
+            <div>
+              <h4>Community Engagement</h4>
+              <p>Working with local communities, practitioners, and stakeholders to ensure heritage preservation is inclusive and sustainable.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-num">4</div>
+            <div>
+              <h4>Education & Outreach</h4>
+              <p>Sharing knowledge through publications, workshops, exhibitions, and digital platforms to inspire appreciation and understanding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

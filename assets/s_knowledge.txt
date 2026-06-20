@@ -1,0 +1,28 @@
+﻿<!-- KNOWLEDGE BANK -->
+<section class="knowledge" id="knowledge">
+  <div class="container">
+    <p class="section-eyebrow">Explore & Learn</p>
+    <h2 class="section-title">Knowledge Bank</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc">Browse our extensive collection of articles, research, and insights on India's traditional and cultural sciences — organized by discipline.</p>
+    <div class="categories">
+      <button class="cat-pill active">All Categories</button>
+      <button class="cat-pill">Bio Field Sciences</button>
+      <button class="cat-pill">Humanistic Sciences</button>
+      <button class="cat-pill">Ritual Sciences</button>
+      <button class="cat-pill">Symbols, Geometry & Pictures</button>
+      <button class="cat-pill">Vedic Sciences</button>
+      <button class="cat-pill">Sanatana Dharma</button>
+      <button class="cat-pill">Occult Sciences</button>
+      <button class="cat-pill">Tantra, Mantra & Yatra</button>
+    </div>
+    <div style="background: var(--cream-dark); border: 1px solid var(--border); padding: 3rem; text-align: center; border-radius: 2px;">
+      <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); font-style: italic; margin-bottom: 1rem;">A living archive of ancient wisdom</p>
+      <p style="font-size: 0.9rem; color: var(--muted); max-width: 500px; margin: 0 auto 2rem; line-height: 1.8;">Our knowledge bank grows continuously as researchers, practitioners, and scholars contribute their expertise and insights.</p>
+      <a href="#contact" class="btn-primary">Submit an Article</a>
+    </div>
+  </div>
+</section>
+
+
+

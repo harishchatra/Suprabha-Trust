@@ -1,0 +1,34 @@
+﻿<!-- CONNECTIONS -->
+<section class="connections">
+  <div class="container">
+    <p class="section-eyebrow">Four Dimensions</p>
+    <h2 class="section-title">How We Connect</h2>
+    <div class="gold-line" style="background: var(--gold);"></div>
+    <p class="section-desc">Our work bridges multiple dimensions of human knowledge — weaving together spiritual, philosophical, cultural, and scientific understanding.</p>
+    <div class="connections-grid">
+      <div class="conn-card">
+        <div class="conn-icon">&#x1F54F;</div>
+        <h3>Spiritual</h3>
+        <p>Deep insights into the spiritual dimensions of Sanatana Dharma and its living practices across traditions.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">&#x1F4DA;</div>
+        <h3>Philosophical</h3>
+        <p>Understanding the philosophical foundations and wisdom traditions that form the bedrock of ancient India.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">&#x1F3FA;</div>
+        <h3>Cultural</h3>
+        <p>Preserving and celebrating the rich cultural heritage and traditional practices of diverse Indian communities.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">&#x2734;</div>
+        <h3>Scientific</h3>
+        <p>Exploring the scientific basis of ancient practices and the remarkable cosmic sciences embedded in tradition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

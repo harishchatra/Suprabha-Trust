@@ -1,0 +1,43 @@
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg class="footer-logo-svg"><use href="#suprabha-logo"/></svg>
+      <a href="#home" style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold); text-decoration: none;">Suprabha Trust</a>
+      <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
+      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#aspects">Sanatana Dharma</a></li>
+        <li><a href="#about">Mission & Vision</a></li>
+        <li><a href="#about">Our Approach</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Engage</h4>
+      <ul>
+        <li><a href="#knowledge">Knowledge Bank</a></li>
+        <li><a href="#programs">Upcoming Programs</a></li>
+        <li><a href="#contact">Submit Article</a></li>
+        <li><a href="#videos">Submit Video</a></li>
+        <li><a href="#contact">Submit Resource</a></li>
+        <li><a href="#partnership">Partner With Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#donate">CSR Programs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">Special Events</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Suprabha Trust. All rights reserved.</p>
+    <a href="/cdn-cgi/l/email-protection#d2a1a7a2a0b3b0bab3bbbcb692b5bfb3bbbefcb1bdbf"><span class="__cf_email__" data-cfemail="dba8aeaba9bab9b3bab2b5bf9bbcb6bab2b7f5b8b4b6">[email&#160;protected]</span></a>
+  </div>
+</footer>

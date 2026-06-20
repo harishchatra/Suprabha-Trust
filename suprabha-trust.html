@@ -1,0 +1,1664 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suprabha Trust — Mystic Sciences of Ancient India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2ॐfamily=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C96B;
+    --gold-pale: #F5EDD6;
+    --deep: #1A1208;
+    --earth: #2E1F0A;
+    --terracotta: #8B3A1E;
+    --sage: #4A6741;
+    --cream: #FAF5EC;
+    --cream-dark: #F0E8D5;
+    --ink: #1C1610;
+    --muted: #6B5D4A;
+    --border: rgba(201,168,76,0.25);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(26,18,8,0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+  }
+
+  .nav-logo span {
+    display: block;
+    font-size: 0.55rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: var(--gold-light);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(232,201,107,0.75);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold-light); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--deep) !important;
+    padding: 0.4rem 1.2rem !important;
+    border-radius: 2px;
+  }
+
+  .nav-cta:hover { background: var(--gold-light) !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: var(--deep);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 64px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 60% at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 80% 40% at 20% 80%, rgba(139,58,30,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(74,103,65,0.08) 0%, transparent 60%);
+  }
+
+  .mandala-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,76,0.12);
+  }
+
+  .mandala-ring:nth-child(1) { width: 400px; height: 400px; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+  .mandala-ring:nth-child(2) { width: 600px; height: 600px; top: 50%; left: 50%; transform: translate(-50%,-50%); border-color: rgba(201,168,76,0.07); }
+  .mandala-ring:nth-child(3) { width: 800px; height: 800px; top: 50%; left: 50%; transform: translate(-50%,-50%); border-color: rgba(201,168,76,0.05); }
+  .mandala-ring:nth-child(4) { width: 1100px; height: 1100px; top: 50%; left: 50%; transform: translate(-50%,-50%); border-color: rgba(201,168,76,0.03); }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    padding: 2rem;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    color: var(--cream);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(250,245,236,0.6);
+    max-width: 540px;
+    margin: 0 auto 2.5rem;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  .hero-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 2rem auto;
+    opacity: 0.6;
+  }
+
+  .hero-since {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(201,168,76,0.5);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--deep);
+    padding: 0.75rem 2rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+
+  .btn-primary:hover { background: var(--gold-light); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--gold);
+    padding: 0.75rem 2rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+
+  .btn-outline:hover { border-color: var(--gold); background: rgba(201,168,76,0.08); }
+
+  /* SECTION STYLES */
+  section { padding: 6rem 2rem; }
+
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  .section-eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 0.8rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+    color: var(--earth);
+  }
+
+  .section-desc {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 600px;
+    line-height: 1.9;
+  }
+
+  .gold-line {
+    width: 50px;
+    height: 2px;
+    background: var(--gold);
+    margin-bottom: 2rem;
+  }
+
+  /* ABOUT STRIP */
+  .about-strip {
+    background: var(--earth);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .about-strip p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+    color: var(--cream);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .about-strip strong {
+    color: var(--gold-light);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  /* THREE ASPECTS */
+  .aspects { background: var(--cream); }
+
+  .aspects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2px;
+    margin-top: 4rem;
+  }
+
+  .aspect-card {
+    background: var(--cream-dark);
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+  }
+
+  .aspect-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+
+  .aspect-card:hover::before { transform: scaleX(1); }
+  .aspect-card:hover { background: white; }
+
+  .aspect-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    color: rgba(201,168,76,0.15);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .aspect-card h3 {
+    font-size: 1.5rem;
+    color: var(--earth);
+    margin-bottom: 0.5rem;
+  }
+
+  .aspect-tag {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+  }
+
+  .aspect-card p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  /* MISSION / APPROACH */
+  .mission { background: var(--cream-dark); }
+
+  .mission-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  @media (max-width: 768px) {
+    .mission-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .nav-links { display: none; }
+  }
+
+  .approach-list { margin-top: 2.5rem; }
+
+  .approach-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .approach-item:last-child { border-bottom: none; }
+
+  .approach-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: rgba(201,168,76,0.3);
+    min-width: 50px;
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  .approach-item h4 {
+    font-size: 1.1rem;
+    color: var(--earth);
+    margin-bottom: 0.4rem;
+  }
+
+  .approach-item p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* CONNECTIONS GRID */
+  .connections { background: var(--deep); }
+
+  .connections .section-title { color: var(--cream); }
+  .connections .section-eyebrow { color: var(--gold); }
+  .connections .section-desc { color: rgba(250,245,236,0.55); }
+
+  .connections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    margin-top: 4rem;
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.1);
+  }
+
+  .conn-card {
+    background: var(--deep);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: background 0.3s;
+  }
+
+  .conn-card:hover { background: var(--earth); }
+
+  .conn-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,76,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .conn-card h3 {
+    font-size: 1.25rem;
+    color: var(--gold-light);
+    margin-bottom: 0.7rem;
+  }
+
+  .conn-card p {
+    font-size: 0.85rem;
+    color: rgba(250,245,236,0.45);
+    line-height: 1.7;
+  }
+
+  /* KNOWLEDGE BANK */
+  .knowledge { background: var(--cream); }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 3rem 0 4rem;
+  }
+
+  .cat-pill {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    background: transparent;
+    font-family: 'Jost', sans-serif;
+  }
+
+  .cat-pill:hover, .cat-pill.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--deep);
+  }
+
+  /* IMPACT AREAS */
+  .impact { background: var(--earth); }
+  .impact .section-title { color: var(--cream); }
+  .impact .section-eyebrow { color: var(--gold); }
+  .impact .section-desc { color: rgba(250,245,236,0.55); }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .impact-card {
+    border: 1px solid rgba(201,168,76,0.15);
+    padding: 2.5rem 2rem;
+    border-radius: 2px;
+    transition: border-color 0.3s, background 0.3s;
+  }
+
+  .impact-card:hover {
+    border-color: rgba(201,168,76,0.4);
+    background: rgba(201,168,76,0.04);
+  }
+
+  .impact-card h3 {
+    font-size: 1.25rem;
+    color: var(--gold-light);
+    margin-bottom: 1rem;
+  }
+
+  .impact-card p {
+    font-size: 0.88rem;
+    color: rgba(250,245,236,0.5);
+    line-height: 1.75;
+  }
+
+  /* PARTNERSHIP */
+  .partnership { background: var(--cream-dark); }
+
+  .partner-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .partner-card {
+    background: white;
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 2rem;
+    border-radius: 2px;
+    transition: box-shadow 0.3s;
+  }
+
+  .partner-card:hover { box-shadow: 0 4px 24px rgba(201,168,76,0.12); }
+
+  .partner-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 0.75rem;
+  }
+
+  .partner-card h3 { font-size: 1.2rem; color: var(--earth); margin-bottom: 0.75rem; }
+  .partner-card p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+
+  /* COLLAB STEPS */
+  .collab-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0;
+    margin-top: 5rem;
+    background: var(--cream);
+    border: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .step {
+    padding: 2.5rem 2rem;
+    border-right: 1px solid rgba(201,168,76,0.15);
+    position: relative;
+  }
+
+  .step:last-child { border-right: none; }
+
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: rgba(201,168,76,0.2);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .step h4 { font-size: 1.1rem; color: var(--earth); margin-bottom: 0.5rem; }
+  .step p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+
+  /* DONATE */
+  .donate { background: var(--gold-pale); text-align: center; }
+
+  .donate h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--earth); margin-bottom: 1rem; }
+  .donate p { color: var(--muted); max-width: 580px; margin: 0 auto 3rem; line-height: 1.8; }
+
+  .donate-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+    margin-top: 3rem;
+  }
+
+  .donate-card {
+    background: white;
+    border: 1px solid rgba(201,168,76,0.25);
+    padding: 2rem;
+    border-radius: 2px;
+  }
+
+  .donate-card h3 { font-size: 1.3rem; color: var(--earth); margin-bottom: 0.75rem; }
+  .donate-card p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.5rem; }
+
+  /* CONTACT */
+  .contact { background: var(--deep); }
+  .contact .section-title { color: var(--cream); }
+  .contact .section-eyebrow { color: var(--gold); }
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; gap: 3rem; } }
+
+  .contact-info h3 {
+    font-size: 1.4rem;
+    color: var(--gold-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-detail p {
+    font-size: 0.9rem;
+    color: rgba(250,245,236,0.55);
+    line-height: 1.7;
+  }
+
+  .contact-detail strong {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    background: rgba(250,245,236,0.05);
+    border: 1px solid rgba(201,168,76,0.2);
+    color: var(--cream);
+    padding: 0.85rem 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form select:focus { border-color: rgba(201,168,76,0.5); }
+
+  .contact-form textarea { height: 140px; resize: vertical; }
+
+  .contact-form select option { background: var(--deep); }
+
+  .contact-form label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(201,168,76,0.6);
+    margin-bottom: 0.4rem;
+  }
+
+  .contact-form .field { margin-bottom: 0.5rem; }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    padding: 3rem 2rem;
+    border-top: 1px solid rgba(201,168,76,0.1);
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+    color: rgba(250,245,236,0.35);
+    line-height: 1.8;
+    margin-top: 1rem;
+    max-width: 280px;
+  }
+
+  .footer-brand .reg {
+    font-size: 0.72rem;
+    color: rgba(201,168,76,0.4);
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  .footer-col h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 0.6rem; }
+  .footer-col ul a {
+    font-size: 0.85rem;
+    color: rgba(250,245,236,0.4);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col ul a:hover { color: var(--gold-light); }
+
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 2.5rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(201,168,76,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+    color: rgba(250,245,236,0.25);
+  }
+
+  .footer-bottom a {
+    color: rgba(201,168,76,0.4);
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+
+  /* OM symbol */
+  .om { font-size: 1.2rem; }
+
+  .nav-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+  }
+  .nav-logo-wrap svg { width: 42px; height: 42px; flex-shrink: 0; }
+  .nav-logo-text { display: flex; flex-direction: column; }
+  .nav-logo-text .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+  }
+  .nav-logo-text .tagline {
+    font-size: 0.5rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: var(--gold-light);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .hero-logo-svg { width: 220px; height: 220px; margin: 0 auto 1.5rem; display: block; }
+
+  .footer-logo-svg { width: 64px; height: 64px; display: block; margin-bottom: 0.75rem; }
+</style>
+</head>
+<body>
+
+<!-- Inline SVG logo symbol (reused throughout) -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="suprabha-logo" viewBox="0 0 680 520">
+      <g transform="translate(340, 235)">
+        <circle r="185" fill="none" stroke="#D4820A" stroke-width="1" opacity="0.35"/>
+        <circle r="183" fill="none" stroke="#E8A020" stroke-width="0.5" opacity="0.2"/>
+        <g fill="#D4820A" opacity="0.55">
+          <polygon points="0,-181 5,-170 -5,-170"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(22.5)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(45)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(67.5)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(90)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(112.5)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(135)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(157.5)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(180)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(202.5)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(225)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(247.5)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(270)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(292.5)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(315)"/>
+          <polygon points="0,-181 5,-170 -5,-170" transform="rotate(337.5)"/>
+        </g>
+        <circle r="165" fill="none" stroke="#D4820A" stroke-width="0.8" opacity="0.4"/>
+        <g fill="#E8A020" opacity="0.7">
+          <circle r="2.5" cx="0" cy="-158"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(30)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(60)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(90)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(120)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(150)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(180)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(210)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(240)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(270)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(300)"/>
+          <circle r="2.5" cx="0" cy="-158" transform="rotate(330)"/>
+        </g>
+        <g opacity="0.9">
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8"/>
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-125" rx="22" ry="40" fill="#E8650A" stroke="#D4820A" stroke-width="0.8" transform="rotate(315)"/>
+        </g>
+        <g opacity="0.8">
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-100" rx="17" ry="32" fill="#C04A10" stroke="#D4820A" stroke-width="0.7" transform="rotate(337.5)"/>
+        </g>
+        <g stroke="#D4820A" stroke-width="0.9" fill="none" opacity="0.55">
+          <polygon points="0,-85 73.6,42.5 -73.6,42.5"/>
+          <polygon points="0,85 -73.6,-42.5 73.6,-42.5"/>
+        </g>
+        <g stroke="#E8A020" stroke-width="0.5" fill="none" opacity="0.3">
+          <polygon points="0,-70 60.6,35 -60.6,35"/>
+          <polygon points="0,70 -60.6,-35 60.6,-35"/>
+        </g>
+        <circle r="68" fill="none" stroke="#D4820A" stroke-width="1.5" opacity="0.8"/>
+        <circle r="60" fill="none" stroke="#E8A020" stroke-width="0.5" opacity="0.35"/>
+        <g opacity="0.75">
+          <ellipse cx="0" cy="-51" rx="9" ry="15" fill="#E8650A" stroke="#D4820A" stroke-width="0.5"/>
+          <ellipse cx="0" cy="-51" rx="9" ry="15" fill="#E8650A" stroke="#D4820A" stroke-width="0.5" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-51" rx="9" ry="15" fill="#E8650A" stroke="#D4820A" stroke-width="0.5" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-51" rx="9" ry="15" fill="#E8650A" stroke="#D4820A" stroke-width="0.5" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-51" rx="9" ry="15" fill="#E8650A" stroke="#D4820A" stroke-width="0.5" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-51" rx="9" ry="15" fill="#E8650A" stroke="#D4820A" stroke-width="0.5" transform="rotate(300)"/>
+        </g>
+        <circle r="34" fill="#D4820A"/>
+        <circle r="30" fill="#F5A623"/>
+        <circle r="26" fill="#E8820A"/>
+        <text x="0" y="13" text-anchor="middle" font-family="serif" font-size="36" fill="#FFF5E0" font-weight="400">ॐ</text>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo-wrap">
+    <svg><use href="#suprabha-logo"/></svg>
+    <div class="nav-logo-text">
+      <span class="name">Suprabha Trust</span>
+      <span class="tagline">Mystic Sciences of Ancient India</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#aspects">Sanatana Dharma</a></li>
+    <li><a href="#knowledge">Knowledge Bank</a></li>
+    <li><a href="#impact">Our Work</a></li>
+    <li><a href="#videos">Submit Video</a></li>
+    <li><a href="#partnership">Partner</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#donate" class="nav-cta">Donate</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="mandala-ring"></div>
+    <div class="mandala-ring"></div>
+    <div class="mandala-ring"></div>
+    <div class="mandala-ring"></div>
+  </div>
+  <div class="hero-content">
+    <svg class="hero-logo-svg"><use href="#suprabha-logo"/></svg>
+    <p class="hero-eyebrow">&#x2B22; Established 2006 &nbsp;·&nbsp; Hyderabad, India</p>
+    <h1>Discovering the <em>Mystic Sciences</em> of Ancient India</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions — bridging ancient wisdom with modern understanding.</p>
+    <div class="hero-actions">
+      <a href="#knowledge" class="btn-primary">Explore Knowledge Bank</a>
+      <a href="#about" class="btn-outline">Our Story</a>
+    </div>
+    <p class="hero-since" style="margin-top: 3rem;">&#9670; Since 2006 · Registered 176/IU/2016 &#9670;</p>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<div class="about-strip" id="about">
+  <p>Suprabha Trust has worked since <strong>2006</strong> to discover and document the mystic cultures, sciences, and rituals performed across many parts of India — honoring a civilization whose depth and diversity gave rise to <strong>Hinduism, Sikhism, Buddhism</strong>, and beyond.</p>
+</div>
+
+<!-- THREE ASPECTS -->
+<section class="aspects" id="aspects">
+  <div class="container">
+    <p class="section-eyebrow">Understanding Sanatana Dharma</p>
+    <h2 class="section-title">Three Aspects of Practice</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc">We explore Sanatana Dharma through three fundamental dimensions that span the cosmic, divine, and spiritual — each offering a unique lens into ancient Indian knowledge systems.</p>
+    <div class="aspects-grid">
+      <div class="aspect-card">
+        <div class="aspect-number">01</div>
+        <p class="aspect-tag">Primary Focus</p>
+        <h3>Adhi Bhauthika</h3>
+        <p>A rare and thoroughly scientific practice relating not only to the world but also to cosmic sciences. This aspect makes our work unique and deeply rooted in scientific understanding — connecting earthly phenomena with universal principles.</p>
+      </div>
+      <div class="aspect-card">
+        <div class="aspect-number">02</div>
+        <p class="aspect-tag">The Divine Aspect</p>
+        <h3>Adhi Daivika</h3>
+        <p>The divine dimension of Sanatana Dharma practices, connecting spiritual wisdom with cosmic consciousness and universal energies. A bridge between human experience and the greater forces that govern existence.</p>
+      </div>
+      <div class="aspect-card">
+        <div class="aspect-number">03</div>
+        <p class="aspect-tag">The Spiritual Dimension</p>
+        <h3>Adhyatmika</h3>
+        <p>The innermost spiritual dimension of ancient practices, focusing on inner consciousness and the journey toward self-realization — the ultimate purpose of all Sanatana Dharma traditions and teachings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & APPROACH -->
+<section class="mission">
+  <div class="container">
+    <div class="mission-layout">
+      <div>
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">Mission & Vision</h2>
+        <div class="gold-line"></div>
+        <p class="section-desc" style="margin-bottom: 1.5rem;">To conserve, document, and celebrate India's traditional and cultural sciences through systematic research, heritage conservation, educational programs, and community partnerships.</p>
+        <p class="section-desc">We envision a world where India's traditional and cultural sciences are recognized, valued, and integrated into contemporary life — vibrant communities that honor their heritage while embracing innovation.</p>
+        <br><br>
+        <p style="font-size: 0.85rem; color: var(--muted);">Our discourses are shaped through discussions with <strong style="color: var(--earth);">Historians, Spiritual Gurus, Resource Persons, Scientists, and Cultus</strong> — bringing together diverse perspectives for a comprehensive view of ancient heritage.</p>
+      </div>
+      <div>
+        <p class="section-eyebrow">How We Work</p>
+        <h2 class="section-title">Our Approach</h2>
+        <div class="gold-line"></div>
+        <div class="approach-list">
+          <div class="approach-item">
+            <div class="approach-num">1</div>
+            <div>
+              <h4>Research & Documentation</h4>
+              <p>Systematic study and recording of traditional knowledge systems, practices, and cultural heritage through scholarly research and fieldwork.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-num">2</div>
+            <div>
+              <h4>Conservation</h4>
+              <p>Active preservation of monuments, manuscripts, artifacts, and intangible cultural practices through restoration and protection initiatives.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-num">3</div>
+            <div>
+              <h4>Community Engagement</h4>
+              <p>Working with local communities, practitioners, and stakeholders to ensure heritage preservation is inclusive and sustainable.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-num">4</div>
+            <div>
+              <h4>Education & Outreach</h4>
+              <p>Sharing knowledge through publications, workshops, exhibitions, and digital platforms to inspire appreciation and understanding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECTIONS -->
+<section class="connections">
+  <div class="container">
+    <p class="section-eyebrow">Four Dimensions</p>
+    <h2 class="section-title">How We Connect</h2>
+    <div class="gold-line" style="background: var(--gold);"></div>
+    <p class="section-desc">Our work bridges multiple dimensions of human knowledge — weaving together spiritual, philosophical, cultural, and scientific understanding.</p>
+    <div class="connections-grid">
+      <div class="conn-card">
+        <div class="conn-icon">&#x1F54F;</div>
+        <h3>Spiritual</h3>
+        <p>Deep insights into the spiritual dimensions of Sanatana Dharma and its living practices across traditions.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">&#x1F4DA;</div>
+        <h3>Philosophical</h3>
+        <p>Understanding the philosophical foundations and wisdom traditions that form the bedrock of ancient India.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">&#x1F3FA;</div>
+        <h3>Cultural</h3>
+        <p>Preserving and celebrating the rich cultural heritage and traditional practices of diverse Indian communities.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">&#x2734;</div>
+        <h3>Scientific</h3>
+        <p>Exploring the scientific basis of ancient practices and the remarkable cosmic sciences embedded in tradition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE BANK -->
+<section class="knowledge" id="knowledge">
+  <div class="container">
+    <p class="section-eyebrow">Explore & Learn</p>
+    <h2 class="section-title">Knowledge Bank</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc">Browse our extensive collection of articles, research, and insights on India's traditional and cultural sciences — organized by discipline.</p>
+    <div class="categories">
+      <button class="cat-pill active">All Categories</button>
+      <button class="cat-pill">Bio Field Sciences</button>
+      <button class="cat-pill">Humanistic Sciences</button>
+      <button class="cat-pill">Ritual Sciences</button>
+      <button class="cat-pill">Symbols, Geometry & Pictures</button>
+      <button class="cat-pill">Vedic Sciences</button>
+      <button class="cat-pill">Sanatana Dharma</button>
+      <button class="cat-pill">Occult Sciences</button>
+      <button class="cat-pill">Tantra, Mantra & Yatra</button>
+    </div>
+    <div style="background: var(--cream-dark); border: 1px solid var(--border); padding: 3rem; text-align: center; border-radius: 2px;">
+      <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); font-style: italic; margin-bottom: 1rem;">A living archive of ancient wisdom</p>
+      <p style="font-size: 0.9rem; color: var(--muted); max-width: 500px; margin: 0 auto 2rem; line-height: 1.8;">Our knowledge bank grows continuously as researchers, practitioners, and scholars contribute their expertise and insights.</p>
+      <a href="#contact" class="btn-primary">Submit an Article</a>
+    </div>
+  </div>
+</section>
+
+<!-- SUBMIT VIDEOS -->
+<section id="videos" style="background: var(--earth); padding: 6rem 2rem;">
+  <div class="container">
+    <p class="section-eyebrow" style="color: var(--gold);">Share Your Knowledge</p>
+    <h2 class="section-title" style="color: var(--cream);">Submit Your Videos</h2>
+    <div class="gold-line" style="background: var(--gold);"></div>
+    <p class="section-desc" style="color: rgba(250,245,236,0.55); margin-bottom: 3rem;">Help us grow our visual archive of India's traditional and cultural sciences. Share documentary films, ritual recordings, lecture videos, field documentation, and educational content with our community.</p>
+
+    <!-- Video type cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.1); margin-bottom: 4rem;">
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center; transition: background 0.3s;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127909;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Documentary Films</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Cultural and heritage documentaries on Indian traditions</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127774;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Ritual Recordings</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Field recordings of ceremonies, pujas, and rituals</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127891;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Lectures & Discourses</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Talks by gurus, historians, and cultural scholars</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127981;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Temple & Site Tours</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Visual tours of sacred sites and heritage spaces</p>
+      </div>
+      <div style="background: var(--earth); padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#127926;</div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem;">Traditional Arts</p>
+        <p style="font-size: 0.8rem; color: rgba(250,245,236,0.4); line-height: 1.6;">Performances, crafts, music, and folk art demonstrations</p>
+      </div>
+    </div>
+
+    <!-- Submission form -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+      <div>
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold-light); margin-bottom: 1.5rem; font-weight: 400;">Video Submission Form</h3>
+        <form onsubmit="handleVideoSubmit(event)" style="display: flex; flex-direction: column; gap: 0.9rem;">
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Your Name *</label>
+            <input type="text" placeholder="Full name" required style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Email Address *</label>
+            <input type="email" placeholder="your@email.com" required style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Video Title *</label>
+            <input type="text" placeholder="Title of your video" required style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Video Category *</label>
+            <select required style="width: 100%; background: var(--earth); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+              <option value="">Select a category</option>
+              <option>Documentary Film</option>
+              <option>Ritual Recording</option>
+              <option>Lecture / Discourse</option>
+              <option>Temple & Site Tour</option>
+              <option>Traditional Art / Performance</option>
+              <option>Field Documentation</option>
+              <option>Educational Content</option>
+              <option>Interview / Conversation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Video Link (YouTube / Vimeo / Drive)</label>
+            <input type="url" placeholder="https://..." style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Language of Video</label>
+            <input type="text" placeholder="e.g. Telugu, Hindi, English, Sanskrit..." style="width: 100%; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.4rem;">Description *</label>
+            <textarea placeholder="Briefly describe the content, location, tradition, and significance of the video..." required style="width: 100%; height: 130px; background: rgba(250,245,236,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 0.8rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300; border-radius: 2px; outline: none; resize: vertical;"></textarea>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 0.25rem;">
+            <input type="checkbox" id="video-consent" style="margin-top: 3px; accent-color: var(--gold); width: 14px; height: 14px; flex-shrink: 0;">
+            <label for="video-consent" style="font-size: 0.8rem; color: rgba(250,245,236,0.45); line-height: 1.6; cursor: pointer;">I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it on their platform.</label>
+          </div>
+          <button type="submit" id="video-submit-btn" style="margin-top: 0.5rem; background: var(--gold); color: var(--deep); padding: 0.85rem 2rem; font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s;">Submit Video</button>
+        </form>
+      </div>
+
+      <!-- Guidelines panel -->
+      <div>
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold-light); margin-bottom: 1.5rem; font-weight: 400;">Submission Guidelines</h3>
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">1</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Content must be relevant</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">Videos should focus on traditional and cultural sciences of India — rituals, heritage sites, philosophy, arts, or related subjects.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">2</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Original or rights-cleared content only</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">Submit only videos you filmed yourself or have explicit permission to share and publish.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">3</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Accepted formats & platforms</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">YouTube, Vimeo, Google Drive, or Dropbox links accepted. Minimum 480p resolution. Any duration welcome.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(201,168,76,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">4</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Review process</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">All submissions are reviewed by our editorial team before publication. You will be notified by email within 7–10 working days.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); flex-shrink: 0;">5</div>
+            <div>
+              <p style="font-size: 0.88rem; font-weight: 500; color: var(--cream); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif;">Credit & attribution</p>
+              <p style="font-size: 0.82rem; color: rgba(250,245,236,0.45); line-height: 1.65;">Your name and any organisation you represent will be credited alongside the published video.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact nudge -->
+        <div style="margin-top: 2.5rem; padding: 1.5rem; border: 1px solid rgba(201,168,76,0.15); border-radius: 2px; background: rgba(201,168,76,0.04);">
+          <p style="font-size: 0.82rem; color: rgba(250,245,236,0.5); line-height: 1.7;">Have a large collection or need to send files directlyॐ Write to us at <span style="color: var(--gold);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f08385808291929891999e94b0979d91999cde939f9d">[email&#160;protected]</a></span> or call <span style="color: var(--gold);">+91 98494 46409</span>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT AREAS -->
+<section class="impact" id="impact">
+  <div class="container">
+    <p class="section-eyebrow">Our Work</p>
+    <h2 class="section-title">Impact Areas</h2>
+    <div class="gold-line" style="background: var(--gold);"></div>
+    <p class="section-desc">From sacred architecture to ancient manuscripts, our work spans the full breadth of India's living heritage.</p>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <h3>Temple Architecture & Sacred Spaces</h3>
+        <p>Restoration and documentation of ancient temples, sacred groves, and architectural marvels that embody India's spiritual and artistic heritage across centuries.</p>
+      </div>
+      <div class="impact-card">
+        <h3>Traditional Arts & Crafts</h3>
+        <p>Supporting artisans and craftspeople in preserving traditional techniques in textiles, metalwork, pottery, painting, and other heritage crafts at risk of disappearing.</p>
+      </div>
+      <div class="impact-card">
+        <h3>Ancient Manuscripts & Texts</h3>
+        <p>Digitization, translation, and preservation of ancient manuscripts containing knowledge on medicine, astronomy, philosophy, and cultural practices of India.</p>
+      </div>
+      <div class="impact-card">
+        <h3>Ritual Sciences & Practices</h3>
+        <p>Documentation and study of traditional rituals, ceremonies, and practices that form the living, breathing heritage of Indian communities across regions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIP -->
+<section class="partnership" id="partnership">
+  <div class="container">
+    <p class="section-eyebrow">Collaborate With Us</p>
+    <h2 class="section-title">Associations & Partnerships</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc">We collaborate with educational institutions, research organizations, cultural bodies, and community groups to preserve India's heritage together.</p>
+    <div class="partner-types">
+      <div class="partner-card">
+        <p class="partner-label">Academic</p>
+        <h3>Academic Institutions</h3>
+        <p>Universities, research centers, and educational institutions working on traditional knowledge systems. Collaborate on research projects and knowledge exchange.</p>
+      </div>
+      <div class="partner-card">
+        <p class="partner-label">Cultural</p>
+        <h3>Cultural Organizations</h3>
+        <p>Museums, cultural centers, and heritage foundations preserving traditional arts and practices. Partner on exhibitions and documentation projects.</p>
+      </div>
+      <div class="partner-card">
+        <p class="partner-label">Community</p>
+        <h3>Community Groups</h3>
+        <p>Local communities, artisan collectives, and traditional practitioners. Grassroots initiatives supporting traditional knowledge holders within communities.</p>
+      </div>
+      <div class="partner-card">
+        <p class="partner-label">Corporate</p>
+        <h3>Corporate Partners</h3>
+        <p>Businesses committed to cultural preservation through CSR initiatives. Develop meaningful partnerships creating lasting impact on heritage conservation.</p>
+      </div>
+    </div>
+
+    <div class="collab-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Initial Contact</h4>
+        <p>Reach out with information about your organization and areas of interest. We'll schedule a meeting to discuss collaboration opportunities.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Identify Common Goals</h4>
+        <p>Together we'll identify shared objectives and explore how our organizations complement each other's strengths and resources.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Partnership Framework</h4>
+        <p>We'll create a clear framework outlining roles, responsibilities, timelines, and expected outcomes for collaborative initiatives.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Implementation</h4>
+        <p>Launch collaborative projects with regular monitoring and evaluation to ensure meaningful impact on heritage preservation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING PROGRAMS -->
+<section id="programs" style="background: var(--cream); padding: 6rem 2rem;">
+  <div class="container">
+    <p class="section-eyebrow">What's Coming</p>
+    <h2 class="section-title">Upcoming Programs &amp; Collaborations</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc" style="margin-bottom: 4rem;">Join us for workshops, festivals, lectures, and field programs — many co-hosted with partner institutions across India. Register early as seats are limited.</p>
+
+    <!-- Featured program -->
+    <div style="background: var(--earth); border: 1px solid rgba(201,168,76,0.25); border-radius: 2px; display: grid; grid-template-columns: 1fr 2fr; overflow: hidden; margin-bottom: 3rem;">
+      <div style="background: var(--deep); padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-right: 1px solid rgba(201,168,76,0.15);">
+        <p style="font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; font-family: 'Jost', sans-serif;">Featured Event</p>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: var(--cream); line-height: 1; font-weight: 300;">28</p>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--gold-light);">June 2025</p>
+        <div style="width: 30px; height: 1px; background: var(--gold); margin: 1rem auto; opacity: 0.4;"></div>
+        <p style="font-size: 0.75rem; color: rgba(250,245,236,0.4); font-family: 'Jost', sans-serif;">Hyderabad</p>
+      </div>
+      <div style="padding: 2.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="background: rgba(232,101,10,0.2); border: 1px solid rgba(232,101,10,0.4); color: #E8650A; font-size: 0.6rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 2px; font-family: 'Jost', sans-serif;">Workshop</span>
+          <span style="background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2); color: var(--gold); font-size: 0.6rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 2px; font-family: 'Jost', sans-serif;">In Collaboration</span>
+        </div>
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--cream); margin-bottom: 0.75rem; font-weight: 400;">Vedic Cosmology & Sacred Geometry Workshop</h3>
+        <p style="font-size: 0.85rem; color: rgba(250,245,236,0.5); line-height: 1.75; margin-bottom: 1.25rem;">A full-day immersive workshop exploring the cosmic sciences embedded in ancient Indian temple design and ritual geometry — conducted by leading scholars and practitioners. In collaboration with Osmania University Department of Ancient History.</p>
+        <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+          <div>
+            <p style="font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(201,168,76,0.5); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">Partner</p>
+            <p style="font-size: 0.85rem; color: var(--gold-light);">Osmania University</p>
+          </div>
+          <div>
+            <p style="font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(201,168,76,0.5); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">Venue</p>
+            <p style="font-size: 0.85rem; color: rgba(250,245,236,0.6);">Jubilee Hall, Hyderabad</p>
+          </div>
+          <div>
+            <p style="font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(201,168,76,0.5); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">Seats</p>
+            <p style="font-size: 0.85rem; color: #E8650A;">Limited — 60 seats</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary" style="font-size: 0.72rem; display: inline-block;">Register Interest</a>
+      </div>
+    </div>
+
+    <!-- Program cards grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+
+      <!-- Card 1 -->
+      <div style="background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; overflow: hidden;">
+        <div style="background: var(--cream-dark); padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(201,168,76,0.15);">
+          <div>
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); line-height: 1;">12 <span style="font-size: 0.9rem;">July</span></p>
+            <p style="font-size: 0.7rem; color: var(--muted);">2025</p>
+          </div>
+          <span style="background: rgba(74,103,65,0.12); border: 1px solid rgba(74,103,65,0.3); color: var(--sage); font-size: 0.6rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 2px; font-family: 'Jost', sans-serif;">Field Trip</span>
+        </div>
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--earth); margin-bottom: 0.5rem;">Heritage Temple Trail — Warangal</h3>
+          <p style="font-size: 0.83rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem;">Guided documentation tour of the Kakatiya-era temples of Warangal district with expert commentary on ritual sciences and stone iconography.</p>
+          <div style="border-top: 1px solid rgba(201,168,76,0.12); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <p style="font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">In collaboration with</p>
+              <p style="font-size: 0.82rem; color: var(--earth); font-weight: 500;">Dept. of Archaeology, TS</p>
+            </div>
+            <a href="#contact" style="font-size: 0.7rem; color: var(--terracotta); text-decoration: none; font-family: 'Jost', sans-serif; letter-spacing: 0.08em; border-bottom: 1px solid rgba(139,58,30,0.3);">Register →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; overflow: hidden;">
+        <div style="background: var(--cream-dark); padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(201,168,76,0.15);">
+          <div>
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); line-height: 1;">05 <span style="font-size: 0.9rem;">Aug</span></p>
+            <p style="font-size: 0.7rem; color: var(--muted);">2025</p>
+          </div>
+          <span style="background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3); color: #7A5C00; font-size: 0.6rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 2px; font-family: 'Jost', sans-serif;">Lecture Series</span>
+        </div>
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--earth); margin-bottom: 0.5rem;">Tantra, Mantra & Yantra — Three-Part Discourse</h3>
+          <p style="font-size: 0.83rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem;">A three-session evening discourse series by a visiting Acharya decoding the science of Tantra, the power of Mantra, and the geometry of Yantra.</p>
+          <div style="border-top: 1px solid rgba(201,168,76,0.12); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <p style="font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">In collaboration with</p>
+              <p style="font-size: 0.82rem; color: var(--earth); font-weight: 500;">Sri Sharada Peetham Trust</p>
+            </div>
+            <a href="#contact" style="font-size: 0.7rem; color: var(--terracotta); text-decoration: none; font-family: 'Jost', sans-serif; letter-spacing: 0.08em; border-bottom: 1px solid rgba(139,58,30,0.3);">Register →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; overflow: hidden;">
+        <div style="background: var(--cream-dark); padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(201,168,76,0.15);">
+          <div>
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); line-height: 1;">20 <span style="font-size: 0.9rem;">Sep</span></p>
+            <p style="font-size: 0.7rem; color: var(--muted);">2025</p>
+          </div>
+          <span style="background: rgba(139,58,30,0.1); border: 1px solid rgba(139,58,30,0.3); color: var(--terracotta); font-size: 0.6rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 2px; font-family: 'Jost', sans-serif;">Festival</span>
+        </div>
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--earth); margin-bottom: 0.5rem;">Sanatana Sanskriti Utsavam 2025</h3>
+          <p style="font-size: 0.83rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem;">An annual cultural festival celebrating India's living traditions — featuring folk performances, ritual demonstrations, manuscript exhibitions, and artisan showcases.</p>
+          <div style="border-top: 1px solid rgba(201,168,76,0.12); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <p style="font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">In collaboration with</p>
+              <p style="font-size: 0.82rem; color: var(--earth); font-weight: 500;">INTACH Hyderabad Chapter</p>
+            </div>
+            <a href="#contact" style="font-size: 0.7rem; color: var(--terracotta); text-decoration: none; font-family: 'Jost', sans-serif; letter-spacing: 0.08em; border-bottom: 1px solid rgba(139,58,30,0.3);">Register →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div style="background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; overflow: hidden;">
+        <div style="background: var(--cream-dark); padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(201,168,76,0.15);">
+          <div>
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); line-height: 1;">15 <span style="font-size: 0.9rem;">Nov</span></p>
+            <p style="font-size: 0.7rem; color: var(--muted);">2025</p>
+          </div>
+          <span style="background: rgba(26,18,8,0.07); border: 1px solid rgba(26,18,8,0.15); color: var(--earth); font-size: 0.6rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 2px; font-family: 'Jost', sans-serif;">Symposium</span>
+        </div>
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--earth); margin-bottom: 0.5rem;">Bio Field Sciences & Pranic Healing Symposium</h3>
+          <p style="font-size: 0.83rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem;">A national-level academic symposium bringing together researchers and practitioners in the field of Vedic bio-energy sciences, Pranic healing, and Vastu Shastra.</p>
+          <div style="border-top: 1px solid rgba(201,168,76,0.12); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <p style="font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">In collaboration with</p>
+              <p style="font-size: 0.82rem; color: var(--earth); font-weight: 500;">CCRAS &amp; University of Hyderabad</p>
+            </div>
+            <a href="#contact" style="font-size: 0.7rem; color: var(--terracotta); text-decoration: none; font-family: 'Jost', sans-serif; letter-spacing: 0.08em; border-bottom: 1px solid rgba(139,58,30,0.3);">Register →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div style="background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; overflow: hidden;">
+        <div style="background: var(--cream-dark); padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(201,168,76,0.15);">
+          <div>
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); line-height: 1;">10 <span style="font-size: 0.9rem;">Dec</span></p>
+            <p style="font-size: 0.7rem; color: var(--muted);">2025</p>
+          </div>
+          <span style="background: rgba(74,103,65,0.12); border: 1px solid rgba(74,103,65,0.3); color: var(--sage); font-size: 0.6rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 2px; font-family: 'Jost', sans-serif;">Training</span>
+        </div>
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--earth); margin-bottom: 0.5rem;">Traditional Craft Documentation — Hands-On Training</h3>
+          <p style="font-size: 0.83rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem;">A 3-day residential training for heritage documentation volunteers — covering photography, oral history recording, and manuscript handling techniques.</p>
+          <div style="border-top: 1px solid rgba(201,168,76,0.12); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <p style="font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-family: 'Jost', sans-serif; margin-bottom: 0.2rem;">In collaboration with</p>
+              <p style="font-size: 0.82rem; color: var(--earth); font-weight: 500;">Crafts Council of Telangana</p>
+            </div>
+            <a href="#contact" style="font-size: 0.7rem; color: var(--terracotta); text-decoration: none; font-family: 'Jost', sans-serif; letter-spacing: 0.08em; border-bottom: 1px solid rgba(139,58,30,0.3);">Register →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 — CTA to collaborate -->
+      <div style="background: var(--deep); border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem; text-align: center; min-height: 260px;">
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--gold-light); font-style: italic; margin-bottom: 0.75rem;">Want to co-host a programॐ</p>
+        <p style="font-size: 0.83rem; color: rgba(250,245,236,0.4); line-height: 1.7; margin-bottom: 1.5rem; max-width: 240px;">We welcome co-hosting proposals from institutions, cultural bodies, and research organisations across India.</p>
+        <a href="#contact" class="btn-outline" style="font-size: 0.7rem;">Propose a Collaboration</a>
+      </div>
+
+    </div>
+
+    <!-- Newsletter signup strip -->
+    <div style="background: var(--cream-dark); border: 1px solid rgba(201,168,76,0.2); padding: 2rem 2.5rem; border-radius: 2px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+      <div>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--earth); margin-bottom: 0.3rem;">Stay informed about upcoming programs</p>
+        <p style="font-size: 0.83rem; color: var(--muted);">Receive event announcements, program schedules, and collaboration calls directly in your inbox.</p>
+      </div>
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <input type="email" placeholder="your@email.com" style="background: white; border: 1px solid rgba(201,168,76,0.3); color: var(--ink); padding: 0.75rem 1rem; font-family: 'Jost', sans-serif; font-size: 0.88rem; border-radius: 2px; outline: none; min-width: 220px;">
+        <button onclick="this.textContent='Subscribed!'; this.style.background='var(--sage)'; setTimeout(()=>{this.textContent='Subscribe';this.style.background='';},3000);" style="background: var(--gold); color: var(--deep); padding: 0.75rem 1.5rem; font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer;">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DONATE -->
+<section class="donate" id="donate">
+  <div class="container">
+    <p class="section-eyebrow">Support Our Work</p>
+    <h2>Preserve Ancient Wisdom</h2>
+    <div class="gold-line" style="margin: 1.5rem auto;"></div>
+    <p>Your support enables us to continue our vital work in preserving India's traditional and cultural sciences — restoring heritage sites, documenting ancient knowledge, and educating future generations.</p>
+    <div class="donate-cards">
+      <div class="donate-card">
+        <h3>Individual Donations</h3>
+        <p>Make a direct contribution to support our heritage conservation work. Every donation, large or small, makes a difference in preserving India's cultural legacy. Contact us to learn about tax benefits.</p>
+        <a href="#contact" class="btn-primary" style="display: inline-block; font-size: 0.72rem;">Get in Touch</a>
+      </div>
+      <div class="donate-card">
+        <h3>Project Sponsorship</h3>
+        <p>Sponsor specific conservation projects, research initiatives, or educational programs. We'll work with you to identify projects that align with your interests. Receive regular impact updates.</p>
+        <a href="#contact" class="btn-primary" style="display: inline-block; font-size: 0.72rem;">Sponsor a Project</a>
+      </div>
+      <div class="donate-card">
+        <h3>Corporate CSR</h3>
+        <p>Develop long-term CSR partnerships that create sustainable impact. We offer customized programs aligned with your CSR objectives while advancing heritage conservation across India.</p>
+        <a href="#contact" class="btn-primary" style="display: inline-block; font-size: 0.72rem;">Schedule Consultation</a>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 3rem;">
+      <div style="text-align: center; padding: 1.5rem; background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px;">
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--earth);">Heritage</p>
+        <p style="font-size: 0.8rem; color: var(--muted);">Conservation</p>
+      </div>
+      <div style="text-align: center; padding: 1.5rem; background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px;">
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--earth);">Community</p>
+        <p style="font-size: 0.8rem; color: var(--muted);">Support</p>
+      </div>
+      <div style="text-align: center; padding: 1.5rem; background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px;">
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--earth);">Education</p>
+        <p style="font-size: 0.8rem; color: var(--muted);">Programs</p>
+      </div>
+      <div style="text-align: center; padding: 1.5rem; background: white; border: 1px solid rgba(201,168,76,0.2); border-radius: 2px;">
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--earth);">Research</p>
+        <p style="font-size: 0.8rem; color: var(--muted);">Documentation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="section-eyebrow">Reach Out</p>
+    <h2 class="section-title">Contact Us</h2>
+    <div class="gold-line" style="background: var(--gold);"></div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <div class="contact-detail">
+          <div>
+            <strong>Primary Office</strong>
+            <p>9/3 RT, Prakash Nagar,<br>Begumpet, Hyderabad</p>
+          </div>
+          <div>
+            <strong>Secondary Address</strong>
+            <p>Reg 34/41, Road No. 4,<br>Vivekanandapuram</p>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <p>+91 98494 46409<br>+91 83319 76555</p>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dfef8fdffecefe5ece4e3e9cdeae0ece4e1a3eee2e0">[email&#160;protected]</a></p>
+          </div>
+          <div>
+            <strong>Website</strong>
+            <p>www.suprabhaind.com</p>
+          </div>
+          <div>
+            <strong>Registration</strong>
+            <p>Registered 2016 — 176/IU/2016<br>Established 2010</p>
+          </div>
+        </div>
+        <div style="margin-top: 2rem; padding: 1.5rem; border: 1px solid rgba(201,168,76,0.15); border-radius: 2px;">
+          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--gold-light); font-style: italic; line-height: 1.6;">"The Indian system has a lot of variations, and many religions have taken shape from India — honoring this diversity is at the heart of our mission."</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1.4rem; color: var(--gold-light); margin-bottom: 1.5rem;">Send a Message</h3>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="field">
+              <label>First Name</label>
+              <input type="text" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label>Last Name</label>
+              <input type="text" placeholder="Last name">
+            </div>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="field">
+            <label>Purpose</label>
+            <select>
+              <option value="">Select a purpose</option>
+              <option>General Inquiry</option>
+              <option>Partnership / Collaboration</option>
+              <option>Article Submission</option>
+              <option>Donation / CSR</option>
+              <option>Resource Submission</option>
+              <option>Research Inquiry</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea placeholder="Tell us about your interest or inquiry..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="cursor: pointer; border: none; width: 100%; font-size: 0.8rem;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg class="footer-logo-svg"><use href="#suprabha-logo"/></svg>
+      <a href="#home" style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold); text-decoration: none;">Suprabha Trust</a>
+      <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
+      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#aspects">Sanatana Dharma</a></li>
+        <li><a href="#about">Mission & Vision</a></li>
+        <li><a href="#about">Our Approach</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Engage</h4>
+      <ul>
+        <li><a href="#knowledge">Knowledge Bank</a></li>
+        <li><a href="#programs">Upcoming Programs</a></li>
+        <li><a href="#contact">Submit Article</a></li>
+        <li><a href="#videos">Submit Video</a></li>
+        <li><a href="#contact">Submit Resource</a></li>
+        <li><a href="#partnership">Partner With Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#donate">CSR Programs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">Special Events</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Suprabha Trust. All rights reserved.</p>
+    <a href="/cdn-cgi/l/email-protection#d2a1a7a2a0b3b0bab3bbbcb692b5bfb3bbbefcb1bdbf"><span class="__cf_email__" data-cfemail="dba8aeaba9bab9b3bab2b5bf9bbcb6bab2b7f5b8b4b6">[email&#160;protected]</span></a>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  document.querySelectorAll('.cat-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+    });
+  });
+
+  function handleVideoSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('video-submit-btn');
+    btn.textContent = 'Video Submitted!';
+    btn.style.background = '#4A6741';
+    setTimeout(() => {
+      btn.textContent = 'Submit Video';
+      btn.style.background = '';
+      e.target.reset();
+    }, 3000);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.textContent = 'Mes
+
