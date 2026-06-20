@@ -4,9 +4,10 @@ nav {
   top: 0; left: 0; right: 0;
   z-index: 100;
   background: var(--glass-dark-bg); /* Glassmorphism Cocoa background */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(253, 243, 234, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(253, 243, 234, 0.08);
+  box-shadow: 0 12px 40px rgba(28, 10, 5, 0.4); /* Strong separation from dark hero */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,8 +22,8 @@ nav {
 .nav-logo-text .name { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-text-on-dark); font-weight: 500; letter-spacing: -0.01em; }
 .nav-logo-text .tagline { font-family: var(--font-body); font-size: 10px; color: var(--color-secondary); letter-spacing: 0.2em; text-transform: uppercase; display: block; }
 
-.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
-.nav-links a { font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-on-dark); text-decoration: none; position: relative; padding-bottom: 4px; transition: color 0.3s ease; }
+.nav-links { display: flex; gap: 2.25rem; list-style: none; align-items: center; }
+.nav-links a { font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-on-dark); text-decoration: none; position: relative; padding-bottom: 4px; transition: color 0.3s ease; }
 .nav-links a:hover, .nav-links a.active, .nav-links a[aria-current="page"] { color: var(--color-secondary); text-decoration: none; }
 
 /* MOBILE NAVIGATION */
@@ -31,7 +32,7 @@ nav {
   .nav-toggle { display: block; }
   .nav-links {
     display: flex; flex-direction: column; position: absolute; top: -500px; left: 0; right: 0;
-    background: var(--glass-dark-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 2rem;
+    background: var(--glass-dark-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); padding: 2rem;
     border-bottom: 1px solid rgba(253, 243, 234, 0.1); transition: top 0.4s ease; opacity: 0; pointer-events: none;
     box-shadow: var(--shadow-lg);
   }
@@ -44,22 +45,51 @@ nav {
   display: inline-flex; align-items: center; justify-content: center;
   padding: 14px 28px; font-family: var(--font-body); font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); border-radius: var(--radius-sm); letter-spacing: 0.05em;
 }
-.btn-primary, .btn-donate {
+
+.btn-primary {
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover)); color: var(--color-text-on-dark) !important; border: none;
   box-shadow: var(--shadow-sm);
 }
-.btn-primary:hover, .btn-donate:hover { 
+.btn-primary:hover { 
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   text-decoration: none; 
 }
 
+/* Elegant Pill shape for Donate to separate it from main CTAs */
+.btn-donate {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover)); color: var(--color-text-on-dark) !important; border: none;
+  padding: 10px 24px;
+  border-radius: var(--radius-lg);
+  font-size: 13px;
+  box-shadow: var(--shadow-sm);
+}
+.btn-donate:hover { 
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  text-decoration: none; 
+}
+
+/* Secondary Button Default (on light bg) */
 .btn-secondary {
   background: var(--color-surface); color: var(--color-deep); border: 1px solid rgba(74,28,16,0.1);
   box-shadow: var(--shadow-sm);
 }
 .btn-secondary:hover { 
   border-color: var(--color-primary); text-decoration: none; transform: translateY(-2px); box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button inside dark Hero (Ghost button) */
+.hero .btn-secondary {
+  background: transparent;
+  color: var(--color-text-on-dark);
+  border: 1px solid rgba(253, 243, 234, 0.25);
+  box-shadow: none;
+}
+.hero .btn-secondary:hover {
+  background: rgba(253, 243, 234, 0.05);
+  border-color: rgba(253, 243, 234, 0.5);
+  transform: translateY(-2px);
 }
 
 /* CARDS */
@@ -94,8 +124,9 @@ section.alt-bg .card, .aspects .card, .connections .card {
   background: var(--color-divider);
   border-radius: 3px;
 }
+/* Fixed margin below hero divider so it groups properly with H1 */
 .hero-divider {
-  height: 3px; width: 48px; margin: 0 0 2rem;
+  height: 3px; width: 48px; margin: 1rem 0 1.5rem;
   background: var(--color-secondary);
   border-radius: 3px;
 }

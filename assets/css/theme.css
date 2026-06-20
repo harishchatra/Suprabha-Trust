@@ -1,15 +1,15 @@
 :root {
   /* Core */
-  --color-primary:      #EC6426;  /* burnt orange â€” primary CTA, accents, links */
-  --color-secondary:    #F8A91F;  /* marigold â€” secondary accent, highlights */
-  --color-bg:           #FDF3EA;  /* warm cream â€” page background */
-  --color-text:         #4A1C10;  /* cocoa â€” body text, dark sections */
+  --color-primary:      #EC6426;  /* burnt orange Ã¢â‚¬â€ primary CTA, accents, links */
+  --color-secondary:    #F8A91F;  /* marigold Ã¢â‚¬â€ secondary accent, highlights */
+  --color-bg:           #FDF3EA;  /* warm cream Ã¢â‚¬â€ page background */
+  --color-text:         #4A1C10;  /* cocoa Ã¢â‚¬â€ body text, dark sections */
 
   /* Supporting */
-  --color-deep:         #632713;  /* chestnut â€” footer, deep panels */
-  --color-surface:      #FDE3CF;  /* peach â€” card / surface background */
-  --color-primary-hover:#C44E18;  /* rust â€” hover/active on orange elements */
-  --color-muted:        #8A6A55;  /* taupe â€” muted text, captions, metadata */
+  --color-deep:         #632713;  /* chestnut Ã¢â‚¬â€ footer, deep panels */
+  --color-surface:      #FDE3CF;  /* peach Ã¢â‚¬â€ card / surface background */
+  --color-primary-hover:#C44E18;  /* rust Ã¢â‚¬â€ hover/active on orange elements */
+  --color-muted:        #8A6A55;  /* taupe Ã¢â‚¬â€ muted text, captions, metadata */
 
   /* Convenience */
   --color-text-on-dark: #FDF3EA;  /* cream text used on cocoa/chestnut backgrounds */
