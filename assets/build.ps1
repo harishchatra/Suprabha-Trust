@@ -11,7 +11,7 @@ $headTemplate = @"
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>##TITLE##</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/theme.css">
 <link rel="stylesheet" href="assets/css/layout.css">
 <link rel="stylesheet" href="assets/css/components.css">
@@ -52,7 +52,7 @@ function Build-Page {
     </div>
   </a>
   <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-on-dark)" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
   </button>
   <ul class="nav-links">
     <li><a href="index.html" $(if($filename -eq 'index.html'){"class='active' aria-current='page'"})>Home</a></li>
@@ -83,7 +83,7 @@ function Build-Page {
         $secContent = $secContent -replace 'class="section-title"', 'class="reveal"'
         $secContent = $secContent -replace 'class="section-desc"', 'class="reveal"'
         $secContent = $secContent -replace 'class="gold-line"', 'class="divider reveal"'
-        $secContent = $secContent -replace 'class="hero-divider"', 'class="divider reveal"'
+        $secContent = $secContent -replace 'class="hero-divider"', 'class="hero-divider reveal"'
         $secContent = $secContent -replace 'class="hero-sub"', 'class="reveal"'
         $secContent = $secContent -replace 'class="hero-actions"', 'class="hero-actions reveal"'
         $secContent = $secContent -replace 'class="btn-outline"', 'class="btn-secondary"'
@@ -110,10 +110,10 @@ function Build-Page {
   <div class="container">
     <div class="footer-grid">
       <div>
-        <svg style="width:48px;height:48px;stroke:var(--brass);fill:none;margin-bottom:1rem;"><use href="#yantra-circle"/></svg>
-        <p class="font-display" style="font-size:24px;color:var(--maroon-deep);margin-bottom:0.5rem;">Suprabha Trust</p>
-        <p style="font-size:14px;">Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
-        <p style="font-size:12px;color:var(--stone);margin-top:1rem;">Established 2006 &#183; Registered 2016 &#8212; 176/IU/2016</p>
+        <svg style="width:48px;height:48px;stroke:var(--color-secondary);fill:none;margin-bottom:1rem;"><use href="#yantra-circle"/></svg>
+        <p class="font-display" style="font-size:24px;color:var(--color-text-on-dark);margin-bottom:0.5rem;">Suprabha Trust</p>
+        <p style="font-size:14px;color:var(--color-text-on-dark);">Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
+        <p style="font-size:12px;color:var(--color-muted);margin-top:1rem;">Established 2006 &#183; Registered 2016 &#8212; 176/IU/2016</p>
       </div>
       <div>
         <h4>About</h4>
@@ -143,7 +143,7 @@ function Build-Page {
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Suprabha Trust. All rights reserved.</span>
-      <a href="mailto:suprabhaind@gmail.com">suprabhaind@gmail.com</a>
+      <a href="mailto:suprabhaind@gmail.com" style="color:var(--color-secondary);">suprabhaind@gmail.com</a>
     </div>
   </div>
 </footer>

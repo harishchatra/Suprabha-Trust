@@ -10,8 +10,8 @@ html {
 }
 body {
   font-family: var(--font-body);
-  background-color: var(--manuscript);
-  color: var(--ink);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -19,25 +19,28 @@ body {
 /* TYPOGRAPHY */
 h1, h2, h3, h4, .font-display {
   font-family: var(--font-display);
-  font-weight: 600;
-  color: var(--maroon-deep);
+  font-weight: 500;
+  color: var(--color-text);
 }
-h1 { font-size: 40px; line-height: 1.08; margin-bottom: 1.5rem; }
+h1 { font-size: 48px; line-height: 1.1; margin-bottom: 1.5rem; }
 h1 em { font-style: italic; font-family: var(--font-display); }
-h2 { font-size: 26px; margin-bottom: 1.5rem; }
-h3 { font-size: 20px; margin-bottom: 1rem; }
-p { max-width: 70ch; margin-bottom: 1.5rem; color: var(--stone); font-size: 16px; line-height: 1.7; }
+h2 { font-size: 32px; margin-bottom: 1.5rem; }
+h3 { font-size: 24px; margin-bottom: 1rem; }
+p { max-width: 70ch; margin-bottom: 1.5rem; color: var(--color-text); font-size: 16px; line-height: 1.7; }
+a { color: var(--color-primary); text-decoration: none; transition: all 0.2s; }
+a:hover { color: var(--color-primary-hover); text-decoration: underline; }
 
 .eyebrow {
   font-family: var(--font-body);
   font-size: 12px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--brass);
-  font-weight: 500;
+  color: var(--color-primary);
+  font-weight: 600;
   margin-bottom: 0.75rem;
   display: block;
 }
+.caption { color: var(--color-muted); font-size: 14px; }
 
 /* LAYOUT PRIMITIVES */
 .container, .hero-content, .about-strip {
@@ -57,24 +60,23 @@ section, .about-strip {
   padding-top: 6rem;
   padding-bottom: 6rem;
   position: relative;
+  background-color: var(--color-bg);
+}
+section.alt-bg, .aspects, .connections {
+  background-color: var(--color-surface);
 }
 
-/* HERO SECTION SPECIFIC (DARK BAND) */
+/* HIGH-IMPACT HERO BAND */
 .hero-section, .hero {
-  background-color: var(--maroon-deep);
+  background-color: var(--color-text); /* Cocoa background */
   padding-top: 10rem;
   padding-bottom: 6rem;
-  min-height: auto;
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
 }
 .hero h1, .hero p, .hero .eyebrow {
-  color: var(--manuscript);
-}
-.hero .eyebrow {
-  color: var(--brass);
+  color: var(--color-text-on-dark);
 }
 
 .grid-2 {
@@ -86,18 +88,19 @@ section, .about-strip {
   .grid-2 { grid-template-columns: 1fr; gap: 3rem; }
 }
 
-.about-strip > p { max-width: 1200px; margin: 0 auto; text-align: center; font-size: 22px; font-family: var(--font-display); line-height: 1.5; color: var(--maroon-deep); }
+.about-strip > p { max-width: 1200px; margin: 0 auto; text-align: center; font-size: 22px; font-family: var(--font-display); line-height: 1.5; color: var(--color-text); }
 
 /* FOOTER */
 footer {
-  background: var(--manuscript);
-  border-top: 1px solid rgba(168, 120, 44, 0.2); /* brass light border */
+  background: var(--color-deep); /* Chestnut background */
   padding: 6rem 0 3rem;
+  color: var(--color-text-on-dark);
 }
-footer h4 { color: var(--maroon-deep); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2rem; font-family: var(--font-body); font-weight: 600; }
+footer h4 { color: var(--color-text-on-dark); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2rem; font-family: var(--font-body); font-weight: 600; }
 footer ul { list-style: none; }
-footer a { color: var(--stone); text-decoration: none; transition: color 0.3s; font-size: 16px; }
-footer a:hover { color: var(--garnet); }
+footer a { color: var(--color-secondary); text-decoration: none; font-size: 16px; transition: color 0.2s; }
+footer a:hover { color: var(--color-primary-hover); text-decoration: underline; }
+footer p { color: var(--color-text-on-dark); }
 footer .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
 @media (max-width: 768px) { footer .footer-grid { grid-template-columns: 1fr 1fr; } }
-footer .footer-bottom { border-top: 1px solid rgba(168, 120, 44, 0.2); padding-top: 2rem; display: flex; justify-content: space-between; font-size: 14px; color: var(--stone); }
+footer .footer-bottom { border-top: 1px solid var(--color-muted); padding-top: 2rem; display: flex; justify-content: space-between; font-size: 14px; color: var(--color-text-on-dark); }

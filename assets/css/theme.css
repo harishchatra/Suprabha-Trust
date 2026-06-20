@@ -1,25 +1,26 @@
 :root {
-  /* COLOR TOKENS */
-  --maroon-deep:  #3A0E12;   /* hero background, primary headings */
-  --garnet:       #6E1E24;   /* links, card top-accent (knowledge) */
-  --brass:        #A8782C;   /* PRIMARY accent: eyebrows, rules, logo stroke, active nav underline */
-  --gold-leaf:    #C9A24B;   /* used sparingly: Donate button + hero primary CTA only */
-  --manuscript:   #F7F3E9;   /* PAGE BACKGROUND (warm paper) */
-  --ink:          #1C1A17;   /* body text */
-  --stone:        #5C5648;   /* muted/secondary text */
-  --verdigris:    #2E5E4E;   /* renewable/energy content accents ONLY */
-  --paper-card:   #FFFFFF;   /* card surfaces */
+  /* Core */
+  --color-primary:      #EC6426;  /* burnt orange â€” primary CTA, accents, links */
+  --color-secondary:    #F8A91F;  /* marigold â€” secondary accent, highlights */
+  --color-bg:           #FDF3EA;  /* warm cream â€” page background */
+  --color-text:         #4A1C10;  /* cocoa â€” body text, dark sections */
 
-  /* ALIASES */
-  --accent-gold:  var(--brass);
-  --text-primary: var(--ink);
-  --text-muted:   var(--stone);
+  /* Supporting */
+  --color-deep:         #632713;  /* chestnut â€” footer, deep panels */
+  --color-surface:      #FDE3CF;  /* peach â€” card / surface background */
+  --color-primary-hover:#C44E18;  /* rust â€” hover/active on orange elements */
+  --color-muted:        #8A6A55;  /* taupe â€” muted text, captions, metadata */
 
-  /* TYPOGRAPHY */
+  /* Convenience */
+  --color-text-on-dark: #FDF3EA;  /* cream text used on cocoa/chestnut backgrounds */
+  --color-divider:      #EC6426;  /* short accent rules under headings */
+  
+  /* Typography */
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
   
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  /* Layout */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
 }

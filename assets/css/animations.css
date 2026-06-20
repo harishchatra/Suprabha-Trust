@@ -23,7 +23,7 @@
   opacity: 0.05;
   pointer-events: none;
   z-index: 0;
-  stroke: var(--brass);
+  stroke: var(--color-primary); /* Use primary for subtle background texture */
   animation: slowSpin 60s linear infinite;
 }
 
