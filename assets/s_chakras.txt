@@ -9,7 +9,7 @@
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" style="width: 100%; height: auto; overflow: visible;">
         <!-- Faint Background Mandala -->
-        <g opacity="0.05" transform="translate(350, 300) scale(1.8)">
+        <g opacity="0.05" transform="translate(500, 300) scale(1.8)">
            <circle r="150" fill="none" stroke="var(--color-primary)" stroke-width="1"/>
            <path d="M0 -150 L150 0 L0 150 L-150 0 Z" fill="none" stroke="var(--color-primary)" stroke-width="0.5"/>
            <path d="M0 -150 L150 0 L0 150 L-150 0 Z" fill="none" stroke="var(--color-primary)" stroke-width="0.5" transform="rotate(45)"/>
@@ -18,19 +18,19 @@
         <!-- Sacred Geometry Wireframe Body -->
         <g stroke="var(--color-primary)" fill="none" stroke-width="1.5" opacity="0.4">
           <!-- Head -->
-          <circle cx="350" cy="120" r="35" opacity="0.6"/>
+          <circle cx="500" cy="120" r="35" opacity="0.6"/>
           <!-- Central Energy Channel (Sushumna) -->
-          <line x1="350" y1="155" x2="350" y2="520" stroke-dasharray="4 4" opacity="0.4"/>
+          <line x1="500" y1="155" x2="500" y2="520" stroke-dasharray="4 4" opacity="0.4"/>
           <!-- Shoulders and Arms sweeping to knees -->
-          <path d="M 350 170 C 280 170 230 220 230 290 C 230 370 200 430 150 480" opacity="0.6"/>
-          <path d="M 350 170 C 420 170 470 220 470 290 C 470 370 500 430 550 480" opacity="0.6"/>
+          <path d="M 500 170 C 430 170 380 220 380 290 C 380 370 350 430 300 480" opacity="0.6"/>
+          <path d="M 500 170 C 570 170 620 220 620 290 C 620 370 650 430 700 480" opacity="0.6"/>
           <!-- Lotus Base (Legs) -->
-          <path d="M 350 540 C 200 540 100 520 150 480 C 200 440 300 450 350 450 C 400 450 500 440 550 480 C 600 520 500 540 350 540 Z" opacity="0.6"/>
+          <path d="M 500 540 C 350 540 250 520 300 480 C 350 440 450 450 500 450 C 550 450 650 440 700 480 C 750 520 650 540 500 540 Z" opacity="0.6"/>
         </g>
 
         <!-- Interactive Chakra Groups -->
         <!-- Root Chakra (Muladhara) - Red -->
-        <g class="chakra-node" transform="translate(350, 500)">
+        <g class="chakra-node" transform="translate(500, 500)">
           <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FF2A2A" opacity="0.8" filter="drop-shadow(0 0 10px #FF2A2A)"/>
           <polygon points="0,8 -8,-4 8,-4" fill="#FFF"/>
           <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FF2A2A" stroke-width="1.5" stroke-dasharray="4 4"/>
@@ -41,7 +41,7 @@
         </g>
 
         <!-- Sacral Chakra (Svadhisthana) - Orange -->
-        <g class="chakra-node" transform="translate(350, 420)">
+        <g class="chakra-node" transform="translate(500, 420)">
           <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FF7F00" opacity="0.8" filter="drop-shadow(0 0 10px #FF7F00)"/>
           <circle cx="0" cy="0" r="6" fill="none" stroke="#FFF" stroke-width="2"/>
           <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FF7F00" stroke-width="1.5" stroke-dasharray="4 4"/>
@@ -52,7 +52,7 @@
         </g>
 
         <!-- Solar Plexus Chakra (Manipura) - Yellow -->
-        <g class="chakra-node" transform="translate(350, 340)">
+        <g class="chakra-node" transform="translate(500, 340)">
           <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FFD700" opacity="0.8" filter="drop-shadow(0 0 10px #FFD700)"/>
           <polygon points="0,-8 -8,4 8,4" fill="none" stroke="#FFF" stroke-width="2"/>
           <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="4 4"/>
@@ -63,7 +63,7 @@
         </g>
 
         <!-- Heart Chakra (Anahata) - Green -->
-        <g class="chakra-node" transform="translate(350, 260)">
+        <g class="chakra-node" transform="translate(500, 260)">
           <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#00FF00" opacity="0.8" filter="drop-shadow(0 0 10px #00FF00)"/>
           <path d="M -6 -2 C -6 -6 -2 -6 0 -2 C 2 -6 6 -6 6 -2 C 6 2 0 6 0 6 C 0 6 -6 2 -6 -2 Z" fill="#FFF"/>
           <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#00FF00" stroke-width="1.5" stroke-dasharray="4 4"/>
@@ -74,7 +74,7 @@
         </g>
 
         <!-- Throat Chakra (Vishuddha) - Blue -->
-        <g class="chakra-node" transform="translate(350, 180)">
+        <g class="chakra-node" transform="translate(500, 180)">
           <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#00BFFF" opacity="0.8" filter="drop-shadow(0 0 10px #00BFFF)"/>
           <circle cx="0" cy="0" r="8" fill="none" stroke="#FFF" stroke-width="2"/>
           <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#00BFFF" stroke-width="1.5" stroke-dasharray="4 4"/>
@@ -85,7 +85,7 @@
         </g>
 
         <!-- Third Eye Chakra (Ajna) - Indigo -->
-        <g class="chakra-node" transform="translate(350, 120)">
+        <g class="chakra-node" transform="translate(500, 120)">
           <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#4B0082" opacity="0.8" filter="drop-shadow(0 0 10px #4B0082)"/>
           <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFF"/>
           <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#4B0082" stroke-width="1.5" stroke-dasharray="4 4"/>
@@ -96,7 +96,7 @@
         </g>
 
         <!-- Crown Chakra (Sahasrara) - Violet -->
-        <g class="chakra-node" transform="translate(350, 60)">
+        <g class="chakra-node" transform="translate(500, 60)">
           <circle class="chakra-glow" cx="0" cy="0" r="20" fill="#9400D3" opacity="0.8" filter="drop-shadow(0 0 15px #9400D3)"/>
           <path d="M 0 -8 L 4 -2 L 10 0 L 4 2 L 0 8 L -4 2 L -10 0 L -4 -2 Z" fill="#FFF"/>
           <line class="chakra-line" x1="24" y1="0" x2="24" y2="0" stroke="#9400D3" stroke-width="1.5" stroke-dasharray="4 4"/>
