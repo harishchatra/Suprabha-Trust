@@ -40,9 +40,9 @@
         </div>
         <!-- Call to Action Card -->
         <div class="card reveal reveal-delay-2" style="padding: 2.5rem; background: var(--gradient-primary); text-align: center; justify-content: center;">
-          <p style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-deep); font-style: italic; margin-bottom: 1rem;">A living archive of ancient wisdom</p>
-          <p style="font-size: 15px; color: var(--color-deep); max-width: 400px; margin: 0 auto 2rem; opacity: 0.9;">Our knowledge bank grows continuously as researchers and scholars contribute their expertise.</p>
-          <a href="articles.html" class="btn-secondary" style="margin: 0 auto;">Submit an Article</a>
+          <p style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-deep); font-style: italic; margin-bottom: 1rem;">Contribute to our modern discourse</p>
+          <p style="font-size: 15px; color: var(--color-deep); max-width: 400px; margin: 0 auto 2rem; opacity: 0.9;">While the Knowledge Bank serves as our permanent, curated library of ancient wisdom, our <strong>Articles</strong> section is a living blog for modern researchers to share their latest findings.</p>
+          <a href="articles.html" class="btn-secondary" style="margin: 0 auto; background: var(--color-deep); color: var(--color-primary) !important; border: none; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">Submit an Article</a>
         </div>
       </div>
       

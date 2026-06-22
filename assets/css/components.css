@@ -78,13 +78,13 @@ nav {
   text-decoration: none; 
 }
 
-/* Secondary Button Default (on light bg) */
+/* Secondary Button Default (on dark bg) */
 .btn-secondary {
-  background: var(--color-surface); color: var(--color-deep); border: 1px solid rgba(74,28,16,0.1);
-  box-shadow: var(--shadow-sm);
+  background: transparent; color: var(--color-text); border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm); backdrop-filter: blur(8px);
 }
 .btn-secondary:hover { 
-  border-color: var(--color-primary); text-decoration: none; transform: translateY(-2px); box-shadow: var(--shadow-md);
+  border-color: var(--color-primary); color: var(--color-primary); text-decoration: none; transform: translateY(-2px); box-shadow: var(--shadow-glow);
 }
 
 /* Secondary Button inside dark Hero (Ghost button) */
