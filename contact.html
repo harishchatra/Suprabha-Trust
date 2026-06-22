@@ -139,88 +139,74 @@
 </nav>
 <main>
 <!-- CONTACT -->
-<section class="contact" id="contact">
+<section class="contact alt-bg" id="contact">
   <div class="container">
-    <p class="eyebrow reveal">Reach Out</p>
-    <h2 class="reveal">Contact Us</h2>
-    <div class="divider reveal" style="background: var(--gold);"></div>
-    <div class="grid-2">
-      <div class="contact-info">
-        <h3>Get in Touch</h3>
-        <div class="contact-detail">
-          <div>
-            <strong>Primary Office</strong>
-            <p>9/3 RT, Prakash Nagar,<br>Begumpet, Hyderabad</p>
+    <p class="section-eyebrow reveal">Reach Out</p>
+    <h2 class="section-title reveal">Contact Us</h2>
+    <div class="gold-line reveal"></div>
+    
+    <div class="grid-2" style="margin-top: 4rem; align-items: start;">
+      <div class="contact-info reveal">
+        <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); margin-bottom: 2rem;">Get in Touch</h3>
+        <div class="card-grid" style="grid-template-columns: 1fr; gap: 1.5rem; margin-top: 0;">
+          
+          <div class="card" style="padding: 2rem;">
+            <strong style="color: var(--color-secondary); display: block; margin-bottom: 0.5rem; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.8rem;">Offices</strong>
+            <p style="margin-bottom: 1rem; color: var(--color-muted);">9/3 RT, Prakash Nagar, Begumpet, Hyderabad</p>
+            <p style="color: var(--color-muted);">Reg 34/41, Road No. 4, Vivekanandapuram</p>
           </div>
-          <div>
-            <strong>Secondary Address</strong>
-            <p>Reg 34/41, Road No. 4,<br>Vivekanandapuram</p>
+          
+          <div class="card" style="padding: 2rem;">
+            <strong style="color: var(--color-secondary); display: block; margin-bottom: 0.5rem; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.8rem;">Direct Contact</strong>
+            <p style="margin-bottom: 0.5rem;"><a href="tel:+919849446409" style="color: var(--color-text); text-decoration: none;">+91 98494 46409</a></p>
+            <p style="margin-bottom: 1rem;"><a href="tel:+918331976555" style="color: var(--color-text); text-decoration: none;">+91 83319 76555</a></p>
+            <p><a href="mailto:suprabhaind@gmail.com" style="color: var(--color-primary); text-decoration: none;">suprabhaind@gmail.com</a></p>
           </div>
-          <div>
-            <strong>Phone</strong>
-            <p>+91 98494 46409<br>+91 83319 76555</p>
-          </div>
-          <div>
-            <strong>Email</strong>
-            <p><a href="mailto:suprabhaind@gmail.com">suprabhaind@gmail.com</a></p>
-          </div>
-          <div>
-            <strong>Website</strong>
-            <p>www.suprabhaind.com</p>
-          </div>
-          <div>
-            <strong>Registration</strong>
-            <p>Registered 2016 &#8212; 176/IU/2016<br>Established 2006</p>
-          </div>
-        </div>
-        <div style="margin-top: 2rem; padding: 1.5rem; border: 1px solid rgba(201,168,76,0.15); border-radius: 2px;">
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--gold-light); font-style: italic; line-height: 1.6;">"The Indian system has a lot of variations, and many religions have taken shape from India &#8212; honoring this diversity is at the heart of our mission."</p>
+          
         </div>
       </div>
 
-      <div>
-        <h3 style="font-size: 1.4rem; color: var(--gold-light); margin-bottom: 1.5rem;">Send a Message</h3>
-        <form name="contact" data-netlify="true" class="contact-form" onsubmit="handleSubmit(event)">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
-            <div class="field">
-              <label>First Name</label>
-              <input type="text" name="first_name" placeholder="Your name" required>
+      <div class="reveal reveal-delay-2">
+        <div class="card" style="padding: 3rem;">
+          <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); margin-bottom: 2rem;">Send a Message</h3>
+          <form name="contact" data-netlify="true" class="contact-form" onsubmit="handleSubmit(event)">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+              <div class="form-field">
+                <label>First Name *</label>
+                <input type="text" name="first_name" placeholder="Your name" required>
+              </div>
+              <div class="form-field">
+                <label>Last Name *</label>
+                <input type="text" name="last_name" placeholder="Last name" required>
+              </div>
             </div>
-            <div class="field">
-              <label>Last Name</label>
-              <input type="text" name="last_name" placeholder="Last name" required>
+            <div class="form-field">
+              <label>Email *</label>
+              <input type="email" name="email" placeholder="your@email.com" required>
             </div>
-          </div>
-          <div class="field">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="your@email.com" required>
-          </div>
-          <div class="field">
-            <label>Purpose</label>
-            <select name="purpose" required>
-              <option value="">Select a purpose</option>
-              <option>General Inquiry</option>
-              <option>Partnership / Collaboration</option>
-              <option>Article Submission</option>
-              <option>Donation / CSR</option>
-              <option>Resource Submission</option>
-              <option>Research Inquiry</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Message</label>
-            <textarea name="message" placeholder="Tell us about your interest or inquiry..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary" style="cursor: pointer; border: none; width: 100%; font-size: 0.8rem;">Send Message</button>
-        </form>
+            <div class="form-field">
+              <label>Purpose *</label>
+              <select name="purpose" required>
+                <option value="">Select a purpose</option>
+                <option>General Inquiry</option>
+                <option>Partnership / Collaboration</option>
+                <option>Article Submission</option>
+                <option>Donation / CSR</option>
+                <option>Resource Submission</option>
+                <option>Research Inquiry</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Message *</label>
+              <textarea name="message" placeholder="Tell us about your interest or inquiry..." required style="height: 120px;"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
 
 <!-- DONATE -->
 <section class="donate" id="donate">
