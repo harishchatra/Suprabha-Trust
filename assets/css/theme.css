@@ -21,8 +21,8 @@
   --gradient-text: linear-gradient(to right, #F5B742, #E8A020, #D4820A);
   
   /* Typography */
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'Philosopher', serif;
+  --font-body: 'Philosopher', serif;
   
   /* Layout & Elevations */
   --radius-sm: 8px;
