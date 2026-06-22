@@ -7,14 +7,46 @@
       <h1>Discovering the <br><em>Mystic Sciences</em><br> of Ancient India</h1>
       <div class="hero-divider"></div>
       <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions — bridging ancient wisdom with modern understanding.</p>
+<!-- HERO -->
+<section class="hero" id="home">
+  <svg class="yantra-bg"><use href="#yantra-circle"/></svg>
+  <div class="container grid-2" style="align-items: center; z-index: 2; position: relative;">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Established 2006 &nbsp;·&nbsp; Hyderabad, India</p>
+      <h1>Discovering the <br><em>Mystic Sciences</em><br> of Ancient India</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions — bridging ancient wisdom with modern understanding.</p>
       <div class="hero-actions" style="display: flex; gap: 1rem; flex-wrap: wrap;">
         <a href="#knowledge" class="btn-primary">Explore Knowledge Bank</a>
         <a href="#about" class="btn-outline">Our Story</a>
       </div>
       <p class="hero-since" style="margin-top: 3rem; color: var(--color-muted);">&#9670; Since 2006 · Registered 176/IU/2016 &#9670;</p>
     </div>
-    <div class="hero-image reveal reveal-delay-2" style="text-align: center;">
-      <img src="assets/images/hero.png" alt="Mystic Mandala" style="width: 100%; max-width: 500px; border-radius: 50%; box-shadow: var(--shadow-glow); filter: drop-shadow(0 0 40px rgba(232, 160, 32, 0.4)); animation: float 8s ease-in-out infinite;">
+    <div class="hero-image reveal reveal-delay-2" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+      <svg viewBox="0 0 200 200" style="width: 100%; max-width: 450px; animation: slowSpin 40s linear infinite, float 8s ease-in-out infinite; filter: drop-shadow(0 0 30px rgba(232,160,32,0.35));">
+        <!-- Outer Glowing Ring -->
+        <circle cx="100" cy="100" r="90" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.8" />
+        <circle cx="100" cy="100" r="80" fill="none" stroke="var(--color-secondary)" stroke-width="0.5" opacity="0.5" />
+        
+        <!-- Sacred Geometry Rays -->
+        <g stroke="var(--color-primary)" stroke-width="1" fill="none" opacity="0.6">
+          <path d="M100 15 L100 185 M15 100 L185 100 M40 40 L160 160 M40 160 L160 40 M60 25 L140 175 M25 60 L175 140 M140 25 L60 175 M175 60 L25 140"/>
+        </g>
+        
+        <!-- Inner Petals/Circles -->
+        <circle cx="100" cy="100" r="60" fill="none" stroke="var(--color-secondary)" stroke-width="2" stroke-dasharray="10 5" opacity="0.8" />
+        <circle cx="100" cy="100" r="50" fill="none" stroke="var(--color-primary)" stroke-width="1" />
+        
+        <!-- Core Intersecting Triangles (Sri Yantra motif) -->
+        <polygon points="100,60 65,120 135,120" fill="rgba(232,160,32,0.1)" stroke="var(--color-primary)" stroke-width="1.5"/>
+        <polygon points="100,140 65,80 135,80" fill="rgba(232,160,32,0.1)" stroke="var(--color-primary)" stroke-width="1.5"/>
+        <polygon points="100,50 50,130 150,130" fill="none" stroke="var(--color-secondary)" stroke-width="0.5" opacity="0.5"/>
+        <polygon points="100,150 50,70 150,70" fill="none" stroke="var(--color-secondary)" stroke-width="0.5" opacity="0.5"/>
+        
+        <!-- Central Bindu -->
+        <circle cx="100" cy="100" r="4" fill="var(--color-secondary)" filter="drop-shadow(0 0 10px var(--color-secondary))" />
+        <circle cx="100" cy="100" r="1.5" fill="#fff" />
+      </svg>
     </div>
   </div>
 </section>
