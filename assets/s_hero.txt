@@ -9,7 +9,6 @@
       <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions — bridging ancient wisdom with modern understanding.</p>
 <!-- HERO -->
 <section class="hero" id="home">
-  <svg class="yantra-bg"><use href="#yantra-circle"/></svg>
   <div class="container grid-2" style="align-items: center; z-index: 2; position: relative;">
     <div class="hero-content">
       <p class="hero-eyebrow">Established 2006 &nbsp;·&nbsp; Hyderabad, India</p>
@@ -23,7 +22,7 @@
       <p class="hero-since" style="margin-top: 3rem; color: var(--color-muted);">&#9670; Since 2006 · Registered 176/IU/2016 &#9670;</p>
     </div>
     <div class="hero-image reveal reveal-delay-2" style="text-align: center; display: flex; justify-content: center; align-items: center;">
-      <svg viewBox="0 0 200 200" style="width: 100%; max-width: 450px; animation: slowSpin 40s linear infinite, float 8s ease-in-out infinite; filter: drop-shadow(0 0 30px rgba(232,160,32,0.35));">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style="width: 100%; max-width: 450px; height: auto; transform-origin: center; animation: slowSpin 40s linear infinite, float 8s ease-in-out infinite; filter: drop-shadow(0 0 30px rgba(232,160,32,0.35));">
         <!-- Outer Glowing Ring -->
         <circle cx="100" cy="100" r="90" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.8" />
         <circle cx="100" cy="100" r="80" fill="none" stroke="var(--color-secondary)" stroke-width="0.5" opacity="0.5" />
