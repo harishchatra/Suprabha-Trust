@@ -17,8 +17,8 @@ nav {
   transition: all 0.3s ease;
 }
 .nav-logo-wrap { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
-.nav-logo-wrap svg { width: 40px; height: 40px; stroke: var(--color-secondary); fill: none; transition: transform 0.3s ease; }
-.nav-logo-wrap:hover svg { transform: rotate(90deg); }
+.nav-logo-wrap svg { width: 45px; height: 45px; transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+.nav-logo-wrap:hover svg { transform: rotate(180deg) scale(1.1); filter: drop-shadow(0 0 10px rgba(232, 160, 32, 0.4)); }
 .nav-logo-text .name { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-text-on-dark); font-weight: 500; letter-spacing: -0.01em; }
 .nav-logo-text .tagline { font-family: var(--font-body); font-size: 10px; color: var(--color-secondary); letter-spacing: 0.2em; text-transform: uppercase; display: block; }
 

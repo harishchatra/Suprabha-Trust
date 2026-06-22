@@ -87,7 +87,7 @@
 <!-- NAV -->
 <nav>
   <a href="#home" class="nav-logo-wrap">
-    <svg><use href="#suprabha-logo"/></svg>
+    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
     <div class="nav-logo-text">
       <span class="name">Suprabha Trust</span>
       <span class="tagline">Mystic Sciences of Ancient India</span>
