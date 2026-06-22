@@ -1,22 +1,20 @@
-﻿<!-- HERO -->
+<!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-bg">
-    <div class="mandala-bg"><div class="mandala-ring"></div><div class="mandala-ring"></div><div class="mandala-ring"></div><div class="mandala-ring"></div></div>
-  <div class="hero-content">
-    <svg class="hero-logo-svg"><use href="#suprabha-logo"/></svg>
-    <p class="hero-eyebrow">Established 2006 &nbsp;·&nbsp; Hyderabad, India</p>
-    <h1>Discovering the <em>Mystic Sciences</em> of Ancient India</h1>
-    <div class="hero-divider"></div>
-    <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions — bridging ancient wisdom with modern understanding.</p>
-    <div class="hero-actions">
-      <a href="#knowledge" class="btn-primary">Explore Knowledge Bank</a>
-      <a href="#about" class="btn-outline">Our Story</a>
+  <svg class="yantra-bg"><use href="#yantra-circle"/></svg>
+  <div class="container grid-2" style="align-items: center; z-index: 2; position: relative;">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Established 2006 &nbsp;·&nbsp; Hyderabad, India</p>
+      <h1>Discovering the <br><em>Mystic Sciences</em><br> of Ancient India</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions — bridging ancient wisdom with modern understanding.</p>
+      <div class="hero-actions" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="#knowledge" class="btn-primary">Explore Knowledge Bank</a>
+        <a href="#about" class="btn-outline">Our Story</a>
+      </div>
+      <p class="hero-since" style="margin-top: 3rem; color: var(--color-muted);">&#9670; Since 2006 · Registered 176/IU/2016 &#9670;</p>
     </div>
-    <p class="hero-since" style="margin-top: 3rem;">&#9670; Since 2006 · Registered 176/IU/2016 &#9670;</p>
+    <div class="hero-image reveal reveal-delay-2" style="text-align: center;">
+      <img src="assets/images/hero.png" alt="Mystic Mandala" style="width: 100%; max-width: 500px; border-radius: 50%; box-shadow: var(--shadow-glow); filter: drop-shadow(0 0 40px rgba(232, 160, 32, 0.4)); animation: float 8s ease-in-out infinite;">
+    </div>
   </div>
 </section>
-
-
-
-
-

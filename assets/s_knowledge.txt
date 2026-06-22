@@ -1,11 +1,12 @@
-﻿<!-- KNOWLEDGE BANK -->
+<!-- KNOWLEDGE BANK -->
 <section class="knowledge" id="knowledge">
   <div class="container">
     <p class="section-eyebrow">Explore & Learn</p>
     <h2 class="section-title">Knowledge Bank</h2>
     <div class="gold-line"></div>
-    <p class="section-desc">Browse our extensive collection of articles, research, and insights on India's traditional and cultural sciences — organized by discipline.</p>
-    <div class="categories">
+    <p class="section-desc" style="margin-bottom: 2rem;">Browse our extensive collection of articles, research, and insights on India's traditional and cultural sciences — organized by discipline.</p>
+    
+    <div class="categories reveal reveal-delay-1">
       <button class="cat-pill active">All Categories</button>
       <button class="cat-pill">Bio Field Sciences</button>
       <button class="cat-pill">Humanistic Sciences</button>
@@ -16,11 +17,40 @@
       <button class="cat-pill">Occult Sciences</button>
       <button class="cat-pill">Tantra, Mantra & Yatra</button>
     </div>
-    <div style="background: var(--cream-dark); border: 1px solid var(--border); padding: 3rem; text-align: center; border-radius: 2px;">
-      <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--earth); font-style: italic; margin-bottom: 1rem;">A living archive of ancient wisdom</p>
-      <p style="font-size: 0.9rem; color: var(--muted); max-width: 500px; margin: 0 auto 2rem; line-height: 1.8;">Our knowledge bank grows continuously as researchers, practitioners, and scholars contribute their expertise and insights.</p>
-      <a href="#contact" class="btn-primary">Submit an Article</a>
+
+    <div class="grid-2" style="margin-top: 4rem; align-items: start;">
+      <div class="card-grid" style="margin-top: 0; display: flex; flex-direction: column; gap: 2rem;">
+        <!-- Mock Article Card 1 -->
+        <div class="card reveal" style="padding: 2.5rem; flex-direction: row; gap: 2rem; align-items: center;">
+          <div style="flex: 1;">
+            <p style="font-size: 12px; color: var(--color-primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Ritual Sciences</p>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">The Geometry of Agnichayana</h3>
+            <p style="font-size: 15px; margin-bottom: 0;">An exploration of the intricate Vedic fire altars and their mathematical precision.</p>
+          </div>
+          <a href="#" style="color: var(--color-primary); font-size: 24px;">→</a>
+        </div>
+        <!-- Mock Article Card 2 -->
+        <div class="card reveal reveal-delay-1" style="padding: 2.5rem; flex-direction: row; gap: 2rem; align-items: center;">
+          <div style="flex: 1;">
+            <p style="font-size: 12px; color: var(--color-primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Vedic Sciences</p>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Decoding Vastu Shastra</h3>
+            <p style="font-size: 15px; margin-bottom: 0;">How ancient architecture aligns with cosmic energies and modern environmental science.</p>
+          </div>
+          <a href="#" style="color: var(--color-primary); font-size: 24px;">→</a>
+        </div>
+        <!-- Call to Action Card -->
+        <div class="card reveal reveal-delay-2" style="padding: 2.5rem; background: var(--gradient-primary); text-align: center; justify-content: center;">
+          <p style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-deep); font-style: italic; margin-bottom: 1rem;">A living archive of ancient wisdom</p>
+          <p style="font-size: 15px; color: var(--color-deep); max-width: 400px; margin: 0 auto 2rem; opacity: 0.9;">Our knowledge bank grows continuously as researchers and scholars contribute their expertise.</p>
+          <a href="articles.html" class="btn-secondary" style="margin: 0 auto;">Submit an Article</a>
+        </div>
+      </div>
+      
+      <div class="reveal reveal-delay-2" style="position: sticky; top: 120px;">
+        <img src="assets/images/manuscript.png" alt="Ancient Palm-Leaf Manuscript" style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); filter: brightness(0.9) contrast(1.1);">
+      </div>
     </div>
+
   </div>
 </section>
 

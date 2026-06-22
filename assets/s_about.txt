@@ -1,8 +1,12 @@
-﻿<!-- ABOUT STRIP -->
-<div class="about-strip" id="about">
-  <p>Suprabha Trust has worked since <strong>2006</strong> to discover and document the mystic cultures, sciences, and rituals performed across many parts of India — honoring a civilization whose depth and diversity gave rise to <strong>Hinduism, Sikhism, Buddhism</strong>, and beyond.</p>
+<!-- ABOUT STRIP -->
+<div class="about-strip" id="about" style="padding: 10rem 2rem;">
+  <div class="container grid-2" style="align-items: center;">
+    <div class="reveal">
+      <img src="assets/images/temple.png" alt="Ancient Temple Architecture" style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+    </div>
+    <div class="reveal reveal-delay-2">
+      <h2 style="font-size: 36px; margin-bottom: 2rem;">Our Journey</h2>
+      <p style="font-size: 22px; font-family: var(--font-display); line-height: 1.6; color: var(--color-text);">Suprabha Trust has worked since <strong>2006</strong> to discover and document the mystic cultures, sciences, and rituals performed across many parts of India — honoring a civilization whose depth and diversity gave rise to <strong>Hinduism, Sikhism, Buddhism</strong>, and beyond.</p>
+    </div>
+  </div>
 </div>
-
-
-
-

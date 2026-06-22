@@ -1,19 +1,24 @@
 :root {
-  /* Core */
-  --color-primary:      #EC6426;  /* burnt orange Ã¢â‚¬â€ primary CTA, accents, links */
-  --color-secondary:    #F8A91F;  /* marigold Ã¢â‚¬â€ secondary accent, highlights */
-  --color-bg:           #FDF3EA;  /* warm cream Ã¢â‚¬â€ page background */
-  --color-text:         #4A1C10;  /* cocoa Ã¢â‚¬â€ body text, dark sections */
-
-  /* Supporting */
-  --color-deep:         #632713;  /* chestnut Ã¢â‚¬â€ footer, deep panels */
-  --color-surface:      #FDE3CF;  /* peach Ã¢â‚¬â€ card / surface background */
-  --color-primary-hover:#C44E18;  /* rust Ã¢â‚¬â€ hover/active on orange elements */
-  --color-muted:        #8A6A55;  /* taupe Ã¢â‚¬â€ muted text, captions, metadata */
-
-  /* Convenience */
-  --color-text-on-dark: #FDF3EA;  /* cream text used on cocoa/chestnut backgrounds */
-  --color-divider:      #EC6426;  /* short accent rules under headings */
+  /* Core Palette - Cosmic Mystic */
+  --color-primary:      #E8A020;  /* Rich Gold - primary CTA, accents */
+  --color-primary-hover:#F5B742;  /* Bright Gold - hover states */
+  --color-secondary:    #D4820A;  /* Deep Orange/Amber */
+  
+  --color-bg:           #0B0D17;  /* Midnight Cosmic Blue - page background */
+  --color-surface:      #15192B;  /* Deep Indigo - cards, panels */
+  --color-surface-hover:#1C2138;
+  
+  --color-text:         #F0F2F8;  /* Off-white - primary text */
+  --color-muted:        #9CA3AF;  /* Cool Gray - secondary text */
+  --color-text-on-dark: #FFFFFF;
+  
+  --color-deep:         #07080F;  /* Darkest blue - footer */
+  --color-divider:      #D4820A;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  --gradient-surface: linear-gradient(145deg, rgba(21, 25, 43, 0.8) 0%, rgba(21, 25, 43, 0.4) 100%);
+  --gradient-text: linear-gradient(to right, #F5B742, #E8A020, #D4820A);
   
   /* Typography */
   --font-display: 'Cormorant Garamond', Georgia, serif;
@@ -21,14 +26,16 @@
   
   /* Layout & Elevations */
   --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
   
-  --shadow-sm: 0 4px 12px rgba(74, 28, 16, 0.08);
-  --shadow-md: 0 12px 24px rgba(74, 28, 16, 0.12);
-  --shadow-lg: 0 24px 48px rgba(74, 28, 16, 0.15);
-  --shadow-hover: 0 20px 32px rgba(236, 100, 38, 0.15); /* soft orange glow for hover states */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 24px rgba(232, 160, 32, 0.25);
   
-  --glass-bg: rgba(253, 243, 234, 0.85); /* cream with opacity for glassmorphism */
-  --glass-dark-bg: rgba(74, 28, 16, 0.85); /* cocoa with opacity for dark nav */
+  /* Glassmorphism */
+  --glass-bg: rgba(21, 25, 43, 0.6);
+  --glass-dark-bg: rgba(11, 13, 23, 0.8);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
 }

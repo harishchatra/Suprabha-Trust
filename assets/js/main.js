@@ -49,29 +49,49 @@ document.querySelectorAll('.cat-pill, .tab-btn').forEach(pill => {
 // Form Handlers
 function handleVideoSubmit(e) {
   e.preventDefault();
+  const form = e.target;
   const btn = document.getElementById('video-submit-btn');
   if (!btn) return;
-  btn.textContent = 'Video Submitted!';
-  btn.style.background = 'var(--accent-gold)';
-  btn.style.color = 'var(--bg-deep)';
-  setTimeout(() => {
-    btn.textContent = 'Submit Video';
-    btn.style.background = '';
-    btn.style.color = '';
-    e.target.reset();
-  }, 3000);
+  
+  const formData = new FormData(form);
+  
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => {
+    btn.textContent = 'Video Submitted!';
+    btn.style.background = 'var(--accent-gold)';
+    btn.style.color = 'var(--bg-deep)';
+    setTimeout(() => {
+      btn.textContent = 'Submit Video';
+      btn.style.background = '';
+      btn.style.color = '';
+      form.reset();
+    }, 3000);
+  }).catch(error => alert("Error submitting form: " + error));
 }
 
 function handleSubmit(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
   if (!btn) return;
   const originalText = btn.textContent;
-  btn.textContent = 'Message Sent!';
-  setTimeout(() => {
-    btn.textContent = originalText;
-    e.target.reset();
-  }, 3000);
+  
+  const formData = new FormData(form);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => {
+    btn.textContent = 'Message Sent!';
+    setTimeout(() => {
+      btn.textContent = originalText;
+      form.reset();
+    }, 3000);
+  }).catch(error => alert("Error submitting form: " + error));
 }
 
 // Smooth scrolling for anchor links

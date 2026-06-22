@@ -1,0 +1,47 @@
+<!-- ARTICLES SECTION -->
+<section class="articles" id="articles" style="padding: 6rem 2rem;">
+  <div class="container">
+    <p class="section-eyebrow" style="color: var(--color-primary);">Scholarly Work</p>
+    <h2 class="section-title">Articles & Publications</h2>
+    <div class="gold-line" style="background: var(--color-primary);"></div>
+    <p class="section-desc" style="margin-bottom: 3rem;">Read scholarly articles, research papers, and cultural commentaries submitted by our community of researchers, historians, and practitioners.</p>
+
+    <!-- Placeholder for Articles -->
+    <div class="card-grid" style="margin-bottom: 4rem;">
+      <div class="card reveal">
+        <h3 style="font-size: 1.4rem; color: var(--color-text);">Coming Soon</h3>
+        <p style="color: var(--color-muted);">We are currently curating our first batch of scholarly articles. Check back soon for deep dives into Sanatana Dharma, ancient sciences, and traditional practices.</p>
+      </div>
+    </div>
+
+    <!-- Article Submission -->
+    <div style="background: var(--color-surface); padding: 3rem; border-radius: var(--radius-md); border: 1px solid rgba(236,100,38,0.15);">
+      <h3 style="font-size: 1.8rem; margin-bottom: 1rem; font-family: var(--font-display);">Contribute an Article</h3>
+      <p style="margin-bottom: 2rem; color: var(--color-muted);">Are you a researcher or scholar of Indian traditional sciences? Submit your articles for review and publication on our platform.</p>
+      
+      <form name="article-submission" data-netlify="true" class="contact-form" onsubmit="handleSubmit(event)" style="max-width: 600px;">
+        <div class="field" style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Author Name *</label>
+          <input type="text" name="author_name" placeholder="Your full name" required style="width: 100%; padding: 0.8rem; border: 1px solid rgba(74,28,16,0.2); border-radius: 4px;">
+        </div>
+        <div class="field" style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Email Address *</label>
+          <input type="email" name="email" placeholder="your@email.com" required style="width: 100%; padding: 0.8rem; border: 1px solid rgba(74,28,16,0.2); border-radius: 4px;">
+        </div>
+        <div class="field" style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Article Title *</label>
+          <input type="text" name="article_title" placeholder="Title of your research" required style="width: 100%; padding: 0.8rem; border: 1px solid rgba(74,28,16,0.2); border-radius: 4px;">
+        </div>
+        <div class="field" style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Link to Document (Google Docs / PDF) *</label>
+          <input type="url" name="article_link" placeholder="https://" required style="width: 100%; padding: 0.8rem; border: 1px solid rgba(74,28,16,0.2); border-radius: 4px;">
+        </div>
+        <div class="field" style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Abstract / Summary</label>
+          <textarea name="abstract" placeholder="Briefly summarize your article..." required style="width: 100%; padding: 0.8rem; border: 1px solid rgba(74,28,16,0.2); border-radius: 4px; min-height: 100px; resize: vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">Submit Article for Review</button>
+      </form>
+    </div>
+  </div>
+</section>

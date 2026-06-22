@@ -139,140 +139,91 @@
 </nav>
 <main>
 <!-- SUBMIT VIDEOS -->
-<section id="videos" >
+<section id="videos" class="alt-bg">
   <div class="container">
-    <p class="eyebrow reveal" >Share Your Knowledge</p>
-    <h2 class="reveal" >Submit Your Videos</h2>
-    <div class="divider reveal" ></div>
-    <p class="reveal" >Help us grow our visual archive of India's traditional and cultural sciences. Share documentary films, ritual recordings, lecture videos, field documentation, and educational content with our community.</p>
+    <p class="eyebrow reveal">Share Your Knowledge</p>
+    <h2 class="reveal">Submit Your Videos</h2>
+    <div class="divider reveal"></div>
+    <p class="reveal" style="margin-bottom: 4rem;">Help us grow our visual archive of India's traditional and cultural sciences. Share documentary films, ritual recordings, lecture videos, and field documentation with our community.</p>
 
     <!-- Video type cards -->
-    <div >
-      <div  onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
-        <div >&#127909;</div>
-        <p >Documentary Films</p>
-        <p >Cultural and heritage documentaries on Indian traditions</p>
+    <div class="card-grid" style="margin-bottom: 4rem;">
+      <div class="card reveal" style="text-align: center; padding: 2.5rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127909;</div>
+        <h3 style="font-size: 1.4rem; color: var(--color-primary); margin-bottom: 0.5rem;">Documentaries</h3>
+        <p style="font-size: 0.9rem; color: var(--color-muted);">Cultural and heritage documentaries on Indian traditions</p>
       </div>
-      <div  onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
-        <div >&#127774;</div>
-        <p >Ritual Recordings</p>
-        <p >Field recordings of ceremonies, pujas, and rituals</p>
+      <div class="card reveal reveal-delay-1" style="text-align: center; padding: 2.5rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127774;</div>
+        <h3 style="font-size: 1.4rem; color: var(--color-primary); margin-bottom: 0.5rem;">Ritual Recordings</h3>
+        <p style="font-size: 0.9rem; color: var(--color-muted);">Field recordings of ceremonies, pujas, and rituals</p>
       </div>
-      <div  onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
-        <div >&#127891;</div>
-        <p >Lectures & Discourses</p>
-        <p >Talks by gurus, historians, and cultural scholars</p>
-      </div>
-      <div  onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
-        <div >&#127981;</div>
-        <p >Temple & Site Tours</p>
-        <p >Visual tours of sacred sites and heritage spaces</p>
-      </div>
-      <div  onmouseover="this.style.background='#3d2a10'" onmouseout="this.style.background='var(--earth)'">
-        <div >&#127926;</div>
-        <p >Traditional Arts</p>
-        <p >Performances, crafts, music, and folk art demonstrations</p>
+      <div class="card reveal reveal-delay-2" style="text-align: center; padding: 2.5rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127891;</div>
+        <h3 style="font-size: 1.4rem; color: var(--color-primary); margin-bottom: 0.5rem;">Lectures</h3>
+        <p style="font-size: 0.9rem; color: var(--color-muted);">Discourses by gurus, historians, and cultural scholars</p>
       </div>
     </div>
 
-    <!-- Submission form -->
-    <div >
-      <div>
-        <h3 >Video Submission Form</h3>
-        <form onsubmit="handleVideoSubmit(event)" >
-          <div>
-            <label >Your Name *</label>
-            <input type="text" placeholder="Full name" required >
+    <!-- Submission form & Guidelines -->
+    <div class="grid-2" style="align-items: start;">
+      
+      <!-- Video Form -->
+      <div class="card reveal" style="padding: 3rem;">
+        <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); margin-bottom: 2rem;">Submission Form</h3>
+        <form name="video-submission" data-netlify="true" onsubmit="handleVideoSubmit(event)" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Your Name *</label>
+            <input type="text" name="name" placeholder="Full name" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
           </div>
-          <div>
-            <label >Email Address *</label>
-            <input type="email" placeholder="your@email.com" required >
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Email Address *</label>
+            <input type="email" name="email" placeholder="your@email.com" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
           </div>
-          <div>
-            <label >Video Title *</label>
-            <input type="text" placeholder="Title of your video" required >
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Video Title *</label>
+            <input type="text" name="video_title" placeholder="Title of your video" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
           </div>
-          <div>
-            <label >Video Category *</label>
-            <select required >
-              <option value="">Select a category</option>
-              <option>Documentary Film</option>
-              <option>Ritual Recording</option>
-              <option>Lecture / Discourse</option>
-              <option>Temple & Site Tour</option>
-              <option>Traditional Art / Performance</option>
-              <option>Field Documentation</option>
-              <option>Educational Content</option>
-              <option>Interview / Conversation</option>
-              <option>Other</option>
-            </select>
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Video Link *</label>
+            <input type="url" name="video_link" placeholder="YouTube, Vimeo, or Google Drive Link" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
           </div>
-          <div>
-            <label >Video Link (YouTube / Vimeo / Drive)</label>
-            <input type="url" placeholder="https://..." >
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Description *</label>
+            <textarea name="description" placeholder="Briefly describe the content..." required style="width: 100%; height: 120px; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none; resize: vertical;"></textarea>
           </div>
-          <div>
-            <label >Language of Video</label>
-            <input type="text" placeholder="e.g. Telugu, Hindi, English, Sanskrit..." >
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <input type="checkbox" name="consent" id="video-consent" style="margin-top: 5px;" required>
+            <label for="video-consent" style="font-size: 0.9rem; color: var(--color-muted); line-height: 1.5; cursor: pointer;">I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it.</label>
           </div>
-          <div>
-            <label >Description *</label>
-            <textarea placeholder="Briefly describe the content, location, tradition, and significance of the video..." required ></textarea>
-          </div>
-          <div >
-            <input type="checkbox" id="video-consent" >
-            <label for="video-consent" >I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it on their platform.</label>
-          </div>
-          <button type="submit" id="video-submit-btn" >Submit Video</button>
+          <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 1.2rem; font-size: 1rem; margin-top: 1rem;">Submit Video</button>
         </form>
       </div>
 
-      <!-- Guidelines panel -->
-      <div>
-        <h3 >Submission Guidelines</h3>
-        <div >
-          <div >
-            <div >1</div>
-            <div>
-              <p >Content must be relevant</p>
-              <p >Videos should focus on traditional and cultural sciences of India — rituals, heritage sites, philosophy, arts, or related subjects.</p>
-            </div>
-          </div>
-          <div >
-            <div >2</div>
-            <div>
-              <p >Original or rights-cleared content only</p>
-              <p >Submit only videos you filmed yourself or have explicit permission to share and publish.</p>
-            </div>
-          </div>
-          <div >
-            <div >3</div>
-            <div>
-              <p >Accepted formats & platforms</p>
-              <p >YouTube, Vimeo, Google Drive, or Dropbox links accepted. Minimum 480p resolution. Any duration welcome.</p>
-            </div>
-          </div>
-          <div >
-            <div >4</div>
-            <div>
-              <p >Review process</p>
-              <p >All submissions are reviewed by our editorial team before publication. You will be notified by email within 7–10 working days.</p>
-            </div>
-          </div>
-          <div >
-            <div >5</div>
-            <div>
-              <p >Credit & attribution</p>
-              <p >Your name and any organisation you represent will be credited alongside the published video.</p>
-            </div>
-          </div>
+      <!-- Guidelines -->
+      <div class="reveal reveal-delay-1" style="padding: 2rem;">
+        <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); margin-bottom: 2rem;">Guidelines</h3>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 0.5rem;">1. Content must be relevant</h4>
+          <p style="color: var(--color-muted); font-size: 0.95rem;">Videos should focus on traditional and cultural sciences of India &#8212; rituals, heritage sites, philosophy, or related subjects.</p>
         </div>
-
-        <!-- Contact nudge -->
-        <div >
-          <p >Have a large collection or need to send files directly? Write to us at <span ><a href="mailto:suprabhaind@gmail.com">suprabhaind@gmail.com</a></span> or call <span >+91 98494 46409</span>.</p>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 0.5rem;">2. Original content only</h4>
+          <p style="color: var(--color-muted); font-size: 0.95rem;">Submit only videos you filmed yourself or have explicit permission to share.</p>
+        </div>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 0.5rem;">3. Accepted Formats</h4>
+          <p style="color: var(--color-muted); font-size: 0.95rem;">YouTube, Vimeo, Google Drive, or Dropbox links accepted. Minimum 480p resolution.</p>
+        </div>
+        
+        <div style="background: rgba(232, 160, 32, 0.05); border: 1px solid rgba(232, 160, 32, 0.2); padding: 2rem; border-radius: var(--radius-md); margin-top: 3rem;">
+          <p style="color: var(--color-muted); font-size: 0.95rem; margin-bottom: 0;">Have a large collection? Write to us directly at <a href="mailto:suprabhaind@gmail.com" style="color: var(--color-primary);">suprabhaind@gmail.com</a>.</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>

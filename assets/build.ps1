@@ -1,6 +1,6 @@
 $utf8NoBom = New-Object System.Text.UTF8Encoding $False
 
-$svgOriginal = Get-Content -Raw "c:\Suprabha Trust\assets\header.txt"
+$svgOriginal = Get-Content -Raw "$PSScriptRoot\header.txt"
 $svgOriginal = $svgOriginal -replace '(?s)<!-- NAV -->.*', ''
 
 $headTemplate = @"
@@ -74,9 +74,7 @@ function Build-Page {
     $content = $pageHead + "`n" + $svgOriginal + "`n" + $svgDefs + "`n" + $nav + "`n<main>`n"
     
     foreach ($sec in $sections) {
-        $secContent = Get-Content -Raw "c:\Suprabha Trust\assets\$sec"
-        
-        $secContent = $secContent -replace 'style="[^"]*"', ''
+        $secContent = Get-Content -Raw "$PSScriptRoot\$sec"
         
         $secContent = $secContent -replace 'class="hero-eyebrow"', 'class="eyebrow reveal"'
         $secContent = $secContent -replace 'class="section-eyebrow"', 'class="eyebrow reveal"'
@@ -175,12 +173,12 @@ function Build-Page {
     $content = $content.Replace([string][char]0x00E2 + [string][char]0x20AC + [string][char]0x201C, '&#8211;')
     $content = $content.Replace([string][char]0x00C2 + [string][char]0x00A9, '&copy;')
     
-    [System.IO.File]::WriteAllText("c:\Suprabha Trust\$filename", $content, $utf8NoBom)
+    [System.IO.File]::WriteAllText("$PSScriptRoot\..\$filename", $content, $utf8NoBom)
 }
 
 Build-Page "index.html" "Home | Suprabha Trust" @("s_hero.txt", "s_aspects.txt", "s_impact.txt")
 Build-Page "knowledge.html" "Knowledge Bank | Suprabha Trust" @("s_knowledge.txt")
-Build-Page "articles.html" "Articles | Suprabha Trust" @()
+Build-Page "articles.html" "Articles | Suprabha Trust" @("s_articles.txt")
 Build-Page "videos.html" "Videos | Suprabha Trust" @("s_videos.txt")
 Build-Page "renewable.html" "Renewable Energy | Suprabha Trust" @("s_programs.txt")
 Build-Page "about.html" "About Us | Suprabha Trust" @("s_about.txt", "s_mission.txt", "s_connections.txt", "s_partnership.txt", "s_impact.txt")

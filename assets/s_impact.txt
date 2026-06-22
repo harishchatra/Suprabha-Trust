@@ -1,31 +1,33 @@
-﻿<!-- IMPACT AREAS -->
+<!-- IMPACT AREAS -->
 <section class="impact" id="impact">
   <div class="container">
     <p class="section-eyebrow">Our Work</p>
     <h2 class="section-title">Impact Areas</h2>
     <div class="gold-line" style="background: var(--gold);"></div>
     <p class="section-desc">From sacred architecture to ancient manuscripts, our work spans the full breadth of India's living heritage.</p>
-    <div class="impact-grid">
-      <div class="impact-card">
-        <h3>Temple Architecture & Sacred Spaces</h3>
-        <p>Restoration and documentation of ancient temples, sacred groves, and architectural marvels that embody India's spiritual and artistic heritage across centuries.</p>
+    
+    <div class="grid-2" style="margin-top: 4rem; align-items: start;">
+      <div class="reveal">
+        <img src="assets/images/arts.png" alt="Traditional Indian Arts" style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); position: sticky; top: 120px;">
       </div>
-      <div class="impact-card">
-        <h3>Traditional Arts & Crafts</h3>
-        <p>Supporting artisans and craftspeople in preserving traditional techniques in textiles, metalwork, pottery, painting, and other heritage crafts at risk of disappearing.</p>
-      </div>
-      <div class="impact-card">
-        <h3>Ancient Manuscripts & Texts</h3>
-        <p>Digitization, translation, and preservation of ancient manuscripts containing knowledge on medicine, astronomy, philosophy, and cultural practices of India.</p>
-      </div>
-      <div class="impact-card">
-        <h3>Ritual Sciences & Practices</h3>
-        <p>Documentation and study of traditional rituals, ceremonies, and practices that form the living, breathing heritage of Indian communities across regions.</p>
+      <div class="impact-grid" style="margin-top: 0;">
+        <div class="impact-card">
+          <h3>Temple Architecture & Sacred Spaces</h3>
+          <p>Restoration and documentation of ancient temples, sacred groves, and architectural marvels that embody India's spiritual and artistic heritage across centuries.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Traditional Arts & Crafts</h3>
+          <p>Supporting artisans and craftspeople in preserving traditional techniques in textiles, metalwork, pottery, painting, and other heritage crafts at risk of disappearing.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Ancient Manuscripts & Texts</h3>
+          <p>Digitization, translation, and preservation of ancient manuscripts containing knowledge on medicine, astronomy, philosophy, and cultural practices of India.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Ritual Sciences & Practices</h3>
+          <p>Documentation and study of traditional rituals, ceremonies, and practices that form the living, breathing heritage of Indian communities across regions.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
