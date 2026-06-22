@@ -176,7 +176,7 @@ function Build-Page {
     [System.IO.File]::WriteAllText("$PSScriptRoot\..\$filename", $content, $utf8NoBom)
 }
 
-Build-Page "index.html" "Home | Suprabha Trust" @("s_hero.txt", "s_aspects.txt", "s_impact.txt")
+Build-Page "index.html" "Home | Suprabha Trust" @("s_hero.txt", "s_aspects.txt", "s_chakras.txt", "s_impact.txt")
 Build-Page "knowledge.html" "Knowledge Bank | Suprabha Trust" @("s_knowledge.txt")
 Build-Page "articles.html" "Articles | Suprabha Trust" @("s_articles.txt")
 Build-Page "videos.html" "Videos | Suprabha Trust" @("s_videos.txt")

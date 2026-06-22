@@ -1,0 +1,109 @@
+<!-- CHAKRAS INTERACTIVE -->
+<section class="chakras-section alt-bg" id="chakras" style="padding: 6rem 0; overflow: hidden;">
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align: center;">The Subtle Body</p>
+    <h2 class="reveal" style="text-align: center;">The 7 Chakras</h2>
+    <div class="divider reveal" style="margin: 1.5rem auto 4rem; background: var(--color-primary);"></div>
+    
+    <div class="chakra-container reveal reveal-delay-1" style="position: relative; width: 100%; max-width: 900px; margin: 0 auto; display: flex; justify-content: center; align-items: center; min-height: 600px;">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="width: 100%; height: auto; overflow: visible;">
+        <!-- Faint Background Mandala -->
+        <g opacity="0.05" transform="translate(400, 320) scale(1.5)">
+           <circle r="150" fill="none" stroke="var(--color-primary)" stroke-width="1"/>
+           <path d="M0 -150 L150 0 L0 150 L-150 0 Z" fill="none" stroke="var(--color-primary)" stroke-width="0.5"/>
+           <path d="M0 -150 L150 0 L0 150 L-150 0 Z" fill="none" stroke="var(--color-primary)" stroke-width="0.5" transform="rotate(45)"/>
+        </g>
+
+        <!-- Meditating Figure Silhouette -->
+        <path d="M 360 480 C 320 480 250 490 220 520 C 190 550 220 570 250 580 C 300 590 350 580 400 580 C 450 580 500 590 550 580 C 580 570 610 550 580 520 C 550 490 480 480 440 480 C 430 430 450 350 460 300 C 470 250 460 200 400 200 C 340 200 330 250 340 300 C 350 350 370 430 360 480 Z" fill="rgba(20, 25, 40, 0.8)" stroke="rgba(232, 160, 32, 0.3)" stroke-width="2" filter="drop-shadow(0 0 20px rgba(0,0,0,0.5))"/>
+        <!-- Head and Neck -->
+        <circle cx="400" cy="140" r="35" fill="rgba(20, 25, 40, 0.8)" stroke="rgba(232, 160, 32, 0.3)" stroke-width="2"/>
+        <path d="M 385 170 L 415 170 L 420 205 L 380 205 Z" fill="rgba(20, 25, 40, 0.8)" stroke="rgba(232, 160, 32, 0.3)" stroke-width="2"/>
+
+        <!-- Interactive Chakra Groups -->
+        <!-- Root Chakra (Muladhara) - Red -->
+        <g class="chakra-node" transform="translate(400, 500)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FF2A2A" opacity="0.8" filter="drop-shadow(0 0 10px #FF2A2A)"/>
+          <polygon points="0,8 -8,-4 8,-4" fill="#FFF"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FF2A2A" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#FF2A2A" font-family="var(--font-display)" font-size="20" font-weight="600">Root Chakra (Muladhara)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Foundation, Stability, Grounding</text>
+          </g>
+        </g>
+
+        <!-- Sacral Chakra (Svadhisthana) - Orange -->
+        <g class="chakra-node" transform="translate(400, 440)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FF7F00" opacity="0.8" filter="drop-shadow(0 0 10px #FF7F00)"/>
+          <circle cx="0" cy="0" r="6" fill="none" stroke="#FFF" stroke-width="2"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FF7F00" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#FF7F00" font-family="var(--font-display)" font-size="20" font-weight="600">Sacral Chakra (Svadhisthana)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Creativity, Passion, Connection</text>
+          </g>
+        </g>
+
+        <!-- Solar Plexus Chakra (Manipura) - Yellow -->
+        <g class="chakra-node" transform="translate(400, 380)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FFD700" opacity="0.8" filter="drop-shadow(0 0 10px #FFD700)"/>
+          <polygon points="0,-8 -8,4 8,4" fill="none" stroke="#FFF" stroke-width="2"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#FFD700" font-family="var(--font-display)" font-size="20" font-weight="600">Solar Plexus Chakra (Manipura)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Power, Confidence, Willpower</text>
+          </g>
+        </g>
+
+        <!-- Heart Chakra (Anahata) - Green -->
+        <g class="chakra-node" transform="translate(400, 320)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#00FF00" opacity="0.8" filter="drop-shadow(0 0 10px #00FF00)"/>
+          <path d="M -6 -2 C -6 -6 -2 -6 0 -2 C 2 -6 6 -6 6 -2 C 6 2 0 6 0 6 C 0 6 -6 2 -6 -2 Z" fill="#FFF"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#00FF00" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#00FF00" font-family="var(--font-display)" font-size="20" font-weight="600">Heart Chakra (Anahata)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Love, Compassion, Harmony</text>
+          </g>
+        </g>
+
+        <!-- Throat Chakra (Vishuddha) - Blue -->
+        <g class="chakra-node" transform="translate(400, 260)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#00BFFF" opacity="0.8" filter="drop-shadow(0 0 10px #00BFFF)"/>
+          <circle cx="0" cy="0" r="8" fill="none" stroke="#FFF" stroke-width="2"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#00BFFF" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#00BFFF" font-family="var(--font-display)" font-size="20" font-weight="600">Throate Chakra (Vishuddha)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Expression, Communication, Truth</text>
+          </g>
+        </g>
+
+        <!-- Third Eye Chakra (Ajna) - Indigo -->
+        <g class="chakra-node" transform="translate(400, 140)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#4B0082" opacity="0.8" filter="drop-shadow(0 0 10px #4B0082)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFF"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#4B0082" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#8A2BE2" font-family="var(--font-display)" font-size="20" font-weight="600">Third Eye Chakra (Ajna)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Intuition, Insight, Imagination</text>
+          </g>
+        </g>
+
+        <!-- Crown Chakra (Sahasrara) - Violet -->
+        <g class="chakra-node" transform="translate(400, 80)">
+          <circle class="chakra-glow" cx="0" cy="0" r="20" fill="#9400D3" opacity="0.8" filter="drop-shadow(0 0 15px #9400D3)"/>
+          <path d="M 0 -8 L 4 -2 L 10 0 L 4 2 L 0 8 L -4 2 L -10 0 L -4 -2 Z" fill="#FFF"/>
+          <line class="chakra-line" x1="24" y1="0" x2="24" y2="0" stroke="#9400D3" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#BA55D3" font-family="var(--font-display)" font-size="20" font-weight="600">Crown Chakra (Sahasrara)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Spirituality, Enlightenment, Cosmic Connection</text>
+          </g>
+        </g>
+      </svg>
+      
+      <div class="chakra-instruction" style="position: absolute; bottom: 20px; text-align: center; width: 100%; color: var(--color-secondary); font-size: 14px; font-style: italic; animation: pulse 2s infinite;">
+        Hover over a Chakra to discover its meaning
+      </div>
+
+    </div>
+  </div>
+</section>
