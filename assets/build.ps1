@@ -33,6 +33,17 @@ $svgDefs = @"
       <line x1="18.18" y1="18.18" x2="81.82" y2="81.82" stroke="currentcolor" stroke-width="0.5" />
       <line x1="18.18" y1="81.82" x2="81.82" y2="18.18" stroke="currentcolor" stroke-width="0.5" />
     </symbol>
+    <symbol id="lotus-logo" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="var(--color-primary)" stroke-width="2" opacity="0.3" />
+      <g stroke="var(--color-primary)" stroke-width="2" fill="none" transform="translate(0, 10)">
+        <path d="M 50 20 C 65 40 65 65 50 80 C 35 65 35 40 50 20 Z" />
+        <path d="M 50 80 C 65 75 80 60 75 40 C 65 45 55 60 50 80 Z" />
+        <path d="M 50 80 C 35 75 20 60 25 40 C 35 45 45 60 50 80 Z" />
+        <path d="M 50 80 C 70 85 95 75 90 55 C 80 65 65 75 50 80 Z" />
+        <path d="M 50 80 C 30 85 5 75 10 55 C 20 65 35 75 50 80 Z" />
+      </g>
+      <path d="M 30 86 Q 50 92 70 86" fill="none" stroke="var(--color-secondary)" stroke-width="2" opacity="0.8" />
+    </symbol>
   </defs>
 </svg>
 "@
@@ -44,7 +55,7 @@ function Build-Page {
 <!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo-wrap">
-    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
+    <svg viewBox="0 0 100 100"><use href="#lotus-logo"/></svg>
     <div class="nav-logo-text">
       <span class="name">Suprabha Trust</span>
       <span class="tagline">Mystic Sciences</span>
@@ -107,7 +118,7 @@ function Build-Page {
   <div class="container">
     <div class="footer-grid">
       <div>
-        <svg viewBox="0 0 680 520" style="width:48px;height:48px;margin-bottom:1rem;"><use href="#suprabha-logo"/></svg>
+        <svg viewBox="0 0 100 100" style="width:48px;height:48px;margin-bottom:1rem;"><use href="#lotus-logo"/></svg>
         <p class="font-display" style="font-size:24px;color:var(--color-text-on-dark);margin-bottom:0.5rem;">Suprabha Trust</p>
         <p style="font-size:14px;color:var(--color-text-on-dark);">Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
         <p style="font-size:12px;color:var(--color-muted);margin-top:1rem;">Established 2006 &#183; Registered 2016 &#8212; 176/IU/2016</p>
