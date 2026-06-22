@@ -44,7 +44,7 @@ function Build-Page {
 <!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo-wrap">
-    <svg><use href="#yantra-circle"/></svg>
+    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
     <div class="nav-logo-text">
       <span class="name">Suprabha Trust</span>
       <span class="tagline">Mystic Sciences</span>
@@ -107,7 +107,7 @@ function Build-Page {
   <div class="container">
     <div class="footer-grid">
       <div>
-        <svg style="width:48px;height:48px;stroke:var(--color-secondary);fill:none;margin-bottom:1rem;"><use href="#yantra-circle"/></svg>
+        <svg viewBox="0 0 680 520" style="width:48px;height:48px;margin-bottom:1rem;"><use href="#suprabha-logo"/></svg>
         <p class="font-display" style="font-size:24px;color:var(--color-text-on-dark);margin-bottom:0.5rem;">Suprabha Trust</p>
         <p style="font-size:14px;color:var(--color-text-on-dark);">Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
         <p style="font-size:12px;color:var(--color-muted);margin-top:1rem;">Established 2006 &#183; Registered 2016 &#8212; 176/IU/2016</p>
