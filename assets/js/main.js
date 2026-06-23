@@ -114,6 +114,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Animated counter for stats section
+function animateCounter(el) {
+  const target = parseInt(el.getAttribute('data-target'), 10);
+  const duration = 1800;
+  const startTime = performance.now();
+  function tick(now) {
+    const elapsed = Math.min(now - startTime, duration);
+    const progress = elapsed / duration;
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * target);
+    if (elapsed < duration) requestAnimationFrame(tick);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(tick);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const statsSection = document.getElementById('stats');
+  if (statsSection) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.counter').forEach(animateCounter);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    observer.observe(statsSection);
+  }
+
+  // Newsletter subscribe feedback
+  document.querySelectorAll('.btn-subscribe').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const input = this.closest('.newsletter-form')?.querySelector('.newsletter-email');
+      if (!input || !input.value.includes('@')) return;
+      const original = this.textContent;
+      this.textContent = 'Subscribed!';
+      this.style.background = '#3a5530';
+      setTimeout(() => {
+        this.textContent = original;
+        this.style.background = '';
+        if (input) input.value = '';
+      }, 3000);
+    });
+  });
+});
+
 // Drive Folder Sync Configuration
 const SUBMISSION_CONFIG = {
   articlesDriveUrl: "YOUR_GOOGLE_DRIVE_URL_HERE",
