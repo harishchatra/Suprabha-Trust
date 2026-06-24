@@ -1,0 +1,114 @@
+{
+  "articles": [
+    {
+      "id": "vedic",
+      "title": "Sanatana Dharma & Vedic Sciences — The Cosmic Knowledge System",
+      "categories": ["Vedic Sciences", "Sanatana Dharma"],
+      "dataCats": "vedic sanatana",
+      "excerpt": "Sanatana Dharma and Vedic Sciences are age-old traditional cultures observed across Jambudweepa — developed by Rishis, Munis, Acharyas, and Sages who observed the patterns of the Universe and Nature. An elaborate illustration of energy, mathematics, algorithms, sciences, symbols, geometry, and frequencies forming the Ultimate Truth.",
+      "author": "Suprabha Trust Research Team",
+      "series": "Vedic Sciences Series",
+      "stats": "46 topics · 4 Vedas · 6 Darshanas · 27 Nakshatras",
+      "deepdivePage": "vedicsciences.html"
+    },
+    {
+      "id": "humanistic",
+      "title": "Life Sciences — 18 Models of Human & Natural Systems",
+      "categories": ["Humanistic Sciences", "Life Sciences", "Bio Field Sciences"],
+      "dataCats": "humanistic life bio",
+      "excerpt": "Humanistic sciences work to understand the workings of the human body with nature, society, and everyday activities. From the five Pancha Bhoothas and seven chakras to cellular intelligence, DNA, organ frequencies, Ayurveda, Navagrahas, Shastras, Sutras, and the 16 sacred Samskaras — an integrated framework of 18 models.",
+      "author": "Suprabha Trust Research Team",
+      "series": "Life Sciences Series",
+      "stats": "18 Models · 7 Chakras · 9 Planets · 16 Samskaras",
+      "deepdivePage": "lifesciences.html"
+    },
+    {
+      "id": "meta",
+      "title": "Meta-Physics — Ancient Indian Mystic Sciences",
+      "categories": ["Meta-Physics", "Vedic Sciences"],
+      "dataCats": "meta vedic sanatana",
+      "excerpt": "Ancient Indian history is mysterious and very different from the rest of the world. The physiology of the human being can be projected in Physical, Super-Physical, and Meta-Physical planes. This document practically demonstrates mystic sciences — Ayurveda, Astrology, Yoga, Vaasthu Shastra — through logical reasoning accessible to every common man.",
+      "author": "Suprabha Trust Research Team",
+      "series": "Mystic Sciences Series",
+      "stats": "3 Planes · Matter → Form → Consciousness",
+      "deepdivePage": "metaphysics.html"
+    },
+    {
+      "id": "ils",
+      "title": "Vedic Sciences — The Blueprint of Human & Natural Systems",
+      "categories": ["Vedic Sciences", "Humanistic Sciences"],
+      "dataCats": "vedic humanistic bio",
+      "excerpt": "What are Vedic sciences and how they apply to human and natural systems remains a great mystery yet to unfold. From the sound values of the Vedas and the chronology of Rigveda (prior to 3100 BCE) to the five elements, cellular function, Vedic cognitive science, and the mathematical magic of 9 — a comprehensive broadcast series exploration.",
+      "author": "Suprabha Trust Editorial Team",
+      "series": "Indian Life Sciences Series",
+      "stats": "Rigveda · Sankhya · Yoga · Cognitive Science",
+      "deepdivePage": "vedicsciences.html"
+    },
+    {
+      "id": "ils2",
+      "title": "Ancient Indian Scientific Heritage — ILS Meta-Physics",
+      "categories": ["Meta-Physics", "Vedic Sciences", "Humanistic Sciences"],
+      "dataCats": "meta vedic humanistic sanatana",
+      "excerpt": "Indian history is a science, not a myth. This illustrated presentation unveils the subtle scientific approach embedded in India's culture and traditions — covering Meta-Physics in Engineering, Tantra-Yantra-Mantra, Vedantas, Homa & Yagna frequencies, Astrology, Ayurvedic healing, and the metaphysics of God and Spirituality. Suprabha Trust's foundational ILS research series.",
+      "author": "Suprabha Trust",
+      "series": "ILS Meta-Physics Presentation Series",
+      "stats": "12 topics · Tantra · Yantra · Mantra · Ayurveda · Astrology",
+      "deepdivePage": "metaphysics.html"
+    },
+    {
+      "id": "humanistic2",
+      "title": "Humanistic Energy Sciences — Human, Nature & Cosmos",
+      "categories": ["Humanistic Sciences", "Bio Field Sciences"],
+      "dataCats": "humanistic bio life",
+      "excerpt": "An exploration of energy sciences from a humanistic perspective — how every living and non-living form carries energy that interacts subtly with the cosmos. Covers the nine forms of human energy (Eyes, Nose, Touch, Taste, Hear, Speech, Gesture, Thought, Bio-fields), sacred geometry of the human body, the mathematics of cosmic cycles (21,600 · 432 · 108), cellular energy at 0.007V, and the role of frequency in health and consciousness.",
+      "author": "Suprabha Trust",
+      "series": "Humanistic Sciences Presentation Series",
+      "stats": "11 slides · Geometry · Frequency · Bio-field · Cosmic cycles",
+      "deepdivePage": "lifesciences.html"
+    },
+    {
+      "id": "lifescience",
+      "title": "Indian Life Sciences — Documentary Series Overview",
+      "categories": ["Life Sciences", "Vedic Sciences", "Ritual Sciences"],
+      "dataCats": "life vedic humanistic ritual sanatana",
+      "excerpt": "A comprehensive documentary series unveiling the subtle scientific aspects of Indian Life Sciences. Covers 13 subjects: Yoga, Astrology, Temples of India, Traditional Worshipping (Puja), Ayurveda, Spirituality, Agori System, Hinduism, Dance & Music, Vastu Shastra, Kamasutra, Vedic Sciences, and Traditions & Festivals — each analyzed from four perspectives: Scientific, Spiritual, Historical, and Natural.",
+      "author": "Suprabha Trust",
+      "series": "Indian Life Sciences Documentary Series",
+      "stats": "17 slides · 13 subjects · 4 perspectives · Pancha Bhuthas",
+      "deepdivePage": "lifesciences.html"
+    },
+    {
+      "id": "biofield",
+      "title": "Aura & Unseen Energy Fields — The Kosha System",
+      "categories": ["Bio Field Sciences", "Humanistic Sciences"],
+      "dataCats": "bio humanistic life",
+      "excerpt": "A landmark scientific presentation by Dr Sujata Vaidya on the measurable bio-field energies surrounding all living and non-living entities. Covers Kirlian photography, PIP aura imaging, the seven major chakras, Phantom Leaf experiments, food energy depletion by microwaves, effects of pranayama and meditation on the aura, Agnihotra on the environment, energy healing through hands, and spiritual energy transfers through Yantra, Tantra, and Mantra.",
+      "author": "Dr Sujata Vaidya",
+      "series": "Bio Field Sciences Research",
+      "stats": "43 slides · Kirlian · PIP · Chakras · Aura · Energy Healing",
+      "deepdivePage": "knowledge.html"
+    },
+    {
+      "id": "sanatana",
+      "title": "Sanatana Dharma — Ultimate Truth & Universal Constitution",
+      "categories": ["Sanatana Dharma", "Vedic Sciences", "Humanistic Sciences"],
+      "dataCats": "sanatana vedic humanistic",
+      "excerpt": "A clear and compelling presentation on why the human system needs Dharma. Covers Sanatana Dharma as the Universal Application and Ecological Constitution — explaining how the human being is a replica of Earth and universal patterns, how energies change through activity, how cosmos, Earth, and human systems are interconnected, the eight Dharmic systems (Devotion, Songs, Dance, Food, Nature, Astrology, Yoga, Vastu), the role of Karma and Aura, and the consequences of truth vs untruth in society.",
+      "author": "Harish · Suprabha Trust",
+      "series": "Sanatana Dharma Series",
+      "stats": "15 slides · Dharma · Karma · Aura · Moksha · Cosmic Constitution",
+      "deepdivePage": "aspects.html"
+    }
+  ],
+  "categories": [
+    { "id": "all", "label": "All Topics" },
+    { "id": "vedic", "label": "Vedic Sciences" },
+    { "id": "humanistic", "label": "Humanistic Sciences" },
+    { "id": "bio", "label": "Bio Field Sciences" },
+    { "id": "life", "label": "Life Sciences" },
+    { "id": "meta", "label": "Meta-Physics" },
+    { "id": "ritual", "label": "Ritual Sciences" },
+    { "id": "sanatana", "label": "Sanatana Dharma" },
+    { "id": "tantra", "label": "Tantra Mantra Yantra" }
+  ]
+}
