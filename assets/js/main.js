@@ -1,3 +1,57 @@
+// ─── MPT NAVIGATION SYSTEM ─────────────────────────────────────
+function mptToggle() {
+  var sidebar = document.getElementById('mpt-sidebar');
+  var overlay = document.getElementById('mpt-overlay');
+  var hamburger = document.getElementById('mpt-hamburger');
+  if (!sidebar) return;
+  var isOpen = sidebar.classList.contains('open');
+  if (isOpen) {
+    sidebar.classList.remove('open');
+    if (overlay) overlay.classList.remove('open');
+    if (hamburger) hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  } else {
+    sidebar.classList.add('open');
+    if (overlay) overlay.classList.add('open');
+    if (hamburger) hamburger.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+var MPT_PAGE_MAP = {
+  'index': 'index.html', 'about': 'about.html', 'aspects': 'aspects.html',
+  'knowledge': 'knowledge.html', 'lifesciences': 'lifesciences.html',
+  'vedicsciences': 'vedicsciences.html', 'metaphysics': 'metaphysics.html',
+  'articles': 'articles.html', 'videos': 'videos.html', 'renewable': 'renewable.html',
+  'impact': 'impact.html', 'partnership': 'partnership.html',
+  'programs': 'programs.html', 'donate': 'donate.html', 'contact': 'contact.html'
+};
+
+function mptShow(pid) {
+  var url = MPT_PAGE_MAP[pid];
+  if (url) window.location.href = url;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var path = window.location.pathname;
+  var filename = path.split('/').pop().replace('.html', '') || 'index';
+  document.querySelectorAll('.mpt-tab').forEach(function(tab) {
+    if (tab.getAttribute('data-pid') === filename) {
+      tab.classList.add('mpt-tab-active');
+      tab.scrollIntoView({ inline: 'center', block: 'nearest' });
+    }
+  });
+  document.querySelectorAll('.mpt-sb-link').forEach(function(link) {
+    if (link.getAttribute('data-pid') === filename) link.classList.add('active');
+  });
+  var crumb = document.getElementById('mpt-crumb-name');
+  if (crumb) {
+    var label = document.querySelector('.mpt-tab.mpt-tab-active .mpt-tab-label');
+    if (label) crumb.textContent = label.textContent;
+  }
+});
+
+// ─── LEGACY HEADER / SCROLL ────────────────────────────────────
 // Sticky Glassmorphic Header & Mobile Nav
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
