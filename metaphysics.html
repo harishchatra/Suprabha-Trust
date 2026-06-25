@@ -189,7 +189,7 @@
     <span class="mpt-sb-section">Connect</span>
     <a class="mpt-sb-link" data-pid="contact" href="contact.html">     ✉ Contact</a>
   </nav>
-  <a class="mpt-sb-donate" onclick="mptShow('donate')">🙏 &nbsp;14 — Donate Now</a>
+  <a class="mpt-sb-donate" href="donate.html">🙏 &nbsp;14 — Donate Now</a>
 </div>
 
 
@@ -221,61 +221,35 @@
   </div>
 </div>
 
-<section id="metaphysics" style="background: #E8A020; padding: 6rem 2rem;">
+<section id="metaphysics">
   <div class="container">
-    <p class="section-eyebrow" style="color: #E8C860;">Mystic Sciences</p>
-    <h2 class="section-title" style="color: #F0F2F8;">Meta-Physics &mdash; Ancient Indian Mystic Sciences</h2>
-    <div class="gold-line" style="background: #F0F2F8;"></div>
-    <p class="section-desc" style="color: rgba(255,240,232,0.8); margin-bottom: 0.75rem;">Ancient Indian history is mysterious and very different from the rest of the world. The physiology of the human being can be projected in Physical, Super-Physical, and Meta-Physical planes &mdash; a continuum of reality that the Rishis observed through inner vision and cosmic observation.</p>
-    <div style="background: rgba(255,255,255,0.12); border-left: 3px solid #F0F2F8; padding: 1rem 1.5rem; margin-bottom: 3rem; border-radius: 0 2px 2px 0; max-width: 720px;">
-      <p style="font-family: 'Philosopher', serif; font-size: 1.25rem; color: #F0F2F8; font-style: italic; line-height: 1.7;">"Everything in the world is moved by an inner urge to become something greater than it is. Everything has grown out of some matter or raw material which may in turn grow into higher forms."</p>
+    <p class="section-eyebrow">Mystic Sciences</p>
+    <h2 class="section-title">Meta-Physics &mdash; Ancient Indian Mystic Sciences</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc" style="margin-bottom: 0.75rem;">Ancient Indian history is mysterious and very different from the rest of the world. The physiology of the human being can be projected in Physical, Super-Physical, and Meta-Physical planes &mdash; a continuum of reality that the Rishis observed through inner vision and cosmic observation.</p>
+    <div style="background: rgba(232,160,32,0.06); border-left: 3px solid var(--color-primary); padding: 1rem 1.5rem; margin-bottom: 3rem; border-radius: 0 2px 2px 0; max-width: 720px;">
+      <p style="font-family: 'Philosopher', serif; font-size: 1.15rem; color: var(--color-primary); font-style: italic; line-height: 1.7;">"Everything in the world is moved by an inner urge to become something greater than it is. Everything has grown out of some matter or raw material which may in turn grow into higher forms."</p>
     </div>
 
-    <style>
-      .mp-tab { padding: 0.4rem 1rem; font-size: 0.98rem; font-family: 'Philosopher', serif; font-weight: 400; letter-spacing: 0.08em; border: 1px solid rgba(255,255,255,0.35); border-radius: 2px; color: rgba(255,240,232,0.85); background: transparent; cursor: pointer; transition: all 0.2s; }
-      .mp-tab:hover { background: rgba(255,255,255,0.15); }
-      .mp-tab-active { background: #0B0D17 !important; color: #E8A020 !important; border-color: #0B0D17 !important; font-weight: 500; }
-      .mp-panel { display: none; }
-      .mp-panel-active { display: block; animation: fadeIn 0.4s ease; }
-      .mp-card { background: rgba(21,25,43,0.7); border: 1px solid rgba(255,255,255,0.5); padding: 1.6rem 1.8rem; border-radius: 2px; margin-bottom: 1.1rem; }
-      .mp-card h4 { font-family: 'Philosopher', serif; font-size: 1.25rem; color: #E8A020; margin-bottom: 0.6rem; font-weight: 400; }
-      .mp-card p { font-size: 1rem; color: #9CA3AF; line-height: 1.8; }
-      .mp-card ul { list-style: none; margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
-      .mp-card ul li { font-size: 0.98rem; color: #9CA3AF; line-height: 1.7; padding-left: 1.1rem; position: relative; }
-      .mp-card ul li::before { content: "â—†"; position: absolute; left: 0; color: #E8A020; font-size: 0.45rem; top: 0.38rem; }
-      .mp-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.1rem; }
-      .mp-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
-      .mp-dark-card { background: rgba(11,13,23,0.85); border: 1px solid rgba(255,255,255,0.15); padding: 1.6rem 1.8rem; border-radius: 2px; }
-      .mp-dark-card h4 { font-family: 'Philosopher', serif; font-size: 1.4rem; color: #E8A020; margin-bottom: 0.6rem; font-weight: 400; }
-      .mp-dark-card p { font-size: 1rem; color: rgba(255,240,232,0.75); line-height: 1.8; }
-      .mp-dark-card ul { list-style: none; margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
-      .mp-dark-card ul li { font-size: 0.96rem; color: rgba(255,240,232,0.65); line-height: 1.7; padding-left: 1.1rem; position: relative; }
-      .mp-dark-card ul li::before { content: "â—†"; position: absolute; left: 0; color: #E8A020; font-size: 0.45rem; top: 0.38rem; }
-      .mp-quote { background: rgba(11,13,23,0.7); border-left: 3px solid #F0F2F8; padding: 1.25rem 1.5rem; margin: 1.5rem 0; border-radius: 0 2px 2px 0; }
-      .mp-quote p { font-family: 'Philosopher', serif; font-size: 1.4rem; color: #E8C860; line-height: 1.75; font-style: italic; }
-      .mp-num-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #0B0D17; color: #E8A020; font-size: 0.94rem; font-weight: 500; flex-shrink: 0; font-family: 'Philosopher', serif; }
-      .mp-plane { border-radius: 2px; padding: 1.8rem; }
-    </style>
-
     <!-- Tabs -->
-    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.2);">
-      <button onclick="showMP('philosophy')" id="mp-tab-philosophy" class="mp-tab mp-tab-active">Philosophy of Matter</button>
-      <button onclick="showMP('planes')" id="mp-tab-planes" class="mp-tab">Three Planes</button>
-      <button onclick="showMP('rishis')" id="mp-tab-rishis" class="mp-tab">Rishis & Vedas</button>
-      <button onclick="showMP('questions')" id="mp-tab-questions" class="mp-tab">Key Questions</button>
-      <button onclick="showMP('sciences')" id="mp-tab-sciences" class="mp-tab">Mystic Sciences</button>
-      <button onclick="showMP('conclusion')" id="mp-tab-conclusion" class="mp-tab">Conclusion</button>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(232,160,32,0.12);">
+      <button onclick="showMP('philosophy')" id="mp-tab-philosophy" class="tab-btn active">Philosophy of Matter</button>
+      <button onclick="showMP('planes')" id="mp-tab-planes" class="tab-btn">Three Planes</button>
+      <button onclick="showMP('rishis')" id="mp-tab-rishis" class="tab-btn">Rishis & Vedas</button>
+      <button onclick="showMP('questions')" id="mp-tab-questions" class="tab-btn">Key Questions</button>
+      <button onclick="showMP('sciences')" id="mp-tab-sciences" class="tab-btn">Mystic Sciences</button>
+      <button onclick="showMP('conclusion')" id="mp-tab-conclusion" class="tab-btn">Conclusion</button>
     </div>
 
     <!-- PANEL: Philosophy of Matter -->
-    <div id="mp-panel-philosophy" class="mp-panel mp-panel-active">
+    <div id="mp-panel-philosophy" class="tab-panel active">
       <div style="margin-bottom: 2rem;">
-        <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #F0F2F8; font-weight: 400; margin-bottom: 1rem;">Matter, Form & Consciousness</h3>
-        <p style="font-size: 1.05rem; color: rgba(255,240,232,0.8); line-height: 1.85; max-width: 860px; margin-bottom: 1.5rem;">The culture and traditions of India have a scientific approach which is subtle and difficult to understand. Research is happening across the world to understand the non-physical elements that exist within the physical world. This concept of growing and out-growing helps us understand the existence of matter &mdash; a domain of reality, or a manifestation of consciousness.</p>
+        <h3 style="font-size: 2.4rem; color: var(--color-text); font-weight: 400; margin-bottom: 1rem;">Matter, Form & Consciousness</h3>
+        <p class="section-desc" style="max-width: 860px; margin-bottom: 1.5rem;">The culture and traditions of India have a scientific approach which is subtle and difficult to understand. Research is happening across the world to understand the non-physical elements that exist within the physical world. This concept of growing and out-growing helps us understand the existence of matter &mdash; a domain of reality, or a manifestation of consciousness.</p>
       </div>
 
-      <div class="mp-grid-3" style="margin-bottom: 1.5rem;">
-        <div class="mp-dark-card">
+      <div class="grid-3" style="margin-bottom: 1.5rem;">
+        <div class="c-card">
           <h4>Raw Matter</h4>
           <p>At the base of matter there may not be a form substantially. Formless matter as such is nothing &mdash; yet everything has a form as a relative perception only. Matter in the widest sense is the possibility of a form.</p>
           <ul>
@@ -284,7 +258,7 @@
             <li>Latent and unrealised capacity</li>
           </ul>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Form</h4>
           <p>Form is the actuality &mdash; the finished reality of matter. Form is not merely shape but a shaping force too. It is an inner necessity and an impulse. This moulds mere material to a specific figure or purpose.</p>
           <ul>
@@ -293,7 +267,7 @@
             <li>Potential capacity of matter realised</li>
           </ul>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Consciousness</h4>
           <p>The sum of a variety of powers of matter is expressed through the forming force &mdash; which resides in everything that acts, or becomes. In Nature we see the conquest of matter by form. Meta-Physics is wedded to Mystic Science.</p>
           <ul>
@@ -304,14 +278,14 @@
         </div>
       </div>
 
-      <div class="mp-quote"><p>"Matter obstructs; Form constructs. Form is not merely the shape but is a shaping force too &mdash; an inner necessity and impulse that moulds mere material to a specific figure or purpose."</p></div>
-      <div class="mp-quote"><p>"In Nature, we see the conquest of matter by form. There is constant progression of this phenomenon. This actually ushers Life to Victory. Meta-Physics is wedded to any Mystic Science."</p></div>
+      <div class="pullquote"><p>"Matter obstructs; Form constructs. Form is not merely the shape but is a shaping force too &mdash; an inner necessity and impulse that moulds mere material to a specific figure or purpose."</p></div>
+      <div class="pullquote"><p>"In Nature, we see the conquest of matter by form. There is constant progression of this phenomenon. This actually ushers Life to Victory. Meta-Physics is wedded to any Mystic Science."</p></div>
     </div>
 
     <!-- PANEL: Three Planes -->
-    <div id="mp-panel-planes" class="mp-panel">
-      <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #F0F2F8; font-weight: 400; margin-bottom: 2rem;">Three Planes of Human Physiology</h3>
-      <div class="mp-grid-3">
+    <div id="mp-panel-planes" class="tab-panel">
+      <h3 style="font-size: 2.4rem; color: var(--color-text); font-weight: 400; margin-bottom: 2rem;">Three Planes of Human Physiology</h3>
+      <div class="grid-3">
         <div class="mp-plane" style="background: rgba(184,200,212,0.95); border-top: 4px solid #C8A060;">
           <p style="font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #9CA3AF; margin-bottom: 0.6rem; font-family: 'Philosopher', serif;">Plane 1</p>
           <h4 style="font-family: 'Philosopher', serif; font-size: 1.65rem; color: #0B0D17; margin-bottom: 1rem; font-weight: 400;">Physical</h4>
@@ -349,34 +323,34 @@
     </div>
 
     <!-- PANEL: Rishis & Vedas -->
-    <div id="mp-panel-rishis" class="mp-panel">
-      <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #F0F2F8; font-weight: 400; margin-bottom: 1rem;">The Rishis &mdash; Inner Vision & Cosmic Observation</h3>
-      <p style="font-size: 1.05rem; color: rgba(255,240,232,0.8); line-height: 1.85; max-width: 860px; margin-bottom: 2rem;">The ancient Indians observed the mystic science of non-physical forms through their inner vision and understood the influences of these mystic universal powers. Based on these observations they developed sciences wherein astronomical forces regulate ecological forces.</p>
-      <div class="mp-grid-2">
-        <div class="mp-dark-card" style="grid-column: 1 / -1;">
+    <div id="mp-panel-rishis" class="tab-panel">
+      <h3 style="font-size: 2.4rem; color: var(--color-text); font-weight: 400; margin-bottom: 1rem;">The Rishis &mdash; Inner Vision & Cosmic Observation</h3>
+      <p class="section-desc" style="max-width: 860px; margin-bottom: 2rem;">The ancient Indians observed the mystic science of non-physical forms through their inner vision and understood the influences of these mystic universal powers. Based on these observations they developed sciences wherein astronomical forces regulate ecological forces.</p>
+      <div class="grid-2">
+        <div class="c-card" style="grid-column: 1 / -1;">
           <p style="font-family: 'Philosopher', serif; font-size: 1.25rem; color: #E8C860; font-style: italic; line-height: 1.8;">"The ancient Indians have observed the mystic science of non-physical form through their inner vision and understood the influences of these mystic universal powers. Based on these observations they developed a science wherein astronomical forces regulate the ecological forces &mdash; and they developed different kinds of sciences to help human beings lead a prosperous life in a natural way. The Vedas are termed as the root of all these sciences."</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Astronomical Forces</h4>
           <p>Observation of celestial patterns, planetary movements, and their influence on earthly life. The Rishis mapped cosmic energies onto human and ecological systems with extraordinary precision.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Ecological Forces</h4>
           <p>Understanding how cosmic energies regulate nature, seasons, plants, animals, and human health &mdash; the ancient science of living in harmony with natural law.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Subtle Energies & Inner Vision</h4>
           <p>Perceiving non-physical vibrations &mdash; prana, aura, bio-field &mdash; invisible to ordinary senses but accessible through deep meditation, pranayama, and trance states.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Mathematical Patterns</h4>
           <p>Encoding cosmic knowledge in geometry, sound (mantras), ritual, and architectural proportion. These mathematical models form the backbone of Vedic sciences.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>The Vedas &mdash; Root of All Sciences</h4>
           <p>The Vedas (Rig, Yajur, Sama, Atharvana) are sound values possessing multidimensional wisdom in each Beejakshara &mdash; ultimate truth encoded with energy and mathematics, preserved through the Gurukula oral tradition.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Oral Tradition &mdash; 75,000 Years</h4>
           <p>The Vedic sciences have been deciphered orally for 75,000 years and more. In spite of several catastrophes, these sciences remain intangible &mdash; learned through the Gurukula system without written records, preserving their purest form.</p>
         </div>
@@ -384,20 +358,20 @@
     </div>
 
     <!-- PANEL: Key Questions -->
-    <div id="mp-panel-questions" class="mp-panel">
-      <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #F0F2F8; font-weight: 400; margin-bottom: 1rem;">Questions from the Common Mind</h3>
-      <p style="font-size: 1.05rem; color: rgba(255,240,232,0.8); line-height: 1.85; max-width: 860px; margin-bottom: 2rem;">Many questions arise in the common mind about Meta-Physical reality. This documentation addresses them through practical demonstration, scientific interpretation, and logical reasoning.</p>
+    <div id="mp-panel-questions" class="tab-panel">
+      <h3 style="font-size: 2.4rem; color: var(--color-text); font-weight: 400; margin-bottom: 1rem;">Questions from the Common Mind</h3>
+      <p class="section-desc" style="max-width: 860px; margin-bottom: 2rem;">Many questions arise in the common mind about Meta-Physical reality. This documentation addresses them through practical demonstration, scientific interpretation, and logical reasoning.</p>
 
       <div style="display: flex; flex-direction: column; gap: 1.2rem; margin-bottom: 2rem;">
         <div style="background: rgba(11,13,23,0.85); border: 1px solid rgba(255,255,255,0.15); border-radius: 2px; padding: 2rem; display: flex; gap: 1.25rem; align-items: flex-start;">
-          <span class="mp-num-badge">1</span>
+          <span class="num-badge">1</span>
           <div>
             <p style="font-family: 'Philosopher', serif; font-size: 1.4rem; color: #F0F2F8; font-style: italic; line-height: 1.7; margin-bottom: 0.75rem;">"How is it possible to show that there is anything else in existence besides the physical world that can be recognized by the sense organs &mdash; or by physical instruments that are really extensions of the sense organs?"</p>
             <p style="font-size: 0.98rem; color: rgba(255,240,232,0.55); line-height: 1.7;">This is the central challenge of Meta-Physical science &mdash; demonstrating that the invisible world is real, measurable, and accessible to logical understanding.</p>
           </div>
         </div>
         <div style="background: rgba(11,13,23,0.85); border: 1px solid rgba(255,255,255,0.15); border-radius: 2px; padding: 2rem; display: flex; gap: 1.25rem; align-items: flex-start;">
-          <span class="mp-num-badge">2</span>
+          <span class="num-badge">2</span>
           <div>
             <p style="font-family: 'Philosopher', serif; font-size: 1.4rem; color: #F0F2F8; font-style: italic; line-height: 1.7; margin-bottom: 0.75rem;">"How to show that a subtler and invisible world exists within the physical world?"</p>
             <p style="font-size: 0.98rem; color: rgba(255,240,232,0.55); line-height: 1.7;">Ancient India's answer: through systematic observation, Vedic practice, and technologies like PIP bio-field photography that bridge the gap between invisible and visible reality.</p>
@@ -413,36 +387,36 @@
     </div>
 
     <!-- PANEL: Mystic Sciences -->
-    <div id="mp-panel-sciences" class="mp-panel">
-      <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #F0F2F8; font-weight: 400; margin-bottom: 1rem;">Mystic Sciences Practised in Daily Life</h3>
-      <p style="font-size: 1.05rem; color: rgba(255,240,232,0.8); line-height: 1.85; max-width: 860px; margin-bottom: 2rem;">Practically demonstrated &middot; Scientifically interpreted &middot; Logically supported. These sciences have been practiced since ages in physical, super-physical, and meta-physical forms.</p>
-      <div class="mp-grid-3">
-        <div class="mp-card">
+    <div id="mp-panel-sciences" class="tab-panel">
+      <h3 style="font-size: 2.4rem; color: var(--color-text); font-weight: 400; margin-bottom: 1rem;">Mystic Sciences Practised in Daily Life</h3>
+      <p class="section-desc" style="max-width: 860px; margin-bottom: 2rem;">Practically demonstrated &middot; Scientifically interpreted &middot; Logically supported. These sciences have been practiced since ages in physical, super-physical, and meta-physical forms.</p>
+      <div class="grid-3">
+        <div class="c-card">
           <div style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">01</div>
           <h4>Ayurveda</h4>
           <p>The science of life and longevity &mdash; plants, herbs, metals, and body energies combined into a holistic healing system aligned with nature. Focuses on Tridoshas, Naadis, and the balance of Pancha Bhuthas.</p>
         </div>
-        <div class="mp-card">
+        <div class="c-card">
           <div style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">02</div>
           <h4>Astrology (Jyothi Shastra)</h4>
           <p>Cosmic mapping of planetary forces and their influence on ecological and human life cycles. The nine Navagrahas correspond to stages of human life &mdash; a complete model of cosmic-human interaction.</p>
         </div>
-        <div class="mp-card">
+        <div class="c-card">
           <div style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">03</div>
           <h4>Yoga</h4>
           <p>The science of union &mdash; body, breath, mind, and consciousness aligned through posture, pranayama, and meditation. Breath control at different rates unlocks understanding of matter, animals, and the cosmos.</p>
         </div>
-        <div class="mp-card">
+        <div class="c-card">
           <div style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">04</div>
           <h4>Vaasthu Shastra</h4>
           <p>Sacred architecture &mdash; directional energy, spatial proportion, and cosmic alignment integrated into living and ritual spaces. Aligns physical spaces with natural and cosmic energies for well-being.</p>
         </div>
-        <div class="mp-card">
+        <div class="c-card">
           <div style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">05</div>
           <h4>Mantra Science</h4>
           <p>Sound vibrations (Beejakshara) encoding multidimensional wisdom &mdash; affecting matter, mind, and consciousness through frequency. Each Beejakshara represents ultimate truth encoded with energy and mathematics.</p>
         </div>
-        <div class="mp-card">
+        <div class="c-card">
           <div style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">06</div>
           <h4>Bio-Field Sciences</h4>
           <p>PIP aura photography, Reiki, and subtle energy research &mdash; bridging ancient pranic science with modern physics. Practically demonstrates the Super-Physical plane through measurable bio-field imaging.</p>
@@ -451,27 +425,27 @@
     </div>
 
     <!-- PANEL: Conclusion -->
-    <div id="mp-panel-conclusion" class="mp-panel">
+    <div id="mp-panel-conclusion" class="tab-panel">
       <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #F0F2F8; font-weight: 400; margin-bottom: 1.5rem;">Purpose & Conclusion</h3>
 
       <div style="background: rgba(11,13,23,0.85); border: 1px solid rgba(255,255,255,0.15); padding: 2rem; border-radius: 2px; margin-bottom: 2rem;">
         <p style="font-family: 'Philosopher', serif; font-size: 1.25rem; color: #E8C860; font-style: italic; line-height: 1.8;">This document practically showcases mystic activities practised in daily life &mdash; such as Ayurveda, Astrology, Yoga, and Vaasthu Shastra &mdash; and demonstrates that these sciences are scientifically interpreted and supported through logical reasoning which can be easily comprehended by a common man.</p>
       </div>
 
-      <div class="mp-grid-2">
-        <div class="mp-dark-card">
+      <div class="grid-2">
+        <div class="c-card">
           <h4>Practical Demonstration</h4>
           <p>Sciences like Ayurveda, Astrology, Yoga, and Vaasthu are shown in practice &mdash; not merely as belief but as living, working systems that produce measurable effects on the human body and environment.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Scientific Interpretation</h4>
           <p>Modern tools including PIP photography, frequency analysis, and bio-field research are used to measure and verify ancient principles &mdash; bridging ancient wisdom with contemporary science.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>Logical Reasoning</h4>
           <p>The invisible world is explained through the progression of matter &rarr; form &rarr; consciousness &mdash; a universal philosophical framework accessible to any common person without prior spiritual knowledge.</p>
         </div>
-        <div class="mp-dark-card">
+        <div class="c-card">
           <h4>A Logical Insight</h4>
           <p>These sciences are being practiced since ages in physical, super-physical, and meta-physical forms. This document gives us a logical insight of our ancient sciences &mdash; bridging the mystical with the rational.</p>
         </div>
@@ -489,12 +463,11 @@
 
 <script>
 function showMP(key) {
-  const panels = ['philosophy','planes','rishis','questions','sciences','conclusion'];
-  panels.forEach(p => {
-    const panel = document.getElementById('mp-panel-' + p);
-    const tab = document.getElementById('mp-tab-' + p);
-    if (panel) panel.className = 'mp-panel' + (p === key ? ' mp-panel-active' : '');
-    if (tab) tab.className = 'mp-tab' + (p === key ? ' mp-tab-active' : '');
+  document.querySelectorAll('.tab-panel').forEach(function(p) {
+    p.classList.toggle('active', p.id === 'mp-panel-' + key);
+  });
+  document.querySelectorAll('.tab-btn').forEach(function(t) {
+    t.classList.toggle('active', t.id === 'mp-tab-' + key);
   });
   document.getElementById('metaphysics').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -507,55 +480,55 @@ function showMP(key) {
 <!-- SUBMIT ARTICLES -->
 
 </main>
-<footer style="background:#0B0D17;padding:4rem 2rem 2rem;">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;">
-    <div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
       <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
-        <svg viewBox="0 0 680 520" style="width:48px;height:48px;"><use href="#suprabha-logo"/></svg>
+        <svg viewBox="0 0 680 520" class="footer-logo-svg"><use href="#suprabha-logo"/></svg>
         <div>
-          <div style="font-family:'Philosopher',serif;font-size:1.25rem;color:#E8A020;">Suprabha Trust</div>
-          <div style="font-size:0.58rem;color:rgba(255,252,244,0.35);font-family:'Philosopher',serif;letter-spacing:0.15em;text-transform:uppercase;">Mystic Sciences of Ancient India</div>
+          <div class="footer-brand-name">Suprabha Trust</div>
+          <div class="mpt-logo-sub">Mystic Sciences of Ancient India &middot; Est. 2006</div>
         </div>
       </div>
-      <p style="font-size:0.9rem;color:rgba(255,252,244,0.5);line-height:1.8;max-width:280px;">Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
-      <p style="font-size:0.75rem;color:rgba(255,252,244,0.25);margin-top:0.75rem;font-family:'Philosopher',serif;">Established 2010 · Registered 2016 — 176/IU/2016</p>
+      <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
+      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
     </div>
-    <div>
-      <h4 style="font-family:'Philosopher',serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#E8A020;margin-bottom:1rem;">About</h4>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-        <li><a onclick="mptShow('about')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Our Story</a></li>
-        <li><a onclick="mptShow('aspects')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Sanatana Dharma</a></li>
-        <li><a onclick="mptShow('impact')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Impact Areas</a></li>
-        <li><a onclick="mptShow('partnership')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Partnerships</a></li>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="aspects.html">Sanatana Dharma</a></li>
+        <li><a href="impact.html">Impact Areas</a></li>
+        <li><a href="partnership.html">Partnerships</a></li>
       </ul>
     </div>
-    <div>
-      <h4 style="font-family:'Philosopher',serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#E8A020;margin-bottom:1rem;">Knowledge</h4>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-        <li><a onclick="mptShow('knowledge')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Knowledge Bank</a></li>
-        <li><a onclick="mptShow('lifesciences')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Life Sciences</a></li>
-        <li><a onclick="mptShow('vedicsciences')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Vedic Sciences</a></li>
-        <li><a onclick="mptShow('metaphysics')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Meta-Physics</a></li>
-        <li><a onclick="mptShow('articles')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Submit Article</a></li>
-        <li><a onclick="mptShow('videos')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Submit Video</a></li>
+    <div class="footer-col">
+      <h4>Knowledge</h4>
+      <ul>
+        <li><a href="knowledge.html">Knowledge Bank</a></li>
+        <li><a href="lifesciences.html">Life Sciences</a></li>
+        <li><a href="vedicsciences.html">Vedic Sciences</a></li>
+        <li><a href="metaphysics.html">Meta-Physics</a></li>
+        <li><a href="articles.html">Submit Article</a></li>
+        <li><a href="videos.html">Submit Video</a></li>
       </ul>
     </div>
-    <div>
-      <h4 style="font-family:'Philosopher',serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#E8A020;margin-bottom:1rem;">Connect</h4>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-        <li><a onclick="mptShow('renewable')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Renewable Energy</a></li>
-        <li><a onclick="mptShow('programs')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Programs</a></li>
-        <li><a onclick="mptShow('donate')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Donate</a></li>
-        <li><a onclick="mptShow('contact')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#E8A020'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Contact Us</a></li>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="renewable.html">Renewable Energy</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
-      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(232,160,32,0.12);">
-        <p style="font-size:0.72rem;color:rgba(255,252,244,0.35);font-family:'Philosopher',serif;line-height:1.6;">info@suprabha-trust.in<br>+91 98494 46409<br>www.suprabha-trust.in</p>
+      <div class="footer-contact">
+        <p>info@suprabha-trust.in<br>+91 98494 46409<br>www.suprabha-trust.in</p>
       </div>
     </div>
   </div>
-  <div style="max-width:1100px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(232,160,32,0.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
-    <p style="font-size:0.82rem;color:rgba(255,252,244,0.25);font-family:'Philosopher',serif;">© 2026 Suprabha Trust. All rights reserved. · Reg. 176/IU/2016 · Hyderabad, India</p>
-    <p style="font-size:0.78rem;color:rgba(232,160,32,0.4);font-family:'Philosopher',serif;">www.suprabha-trust.in</p>
+  <div class="footer-bottom">
+    <p>© 2026 Suprabha Trust. All rights reserved. · Reg. 176/IU/2016 · Hyderabad, India</p>
+    <p>www.suprabha-trust.in</p>
   </div>
 </footer>
 
