@@ -1,4 +1,4 @@
-// ─── MPT NAVIGATION SYSTEM ─────────────────────────────────────
+﻿// ─── MPT NAVIGATION SYSTEM ─────────────────────────────────────
 function mptToggle() {
   var sidebar = document.getElementById('mpt-sidebar');
   var overlay = document.getElementById('mpt-overlay');
@@ -233,4 +233,63 @@ document.addEventListener('DOMContentLoaded', () => {
     videosBtn.href = SUBMISSION_CONFIG.videosDriveUrl;
     if (videosBtn.parentElement) videosBtn.parentElement.style.display = 'flex';
   }
+});
+
+
+// ─── PREMIUM MICRO-INTERACTIONS ────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Dynamic Cursor Glow on Cards
+  const glowCards = document.querySelectorAll('.aspect-card, .conn-card, .kb-card, .impact-card, .partner-card, .donate-card, .stat-item');
+  glowCards.forEach(card => {
+    card.classList.add('premium-glow-card');
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+
+  // 2. Magnetic Glow on Primary Buttons
+  const primaryBtns = document.querySelectorAll('.btn-primary');
+  primaryBtns.forEach(btn => {
+    // inject glow element
+    const glow = document.createElement('div');
+    glow.className = 'magnetic-glow';
+    btn.appendChild(glow);
+    
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      btn.style.setProperty('--x', `${x}px`);
+      btn.style.setProperty('--y', `${y}px`);
+    });
+  });
+
+  // 3. Staggered Reveal Logic
+  const staggerContainers = document.querySelectorAll('.aspects-grid, .connections-grid, .kb-grid, .impact-grid, .partner-types, .donate-cards');
+  staggerContainers.forEach(container => {
+    // Add reveal-stagger class to children
+    Array.from(container.children).forEach(child => {
+      child.classList.add('reveal-stagger');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const children = Array.from(entry.target.children);
+          children.forEach((child, index) => {
+            setTimeout(() => {
+              child.classList.add('active');
+            }, index * 100); // 100ms stagger
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    observer.observe(container);
+  });
 });

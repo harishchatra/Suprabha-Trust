@@ -1412,3 +1412,101 @@ footer {
   margin-top: 0.1rem;
   filter: drop-shadow(0 0 8px rgba(232,160,32,0.3));
 }
+
+
+/* ═══ PREMIUM ARCHITECTURE UPGRADES ═══════════════════════════ */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: rgba(232,160,32,0.3); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(232,160,32,0.6); }
+
+/* Text Selection */
+::selection { background: rgba(232,160,32,0.3); color: #fff; }
+::-moz-selection { background: rgba(232,160,32,0.3); color: #fff; }
+
+/* Cosmic Spin Animation */
+@keyframes cosmicSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#vedic-bg ellipse, #vedic-bg polygon, #vedic-bg path {
+  transform-origin: center;
+  animation: cosmicSpin 120s linear infinite;
+}
+
+/* Magnetic Button Glow */
+.btn-primary { overflow: visible !important; }
+.btn-primary .magnetic-glow {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  mix-blend-mode: overlay;
+}
+.btn-primary:hover .magnetic-glow { opacity: 1; }
+
+/* Dynamic Card Glow (JS tracked) */
+.premium-glow-card {
+  position: relative;
+  z-index: 1;
+}
+.premium-glow-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+    rgba(232, 160, 32, 0.5),
+    transparent 40%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+.premium-glow-card:hover::before {
+  opacity: 1;
+}
+.premium-glow-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+    rgba(232, 160, 32, 0.04),
+    transparent 40%
+  );
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.premium-glow-card:hover::after {
+  opacity: 1;
+}
+
+/* Staggered Reveal Logic */
+.reveal-stagger {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.reveal-stagger.active {
+  opacity: 1;
+  transform: translateY(0);
+}
