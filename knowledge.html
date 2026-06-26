@@ -206,7 +206,7 @@
 
 <main id="spt-main">
 <div class="mpt-page-badge">
-  <span class="mpt-badge-icon">â—‰</span>
+  <span class="mpt-badge-icon">◉</span>
   <div style="flex:1;">
     <div class="mpt-badge-name">Knowledge Bank</div>
     <div class="mpt-badge-desc">Research articles, PPT presentations, and field documentation across all Indian sciences</div>
@@ -264,7 +264,7 @@
 
     <!-- Search -->
     <div style="margin-bottom: 1.5rem; position: relative;">
-      <input id="kb-search" type="search" placeholder="Search articles…" oninput="searchKB(this.value)"
+      <input id="kb-search" type="search" placeholder="Search articles�" oninput="searchKB(this.value)"
         style="width:100%;box-sizing:border-box;padding:0.75rem 1rem 0.75rem 2.75rem;background:rgba(255,252,244,0.06);border:1px solid rgba(232,160,32,0.25);border-radius:3px;color:#F5F0E8;font-family:'Philosopher',serif;font-size:0.92rem;outline:none;transition:border-color 0.2s;"
         onfocus="this.style.borderColor='#E8A020'" onblur="this.style.borderColor='rgba(232,160,32,0.25)'">
       <svg style="position:absolute;left:0.85rem;top:50%;transform:translateY(-50%);opacity:0.4;pointer-events:none;" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -310,7 +310,7 @@
       .kb-modal-body p { font-size: 1.04rem; color: #2C1000; line-height: 1.85; margin-bottom: 1rem; }
       .kb-modal-body ul { list-style: none; margin: 0.75rem 0 1rem; }
       .kb-modal-body ul li { font-size: 1.02rem; color: #3A2000; line-height: 1.75; padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
-      .kb-modal-body ul li::before { content: "â—†"; position: absolute; left: 0; color: #E8A020; font-size: 0.45rem; top: 0.38rem; }
+      .kb-modal-body ul li::before { content: "◆"; position: absolute; left: 0; color: #E8A020; font-size: 0.45rem; top: 0.38rem; }
       .kb-modal-body .kb-pullquote { border-left: 3px solid #E8A020; padding: 1rem 1.25rem; background: rgba(232,160,32,0.06); margin: 1.5rem 0; border-radius: 0 2px 2px 0; }
       .kb-modal-body .kb-pullquote p { font-family: 'Philosopher', serif; font-size: 1.05rem; color: #4A1818; font-style: italic; margin: 0; }
       .kb-modal-table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.98rem; }
@@ -324,7 +324,7 @@
     <div class="kb-grid">
 
       <!-- CARD 1: Vedic Sciences -->
-      <div class="kb-card" data-cats="vedic sanatana" onclick="openKB('vedic')">
+      <div class="kb-card" data-cats="vedic sanatana" onclick="window.location.href='knowledge/vedic-sciences.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Vedic Sciences</span>
@@ -338,12 +338,12 @@
             <p class="kb-meta">Suprabha Trust Research Team &nbsp;&middot;&nbsp; Vedic Sciences Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">46 topics &middot; 4 Vedas &middot; 6 Darshanas &middot; 27 Nakshatras</p>
           </div>
-          <a href="knowledge/vedic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/vedic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 2: Humanistic Sciences / Life Sciences -->
-      <div class="kb-card" data-cats="humanistic life bio" onclick="openKB('humanistic')">
+      <div class="kb-card" data-cats="humanistic life bio" onclick="window.location.href='knowledge/life-sciences.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Humanistic Sciences</span>
@@ -358,12 +358,12 @@
             <p class="kb-meta">Suprabha Trust Research Team &nbsp;&middot;&nbsp; Life Sciences Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">18 Models &middot; 7 Chakras &middot; 9 Planets &middot; 16 Samskaras</p>
           </div>
-          <a href="knowledge/humanistic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/humanistic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 3: Meta-Physics -->
-      <div class="kb-card" data-cats="meta vedic sanatana" onclick="openKB('meta')">
+      <div class="kb-card" data-cats="meta vedic sanatana" onclick="window.location.href='knowledge/meta-physics.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Meta-Physics</span>
@@ -375,14 +375,14 @@
         <div class="kb-card-bottom">
           <div>
             <p class="kb-meta">Suprabha Trust Research Team &nbsp;&middot;&nbsp; Mystic Sciences Series</p>
-            <p class="kb-meta" style="margin-top: 0.2rem;">3 Planes &middot; Matter â†’ Form â†’ Consciousness</p>
+            <p class="kb-meta" style="margin-top: 0.2rem;">3 Planes &middot; Matter → Form → Consciousness</p>
           </div>
-          <a href="knowledge/meta-physics.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/meta-physics.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 4: ILS / Vedic Sciences Broadcast -->
-      <div class="kb-card" data-cats="vedic humanistic bio" onclick="openKB('ils')">
+      <div class="kb-card" data-cats="vedic humanistic bio" onclick="window.location.href='knowledge/vedic-blueprint.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Vedic Sciences</span>
@@ -396,12 +396,12 @@
             <p class="kb-meta">Suprabha Trust Editorial Team &nbsp;&middot;&nbsp; Indian Life Sciences Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">Rigveda &middot; Sankhya &middot; Yoga &middot; Cognitive Science</p>
           </div>
-          <a href="knowledge/vedic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/vedic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 5: Ancient Indian Scientific Heritage / ILS Meta-Physics PPT -->
-      <div class="kb-card" data-cats="meta vedic humanistic sanatana tantra" onclick="openKB('ils2')">
+      <div class="kb-card" data-cats="meta vedic humanistic sanatana tantra" onclick="window.location.href='knowledge/ils-meta-physics.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Meta-Physics</span>
@@ -416,12 +416,12 @@
             <p class="kb-meta">Suprabha Trust &nbsp;&middot;&nbsp; ILS Meta-Physics Presentation Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">12 topics &middot; Tantra &middot; Yantra &middot; Mantra &middot; Ayurveda &middot; Astrology</p>
           </div>
-          <a href="knowledge/tantra-mantra-yantra.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/tantra-mantra-yantra.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 7: Humanistic Energy Sciences PPT -->
-      <div class="kb-card" data-cats="humanistic bio life" onclick="openKB('humanistic2')">
+      <div class="kb-card" data-cats="humanistic bio life" onclick="window.location.href='knowledge/humanistic-energy.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Humanistic Sciences</span>
@@ -435,12 +435,12 @@
             <p class="kb-meta">Suprabha Trust &nbsp;&middot;&nbsp; Humanistic Sciences Presentation Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">11 slides &middot; Geometry &middot; Frequency &middot; Bio-field &middot; Cosmic cycles</p>
           </div>
-          <a href="knowledge/humanistic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/humanistic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 8: Indian Life Sciences Documentary -->
-      <div class="kb-card" data-cats="life vedic humanistic ritual sanatana" onclick="openKB('lifescience')">
+      <div class="kb-card" data-cats="life vedic humanistic ritual sanatana" onclick="window.location.href='knowledge/life-sciences-documentary.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Life Sciences</span>
@@ -455,12 +455,12 @@
             <p class="kb-meta">Suprabha Trust &nbsp;&middot;&nbsp; Indian Life Sciences Documentary Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">17 slides &middot; 13 subjects &middot; 4 perspectives &middot; Pancha Bhuthas</p>
           </div>
-          <a href="knowledge/life-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/life-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 9: Biofield Sciences &mdash; Aura & Unseen Energy Fields -->
-      <div class="kb-card" data-cats="bio humanistic life" onclick="openKB('biofield')">
+      <div class="kb-card" data-cats="bio humanistic life" onclick="window.location.href='knowledge/biofield-sciences.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Bio Field Sciences</span>
@@ -474,12 +474,12 @@
             <p class="kb-meta">Dr Sujata Vaidya &nbsp;&middot;&nbsp; Bio Field Sciences Research &nbsp;&middot;&nbsp; drsujatavaidya.com</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">43 slides &middot; Kirlian &middot; PIP &middot; Chakras &middot; Aura &middot; Energy Healing</p>
           </div>
-          <a href="knowledge/biofield.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/biofield.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 10: Sanatana Dharma &mdash; Harish PPT -->
-      <div class="kb-card" data-cats="sanatana vedic humanistic" onclick="openKB('sanatana')">
+      <div class="kb-card" data-cats="sanatana vedic humanistic" onclick="window.location.href='knowledge/sanatana-dharma.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Sanatana Dharma</span>
@@ -494,12 +494,12 @@
             <p class="kb-meta">Harish &nbsp;&middot;&nbsp; Suprabha Trust &nbsp;&middot;&nbsp; Sanatana Dharma Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">15 slides &middot; Dharma &middot; Karma &middot; Aura &middot; Moksha &middot; Cosmic Constitution</p>
           </div>
-          <a href="knowledge/sanatan-dharma.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/sanatan-dharma.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 11: Sanatana Dharma PPT -->
-      <div class="kb-card" data-cats="sanatana vedic humanistic" onclick="openKB('sanatana')">
+      <div class="kb-card" data-cats="sanatana vedic humanistic" onclick="window.location.href='knowledge/sanatana-dharma.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Sanatana Dharma</span>
@@ -514,7 +514,7 @@
             <p class="kb-meta">Harish &nbsp;&middot;&nbsp; Sanatana Dharma Research &nbsp;&middot;&nbsp; Suprabha Trust</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">15 slides &middot; Aura &middot; Karma &middot; Dharma &middot; Moksha &middot; Universal Constitution</p>
           </div>
-          <a href="knowledge/sanatan-dharma.html" class="kb-read" onclick="event.stopPropagation()">Read â†’</a>
+          <a href="knowledge/sanatan-dharma.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -526,13 +526,13 @@
           <p class="kb-excerpt" style="color: rgba(255,240,232,0.35);">We welcome original research, practitioner insights, and field documentation from scholars across India and the world.</p>
         </div>
         <div class="kb-card-bottom">
-          <span class="kb-read" style="cursor: pointer;">Submit Your Article â†’</span>
+          <span class="kb-read" style="cursor: pointer;">Submit Your Article →</span>
         </div>
       </div>
 
     </div><!-- /kb-grid -->
 
-    <!-- â”€â”€ ARTICLE OVERLAY: VEDIC SCIENCES â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: VEDIC SCIENCES ── -->
     <div class="kb-overlay" id="kb-vedic">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -554,7 +554,7 @@
           <ul><li>Rig Veda &mdash; hymns and cosmic knowledge</li><li>Yajur Veda &mdash; ritual formulas and procedures</li><li>Sama Veda &mdash; musical chants and melodies</li><li>Atharvana Veda &mdash; healing, protection, and daily life</li></ul>
 
           <h2>The Six Darshanas</h2>
-          <ul><li><strong>Sankhya</strong> &mdash; dualistic philosophy of consciousness (Puruá¹£a) and matter (Praká¹›ti)</li><li><strong>Yoga</strong> &mdash; integrates Sankhya with practical techniques for controlling the mind and spiritual liberation</li><li><strong>Nyaya &amp; Vaisheshika</strong> &mdash; Logic and Atomism; understanding reality through valid knowledge and atomic theory</li><li><strong>Mimamsa</strong> &mdash; interpreting Vedic rituals connected to karma and dharma; posits an eternal universe governed by action and consequences</li><li><strong>Vedanta</strong> &mdash; emphasizes the Upanishads, Brahma Sutra, and Bhagavad Gita; key interpretations: Dvaita, Advaita, Visishtadvaita</li></ul>
+          <ul><li><strong>Sankhya</strong> &mdash; dualistic philosophy of consciousness (Puruṣa) and matter (Prakṛti)</li><li><strong>Yoga</strong> &mdash; integrates Sankhya with practical techniques for controlling the mind and spiritual liberation</li><li><strong>Nyaya &amp; Vaisheshika</strong> &mdash; Logic and Atomism; understanding reality through valid knowledge and atomic theory</li><li><strong>Mimamsa</strong> &mdash; interpreting Vedic rituals connected to karma and dharma; posits an eternal universe governed by action and consequences</li><li><strong>Vedanta</strong> &mdash; emphasizes the Upanishads, Brahma Sutra, and Bhagavad Gita; key interpretations: Dvaita, Advaita, Visishtadvaita</li></ul>
 
           <h2>Pancha Purusharthas &mdash; Four Goals of Life</h2>
           <ul><li><strong>Dharma</strong> &mdash; righteous conduct and duty</li><li><strong>Artha</strong> &mdash; material prosperity and security</li><li><strong>Kama</strong> &mdash; pleasure, love, and desire</li><li><strong>Moksha</strong> &mdash; liberation through self-realisation</li></ul>
@@ -589,12 +589,12 @@
           <h2>Conclusion</h2>
           <p>Sanatana Dharma and Vedic Sciences, when combined, form a system of knowledge that talks about something beyond earthly sciences &mdash; understood as "Cosmic Sciences" deeply rooted in the principle that the universe functions through consciousness, interconnected energies, and natural laws. The Oral Tradition of Vedic Recitation stands out as extraordinary &mdash; indestructible for hundreds of years, preserved in purest form even without written records.</p>
 
-          <button class="kb-close-btn" onclick="closeKB('vedic')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('vedic')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: HUMANISTIC / LIFE SCIENCES â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: HUMANISTIC / LIFE SCIENCES ── -->
     <div class="kb-overlay" id="kb-humanistic">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -627,10 +627,10 @@
 
           <h2>Model 7 &mdash; Cellular Level, DNA & Natural Intelligence</h2>
           <p>The human body is made of 33 trillion cells. Each cell has an energy quantum of 0.007 volts &mdash; changing depending upon 5 senses, bio-field energy, remote sensing, and natural intelligence. DNA records data from one generation to another &mdash; knowledge, wisdom, disease, and other natural functions.</p>
-          <div class="kb-pullquote"><p>21,600 breaths per day (15Ã—60Ã—24) &mdash; digit sum = 9. Animals (dogs): 33,120 breaths per day &mdash; digit sum also = 9. The magical number 9 is the universal link.</p></div>
+          <div class="kb-pullquote"><p>21,600 breaths per day (15×60×24) &mdash; digit sum = 9. Animals (dogs): 33,120 breaths per day &mdash; digit sum also = 9. The magical number 9 is the universal link.</p></div>
 
           <h2>Model 8 &mdash; Breath, Yoga & the Language of the Unseen</h2>
-          <ul><li>12 breaths/min &mdash; clarity of mind and body</li><li>6 breaths/min &mdash; understanding of inanimate objects</li><li>3 breaths/min &mdash; connection to the Universe</li><li>111 meridians Ã— 360 = 39,960 (digit sum = 9)</li><li>Distance Earth to Sun = 108 Earth diameters &middot; Distance Moon to Earth = 108 Earth diameters</li></ul>
+          <ul><li>12 breaths/min &mdash; clarity of mind and body</li><li>6 breaths/min &mdash; understanding of inanimate objects</li><li>3 breaths/min &mdash; connection to the Universe</li><li>111 meridians × 360 = 39,960 (digit sum = 9)</li><li>Distance Earth to Sun = 108 Earth diameters &middot; Distance Moon to Earth = 108 Earth diameters</li></ul>
 
           <h2>Model 9 &mdash; Seven Chakras</h2>
           <table class="kb-modal-table">
@@ -672,8 +672,8 @@
           <h2>Model 5 &mdash; 23 Shastras of Life Science</h2>
           <p>Dharma Shastra &middot; Ayurveda &middot; Jyothi Shastra &middot; Vaasthu Shastra &middot; Yoga Shastra &middot; Bauthika Shastra &middot; Rasa Shastra &middot; Jeeva Shastra &middot; Shilpa Shastra &middot; Arth Shastra &middot; Miti Shastra &middot; Naatya Shastra &middot; Kalanikarva Shastra &middot; Kavya Shastra &middot; Sangeeth Shastra &middot; Moksh Shastra &middot; Karma Shastra &middot; Vyakarna Shastra &middot; Samudrika Shastra &middot; Surya Siddhantha &middot; Varmimika Shastra &middot; Moksopaya Shastra &middot; Kaama Shastra</p>
 
-          <h2>Model 7 &mdash; á¹¢oá¸aÅ›a Saá¹skÄras</h2>
-          <p>The sixteen sacred rites from conception to death: <strong>Garbadharana</strong> (Pre-Natal &middot; sacred initiation of life) &middot; <strong>Pumasavana</strong> (Foetus welfare) &middot; <strong>Simantonayana</strong> (Mother's well-being) &middot; JÄtakarma &middot; NÄmakaraá¹‡a &middot; AnnaprÄÅ›ana &middot; CÅ«á¸Äkaraá¹‡a &middot; Upanayana &middot; SamÄvartana &middot; VivÄha &middot; Antima Saá¹skÄra &middot; Antyeá¹£á¹­i &middot; Tarpaá¹‡a &middot; Piá¹‡á¸a DÄna</p>
+          <h2>Model 7 &mdash; Ṣoḍaśa Saṁskāras</h2>
+          <p>The sixteen sacred rites from conception to death: <strong>Garbadharana</strong> (Pre-Natal &middot; sacred initiation of life) &middot; <strong>Pumasavana</strong> (Foetus welfare) &middot; <strong>Simantonayana</strong> (Mother's well-being) &middot; Jātakarma &middot; Nāmakaraṇa &middot; Annaprāśana &middot; Cūḍākaraṇa &middot; Upanayana &middot; Samāvartana &middot; Vivāha &middot; Antima Saṁskāra &middot; Antyeṣṭi &middot; Tarpaṇa &middot; Piṇḍa Dāna</p>
 
           <h2>Festival Types</h2>
           <table class="kb-modal-table">
@@ -688,12 +688,12 @@
             </tbody>
           </table>
 
-          <button class="kb-close-btn" onclick="closeKB('humanistic')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('humanistic')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: META-PHYSICS â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: META-PHYSICS ── -->
     <div class="kb-overlay" id="kb-meta">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -737,12 +737,12 @@
           <h2>Conclusion</h2>
           <p>These sciences are being practiced since ages in physical, superphysical, and meta-physical forms. This document presentation gives us a logical insight of our ancient sciences &mdash; demonstrating that the invisible world is real, measurable, and accessible to logical understanding. SUPRABHA TRUST is exploring Physics, Super Physics, and Meta Physics &mdash; Universal Applications of Wisdom.</p>
 
-          <button class="kb-close-btn" onclick="closeKB('meta')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('meta')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: ILS / VEDIC BROADCAST â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: ILS / VEDIC BROADCAST ── -->
     <div class="kb-overlay" id="kb-ils">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -781,12 +781,12 @@
           <p>Through deep transcendental meditation, the early Rishis observed various aspects of the Universe, Nature, and the Human Body &mdash; developing complete knowledge of universal patterns and creating systems for better living. The air pressure applying on the human body can control all the inner and outer systems in a systematic pattern. This is how the Vedic system developed to give perfect balance to nature and human beings.</p>
           <p>A person cannot utilise their potential beyond 5 to 25% in a lifetime. The Vedic science provides support to the human body in inheriting potential to its maximum utilisation. One charged person through spirituality leaves an impression on thousands of people &mdash; helping make society a better place.</p>
 
-          <button class="kb-close-btn" onclick="closeKB('ils')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('ils')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: ANCIENT INDIAN SCIENTIFIC HERITAGE / ILS META-PHYSICS PPT â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: ANCIENT INDIAN SCIENTIFIC HERITAGE / ILS META-PHYSICS PPT ── -->
     <div class="kb-overlay" id="kb-ils2">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -904,12 +904,12 @@
             <li>Suprabha Trust invites researchers, practitioners, and institutions to collaborate in this rediscovery</li>
           </ul>
 
-          <button class="kb-close-btn" onclick="closeKB('ils2')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('ils2')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: HUMANISTIC ENERGY SCIENCES â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: HUMANISTIC ENERGY SCIENCES ── -->
     <div class="kb-overlay" id="kb-humanistic2">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -974,15 +974,15 @@
           </ul>
 
           <h2>Human Geometry & Cosmic Science &mdash; The Mathematics of Life</h2>
-          <div class="kb-pullquote"><p>Longitude: 1 nautical mile = 111 km = 60 min. 360 degrees Ã— 60 meridians = 21,600. Human breaths: 15 per min Ã— 60 Ã— 24 = 21,600 breaths/day. The magical number 21,600 connects Earth's geometry to human breathing rhythm.</p></div>
+          <div class="kb-pullquote"><p>Longitude: 1 nautical mile = 111 km = 60 min. 360 degrees × 60 meridians = 21,600. Human breaths: 15 per min × 60 × 24 = 21,600 breaths/day. The magical number 21,600 connects Earth's geometry to human breathing rhythm.</p></div>
           <table class="kb-modal-table">
             <thead><tr><th>Mathematical Connection</th><th>Value</th><th>Significance</th></tr></thead>
             <tbody>
-              <tr><td>Human breaths per day</td><td>21,600</td><td>15 Ã— 60 Ã— 24 &mdash; matches Earth's nautical meridian count</td></tr>
-              <tr><td>Heart beats analysis</td><td>43,200</td><td>60 Ã— 60 Ã— 24 Ã· 2 &mdash; half the daily heart beats</td></tr>
-              <tr><td>Yuga calendar</td><td>432</td><td>25,920 Ã· 60 &mdash; universal frequency found in Egypt, Mesopotamia, Jewish culture</td></tr>
-              <tr><td>Sun&ldquo;Earth distance</td><td>108Ã—</td><td>Diameter of Sun Ã— 108 = distance to Earth</td></tr>
-              <tr><td>Moon&ldquo;Earth distance</td><td>108Ã—</td><td>Diameter of Moon Ã— 108 = distance to Earth</td></tr>
+              <tr><td>Human breaths per day</td><td>21,600</td><td>15 × 60 × 24 &mdash; matches Earth's nautical meridian count</td></tr>
+              <tr><td>Heart beats analysis</td><td>43,200</td><td>60 × 60 × 24 ÷ 2 &mdash; half the daily heart beats</td></tr>
+              <tr><td>Yuga calendar</td><td>432</td><td>25,920 ÷ 60 &mdash; universal frequency found in Egypt, Mesopotamia, Jewish culture</td></tr>
+              <tr><td>Sun&ldquo;Earth distance</td><td>108×</td><td>Diameter of Sun × 108 = distance to Earth</td></tr>
+              <tr><td>Moon&ldquo;Earth distance</td><td>108×</td><td>Diameter of Moon × 108 = distance to Earth</td></tr>
               <tr><td>Human nervous system</td><td>86,400 miles</td><td>Equals the number of seconds in a day</td></tr>
               <tr><td>Surya Siddhartha</td><td>432 Hz</td><td>2,202 yojanas; 1 yojana = 9 miles; 1 nimisha = 16/75th of a second</td></tr>
             </tbody>
@@ -1016,12 +1016,12 @@
           </ul>
           <p>Ease of human living, ease in society, ease in nature &mdash; these are the outcomes of living in alignment with the fundamental truth of energy.</p>
 
-          <button class="kb-close-btn" onclick="closeKB('humanistic2')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('humanistic2')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: INDIAN LIFE SCIENCES DOCUMENTARY â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: INDIAN LIFE SCIENCES DOCUMENTARY ── -->
     <div class="kb-overlay" id="kb-lifescience">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -1167,12 +1167,12 @@
             <li>Intelligence energy forms discovered in the universe &mdash; connecting human to cosmic consciousness</li>
           </ul>
 
-          <button class="kb-close-btn" onclick="closeKB('lifescience')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('lifescience')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: BIOFIELD SCIENCES â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: BIOFIELD SCIENCES ── -->
     <div class="kb-overlay" id="kb-biofield">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -1339,12 +1339,12 @@
           <p>Bio-field science provides the modern scientific bridge between ancient Vedic wisdom and contemporary understanding. Through Kirlian photography, PIP imaging, and energy field research, we can now observe, measure, and document what the Rishis described millennia ago &mdash; the living energy matrix that underlies all existence. The Kosha system, the chakras, the power of mantra, the healing capacity of pranayama and meditation, the energetic quality of food &mdash; all are now measurably real.</p>
           <p style="font-size: 0.98rem; color: #5A3030; margin-top: 1rem;">Contact: Dr Sujata Vaidya | <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c081e1f19060d180d1a0d0508150d2c0b010d0500420f0301">[email&#160;protected]</a></strong> | <strong>drsujatavaidya.com</strong></p>
 
-          <button class="kb-close-btn" onclick="closeKB('biofield')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('biofield')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
 
-    <!-- â”€â”€ ARTICLE OVERLAY: SANATANA DHARMA â”€â”€ -->
+    <!-- ── ARTICLE OVERLAY: SANATANA DHARMA ── -->
     <div class="kb-overlay" id="kb-sanatana">
       <div class="kb-modal">
         <div class="kb-modal-header">
@@ -1476,7 +1476,7 @@
           </ul>
           <div class="kb-pullquote"><p>Human beings need to live a balanced life to attain Moksha / Salvation through the Cosmic Constitution. A truthful life &mdash; aligned with Achar, Vichar, and Vyavahar &mdash; is the direct path to this ultimate liberation. Sanatana Dharma is not a restriction but a map to the highest freedom.</p></div>
 
-          <button class="kb-close-btn" onclick="closeKB('sanatana')">â† Back to Knowledge Bank</button>
+          <button class="kb-close-btn" onclick="closeKB('sanatana')">← Back to Knowledge Bank</button>
         </div>
       </div>
     </div>
@@ -1592,4 +1592,5 @@ document.querySelectorAll('.kb-overlay').forEach(ov => {
 
 </body>
 </html>
+
 
