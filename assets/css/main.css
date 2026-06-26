@@ -1340,7 +1340,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  #mpt-hamburger { display: none !important; }
   #mpt-topbar { 
     top: 20px; 
     left: 2rem; 
