@@ -492,27 +492,11 @@ section { padding: 6rem 2rem; position: relative; background: var(--color-bg); }
 }
 
 /* ═══ THREE ASPECTS ══════════════════════════════════════════ */
-.aspects { background: var(--color-bg); }
 
-.aspects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
-}
 
-.aspect-card {
-  background: var(--gradient-surface);
-  border: var(--glass-border);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 3rem 2.5rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
+
+
+
 
 .aspect-card::before {
   content: '';
@@ -536,27 +520,11 @@ section { padding: 6rem 2rem; position: relative; background: var(--color-bg); }
   font-weight: 700;
 }
 
-.aspect-card h3 {
-  font-size: 1.5rem;
-  color: var(--color-text);
-  margin-bottom: 0.5rem;
-}
 
-.aspect-tag {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-secondary);
-  margin-bottom: 1rem;
-  display: block;
-}
 
-.aspect-card p {
-  font-size: 0.95rem;
-  color: var(--color-muted);
-  line-height: 1.8;
-}
+
+
+
 
 /* ═══ MISSION / APPROACH ═════════════════════════════════════ */
 .mission { background: var(--color-surface); }
@@ -1304,7 +1272,7 @@ footer {
 @media (max-width: 480px) {
   .footer-inner { grid-template-columns: 1fr; }
   .donate-cards { grid-template-columns: 1fr; }
-  .aspects-grid { grid-template-columns: 1fr; }
+  
   .connections-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -1602,4 +1570,103 @@ footer {
 
 
 
+
+
+
+.aspects {
+  position: relative;
+  background: var(--color-bg);
+  overflow: hidden;
+}
+.aspects::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vw;
+  max-width: 1000px;
+  max-height: 1000px;
+  background: radial-gradient(circle, rgba(15,40,90,0.15) 0%, rgba(11,13,23,0) 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+}
+.aspects .container { position: relative; z-index: 2; }
+
+.aspects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.aspect-card {
+  background: rgba(11, 13, 23, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.aspect-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 100%;
+  background: linear-gradient(180deg, rgba(232,160,32,0.03) 0%, rgba(232,160,32,0) 100%);
+  pointer-events: none;
+}
+.aspect-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(232,160,32,0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 40px rgba(232,160,32,0.1);
+}
+
+.aspect-num {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.03);
+  -webkit-text-stroke: 1px rgba(232,160,32,0.3);
+  line-height: 1;
+  margin-bottom: 2rem;
+  transition: all 0.4s ease;
+}
+.aspect-card:hover .aspect-num {
+  color: rgba(232,160,32,0.1);
+  -webkit-text-stroke: 1px rgba(232,160,32,0.6);
+  text-shadow: 0 0 20px rgba(232,160,32,0.2);
+}
+
+.aspect-tag {
+  font-family: system-ui, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(232,160,32,0.8);
+  margin-bottom: 1.5rem;
+}
+
+.aspect-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.aspect-card p:not(.aspect-tag) {
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.8;
+  font-weight: 300;
+}
 
