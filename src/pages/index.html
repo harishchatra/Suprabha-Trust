@@ -1,0 +1,163 @@
+﻿<!-- INCLUDE header -->
+<!-- INCLUDE sidebar -->
+<!-- SET_TITLE: home | Suprabha Trust -->
+<main id="spt-main">
+<div class="mpt-page-badge">
+  <span class="mpt-badge-icon">âŒ‚</span>
+  <div style="flex:1;">
+    <div class="mpt-badge-name">Suprabha Trust â€” Home</div>
+    <div class="mpt-badge-desc">Discovering the Mystic Sciences of Ancient India Â· Est. 2006 Â· Hyderabad</div>
+  </div>
+  <span class="mpt-badge-num">1 / 15</span>
+</div>
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <!-- Mystic Figures & Energy Points Backdrop -->
+    <svg id="vedic-bg" xmlns="http://www.w3.org/2000/svg"
+      style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden;"
+      viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <style>
+          @keyframes pulse2    { 0%,100%{opacity:0.12} 50%{opacity:0.35} }
+          @keyframes floatUp   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+          @keyframes breathe   { 0%,100%{opacity:0.06} 50%{opacity:0.18} }
+          .float   { animation: floatUp 7s ease-in-out infinite; }
+          .breathe { animation: breathe 9s ease-in-out infinite; }
+          .pulse2  { animation: pulse2  8s ease-in-out infinite; }
+        </style>
+        <radialGradient id="centreGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"  stop-color="#B8860B" stop-opacity="0.15"/>
+          <stop offset="70%" stop-color="#2C0F0F" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- Subtle centre ambient glow -->
+      <ellipse cx="700" cy="450" rx="400" ry="300" fill="url(#centreGlow)"/>
+
+      <!-- â•â• 4 soft orbital rings â•â• -->
+      <circle cx="700" cy="450" r="560" fill="none" stroke="#B8860B" stroke-width="0.4" opacity="0.07"/>
+      <circle cx="700" cy="450" r="420" fill="none" stroke="#C8A060" stroke-width="0.4" opacity="0.09"/>
+      <circle cx="700" cy="450" r="290" fill="none" stroke="#B8860B" stroke-width="0.5" opacity="0.10"/>
+      <circle cx="700" cy="450" r="160" fill="none" stroke="#C8A060" stroke-width="0.4" opacity="0.10"/>
+
+      <!-- â•â• NATARAJ SILHOUETTE (left side) â•â• -->
+      <g opacity="0.09" transform="translate(165, 165)" fill="#B8860B" class="breathe">
+        <circle cx="130" cy="165" r="30"/>
+        <ellipse cx="130" cy="252" rx="28" ry="72" transform="rotate(-8 130 252)"/>
+        <ellipse cx="185" cy="315" rx="14" ry="52" transform="rotate(-45 185 315)"/>
+        <ellipse cx="92"  cy="335" rx="12" ry="56" transform="rotate(15 92 335)"/>
+        <ellipse cx="192" cy="218" rx="10" ry="48" transform="rotate(-60 192 218)"/>
+        <ellipse cx="88"  cy="222" rx="10" ry="46" transform="rotate(40 88 222)"/>
+        <circle cx="130" cy="250" r="118" fill="none" stroke="#B8860B" stroke-width="5" opacity="0.55"/>
+        <circle cx="130" cy="250" r="102" fill="none" stroke="#B8860B" stroke-width="2" opacity="0.3"/>
+        <polygon points="130,132 121,152 130,144 139,152" opacity="0.8"/>
+        <polygon points="28,197 39,210 41,200 52,212" opacity="0.7" transform="rotate(-30 130 250)"/>
+        <polygon points="28,197 39,210 41,200 52,212" opacity="0.7" transform="rotate(30 130 250)"/>
+        <polygon points="28,197 39,210 41,200 52,212" opacity="0.7" transform="rotate(90 130 250)"/>
+        <polygon points="28,197 39,210 41,200 52,212" opacity="0.7" transform="rotate(-90 130 250)"/>
+        <polygon points="28,197 39,210 41,200 52,212" opacity="0.7" transform="rotate(150 130 250)"/>
+        <polygon points="28,197 39,210 41,200 52,212" opacity="0.7" transform="rotate(-150 130 250)"/>
+      </g>
+
+      <!-- â•â• OM SYMBOL (right side, floating) â•â• -->
+      <g class="float" opacity="0.08" transform="translate(990, 240)">
+        <text font-size="230" font-family="serif" fill="#B8860B" text-anchor="middle" x="80" y="210">&#2384;</text>
+      </g>
+
+      <!-- â•â• 7 CHAKRA ENERGY POINTS along central spine â•â• -->
+      <!-- Sahasrara (Crown) â€” Violet -->
+      <circle cx="700" cy="245" r="7" fill="#B8860B" opacity="0.65">
+        <animate attributeName="r" values="5;10;5" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1.0;0.45" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="245" r="26" fill="none" stroke="#B8860B" stroke-width="0.8" opacity="0.15">
+        <animate attributeName="r" values="20;42;20" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0;0.2" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Ajna (Third Eye) â€” Indigo -->
+      <circle cx="700" cy="315" r="6" fill="#6A4030" opacity="0.60">
+        <animate attributeName="r" values="4.5;8;4.5" dur="4.8s" begin="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1.0;0.45" dur="4.8s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="315" r="22" fill="none" stroke="#6A4030" stroke-width="0.8" opacity="0.18">
+        <animate attributeName="r" values="17;32;17" dur="4.8s" begin="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.22;0;0.22" dur="4.8s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Vishuddha (Throat) â€” Blue -->
+      <circle cx="700" cy="385" r="5" fill="#7A5020" opacity="0.55">
+        <animate attributeName="r" values="4;7;4" dur="4.1s" begin="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.1s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="385" r="20" fill="none" stroke="#7A5020" stroke-width="0.8" opacity="0.18">
+        <animate attributeName="r" values="15;28;15" dur="4.1s" begin="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0;0.2" dur="4.1s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Anahata (Heart) â€” Green -->
+      <circle cx="700" cy="455" r="7" fill="#B8860B" opacity="0.60">
+        <animate attributeName="r" values="5;9;5" dur="5s" begin="0.9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;1.0;0.4" dur="5s" begin="0.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="455" r="25" fill="none" stroke="#B8860B" stroke-width="0.8" opacity="0.15">
+        <animate attributeName="r" values="20;38;20" dur="5s" begin="0.9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0;0.2" dur="5s" begin="0.9s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Manipura (Solar Plexus) â€” Yellow -->
+      <circle cx="700" cy="530" r="6" fill="#B8860B" opacity="0.55">
+        <animate attributeName="r" values="4.5;8;4.5" dur="4.5s" begin="0.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0.95;0.4" dur="4.5s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="530" r="22" fill="none" stroke="#B8860B" stroke-width="0.8" opacity="0.18">
+        <animate attributeName="r" values="18;32;18" dur="4.5s" begin="0.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.22;0;0.22" dur="4.5s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Svadhisthana (Sacral) â€” Orange -->
+      <circle cx="700" cy="605" r="5" fill="#8B6508" opacity="0.50">
+        <animate attributeName="r" values="4;7;4" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.35;0.85;0.35" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="605" r="20" fill="none" stroke="#8B6508" stroke-width="0.8" opacity="0.18">
+        <animate attributeName="r" values="15;26;15" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0;0.2" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Muladhara (Root) â€” Red -->
+      <circle cx="700" cy="675" r="5" fill="#8B2020" opacity="0.55">
+        <animate attributeName="r" values="4;7;4" dur="4.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="675" r="20" fill="none" stroke="#8B2020" stroke-width="0.8" opacity="0.2">
+        <animate attributeName="r" values="16;28;16" dur="4.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.25;0;0.25" dur="4.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Chakra spine â€” faint dashed line -->
+      <line x1="700" y1="245" x2="700" y2="675" stroke="#B8860B" stroke-width="0.5" opacity="0.10" stroke-dasharray="4 7"/>
+
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <svg class="hero-logo-svg"><use href="#suprabha-logo"/></svg>
+    <p class="hero-eyebrow">&#x2B22; Established 2006 &nbsp;Â·&nbsp; Hyderabad, India &nbsp;Â·&nbsp; suprabha-trust.in</p>
+    <h1>Discovering the <em>Mystic Sciences</em> of Ancient India</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions â€” bridging ancient wisdom with modern understanding.</p>
+    <div class="hero-actions">
+      <a href="#knowledge" class="btn-primary">Explore Knowledge Bank</a>
+      <a href="#about" class="btn-outline">Our Story</a>
+    </div>
+    <p class="hero-since" style="margin-top: 3rem;">&#9670; Since 2006 &nbsp;Â·&nbsp; Reg. 176/IU/2016 &nbsp;Â·&nbsp; www.suprabha-trust.in &#9670;</p>
+  </div>
+</section>
+
+
+</div><!-- /page-about -->
+<!-- ABOUT STRIP -->
+
+</main>
+<!-- INCLUDE footer -->

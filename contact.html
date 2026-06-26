@@ -15,13 +15,12 @@
 <meta name="canonical" content="https://www.suprabha-trust.in">
 <link rel="canonical" href="https://www.suprabha-trust.in">
 <!-- Favicon — gold OM symbol on maroon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230B0D17'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23E8A020' font-family='serif'>ॐ</text></svg>">
-<meta name="theme-color" content="#0B0D17">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%232C0F0F'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23B8860B' font-family='serif'>ॐ</text></svg>">
+<meta name="theme-color" content="#2C0F0F">
 <meta name="apple-mobile-web-app-title" content="Suprabha Trust">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
-<script defer src="assets/js/main.js"></script>
 </head>
 <body>
 
@@ -117,6 +116,7 @@
      Pattern: Deep Maroon + Antique Gold + Parchment
      Layout:  Fixed topbar + Full-width numbered tab strip
 ═══════════════════════════════════════════ -->
+<link rel="stylesheet" href="assets/css/main.css">
 
 <!-- ═══ TOP BAR ═══ -->
 <div id="mpt-topbar">
@@ -124,7 +124,7 @@
     <span></span><span></span><span></span>
   </button>
   <div id="mpt-logo" href="index.html" style="cursor:pointer;">
-    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
+    <svg><use href="#suprabha-logo"/></svg>
     <div>
       <div class="mpt-logo-name">Suprabha Trust</div>
       <span class="mpt-logo-tag">Mystic Sciences of Ancient India · Est. 2006</span>
@@ -144,6 +144,7 @@
   <a class="mpt-tab" data-pid="metaphysics" href="metaphysics.html"><div class="mpt-tab-icon">◒</div><div class="mpt-tab-label">Meta-Physics</div></a>
   <a class="mpt-tab" data-pid="articles" href="articles.html"><div class="mpt-tab-icon">✎</div><div class="mpt-tab-label">Articles</div></a>
   <a class="mpt-tab" data-pid="videos" href="videos.html"><div class="mpt-tab-icon">▶</div><div class="mpt-tab-label">Videos</div></a>
+  <a class="mpt-tab" data-pid="renewable" href="renewable.html"><div class="mpt-tab-icon">⚡</div><div class="mpt-tab-label">Renewable</div></a>
   <a class="mpt-tab" data-pid="impact" href="impact.html"><div class="mpt-tab-icon">◆</div><div class="mpt-tab-label">Impact</div></a>
   <a class="mpt-tab" data-pid="partnership" href="partnership.html"><div class="mpt-tab-icon">◇</div><div class="mpt-tab-label">Partners</div></a>
   <a class="mpt-tab" data-pid="programs" href="programs.html"><div class="mpt-tab-icon">◈</div><div class="mpt-tab-label">Programs</div></a>
@@ -163,7 +164,7 @@
 <!-- ═══ SIDEBAR ═══ -->
 <div id="mpt-sidebar">
   <div class="mpt-sidebar-header">
-    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
+    <svg><use href="#suprabha-logo"/></svg>
     <div>
       <div class="mpt-sb-name">Suprabha Trust</div>
       <span class="mpt-sb-tag">Mystic Sciences · Est. 2006</span>
@@ -183,13 +184,14 @@
     <a class="mpt-sb-link" data-pid="articles" href="articles.html">    ✎ Submit Article</a>
     <a class="mpt-sb-link" data-pid="videos" href="videos.html">      ▶ Submit Video</a>
     <span class="mpt-sb-section">Initiatives</span>
+    <a class="mpt-sb-link" data-pid="renewable" href="renewable.html">   ⚡ Renewable Energy</a>
     <a class="mpt-sb-link" data-pid="impact" href="impact.html">      ◆ Impact Areas</a>
     <a class="mpt-sb-link" data-pid="partnership" href="partnership.html"> ◇ Partnerships</a>
     <a class="mpt-sb-link" data-pid="programs" href="programs.html">    ◈ Programs</a>
     <span class="mpt-sb-section">Connect</span>
     <a class="mpt-sb-link" data-pid="contact" href="contact.html">     ✉ Contact</a>
   </nav>
-  <a class="mpt-sb-donate" href="donate.html">🙏 &nbsp;14 — Donate Now</a>
+  <a class="mpt-sb-donate" onclick="mptShow('donate')">🙏 &nbsp;14 — Donate Now</a>
 </div>
 
 
@@ -202,75 +204,75 @@
   <span class="mpt-badge-icon">âœ‰</span>
   <div style="flex:1;">
     <div class="mpt-badge-name">Contact Us</div>
-    <div class="mpt-badge-desc">Reach Suprabha Trust &mdash; Begumpet, Hyderabad &middot; +91 98494 46409 &middot; info@suprabha-trust.in</div>
+    <div class="mpt-badge-desc">Reach Suprabha Trust â€” Begumpet, Hyderabad Â· +91 98494 46409 Â· info@suprabha-trust.in</div>
   </div>
   <span class="mpt-badge-num">15 / 15</span>
 </div>
 
-<!-- Contact &mdash; Hyderabad heritage image banner -->
-<div style="position:relative;height:140px;overflow:hidden;background:#0B0D17;">
+<!-- Contact â€” Hyderabad heritage image banner -->
+<div style="position:relative;height:140px;overflow:hidden;background:#1A0808;">
   <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Charminar-Hyderabad.jpg/800px-Charminar-Hyderabad.jpg"
-    alt="Hyderabad &mdash; Charminar Heritage" loading="lazy"
-    style="width:100%;height:100%;object-fit:cover;opacity:0.55;object-position:center 40%;" referrerpolicy="no-referrer">
-  <div style="position:absolute;inset:0;background:linear-gradient(rgba(11,13,23,0.4),rgba(11,13,23,0.8));display:flex;align-items:center;padding:0 2.5rem;gap:1.5rem;">
+    alt="Hyderabad â€” Charminar Heritage" loading="lazy"
+    style="width:100%;height:100%;object-fit:cover;opacity:0.55;object-position:center 40%;">
+  <div style="position:absolute;inset:0;background:linear-gradient(rgba(26,8,8,0.4),rgba(26,8,8,0.8));display:flex;align-items:center;padding:0 2.5rem;gap:1.5rem;">
     <div>
-      <p style="font-family:'Philosopher',serif;font-size:1.4rem;color:#E8A020;font-weight:300;">Suprabha Trust, Hyderabad</p>
-      <p style="font-size:0.75rem;color:rgba(255,248,220,0.6);font-family:'Philosopher',serif;margin-top:0.25rem;">9/3 RT, Prakash Nagar, Begumpet &middot; +91 98494 46409 &middot; info@suprabha-trust.in</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#D4A017;font-weight:300;">Suprabha Trust, Hyderabad</p>
+      <p style="font-size:0.75rem;color:rgba(255,248,220,0.6);font-family:'Jost',sans-serif;margin-top:0.25rem;">9/3 RT, Prakash Nagar, Begumpet Â· +91 98494 46409 Â· info@suprabha-trust.in</p>
     </div>
   </div>
 </div>
 
-<section class="contact" id="contact" style="background:#15192B; padding:5rem 2rem;">
+<section class="contact" id="contact" style="background:#F5F0E8; padding:5rem 2rem;">
   <div class="container">
     <p class="section-eyebrow">Reach Out</p>
-    <h2 class="section-title">Contact Us</h2>
-    <div class="gold-line"></div>
+    <h2 class="section-title" style="color:#4A1818;">Contact Us</h2>
+    <div class="gold-line" style="background:#B8860B;"></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;">
 
       <!-- Contact info -->
       <div>
-        <h3 style="font-family:'Philosopher',serif;font-size:1.75rem;color:#E8A020;margin-bottom:1.5rem;font-weight:400;">Get in Touch</h3>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;color:#4A1818;margin-bottom:1.5rem;font-weight:400;">Get in Touch</h3>
         <div style="display:flex;flex-direction:column;gap:1.25rem;">
           <div style="display:flex;gap:1rem;align-items:flex-start;">
-            <div style="width:36px;height:36px;background:#0B0D17;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“</div>
+            <div style="width:36px;height:36px;background:#2C0F0F;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“</div>
             <div>
-              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.25rem;font-family:'Philosopher',serif;">Primary Office</p>
-              <p style="font-size:0.95rem;color:#0B0D17;line-height:1.7;">9/3 RT, Prakash Nagar,<br>Begumpet, Hyderabad &mdash; 500016</p>
+              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#7A2828;margin-bottom:0.25rem;font-family:'Jost',sans-serif;">Primary Office</p>
+              <p style="font-size:0.95rem;color:#2C0F0F;line-height:1.7;">9/3 RT, Prakash Nagar,<br>Begumpet, Hyderabad â€” 500016</p>
             </div>
           </div>
           <div style="display:flex;gap:1rem;align-items:flex-start;">
-            <div style="width:36px;height:36px;background:#0B0D17;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“</div>
+            <div style="width:36px;height:36px;background:#2C0F0F;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“</div>
             <div>
-              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.25rem;font-family:'Philosopher',serif;">Registered Address</p>
-              <p style="font-size:0.95rem;color:#0B0D17;line-height:1.7;">ST HNO 34-41, Plot No. 40, Road No. 4<br>Vivekanandapuram, Medchal Sainikpuri<br>Malkajgiri, Hyderabad &mdash; 500094</p>
+              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#7A2828;margin-bottom:0.25rem;font-family:'Jost',sans-serif;">Registered Address</p>
+              <p style="font-size:0.95rem;color:#2C0F0F;line-height:1.7;">ST HNO 34-41, Plot No. 40, Road No. 4<br>Vivekanandapuram, Medchal Sainikpuri<br>Malkajgiri, Hyderabad â€” 500094</p>
             </div>
           </div>
           <div style="display:flex;gap:1rem;align-items:flex-start;">
-            <div style="width:36px;height:36px;background:#0B0D17;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“ž</div>
+            <div style="width:36px;height:36px;background:#2C0F0F;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“ž</div>
             <div>
-              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.25rem;font-family:'Philosopher',serif;">Phone</p>
-              <p style="font-size:0.95rem;color:#0B0D17;line-height:1.7;"><a href="tel:+919849446409" style="color:#E8A020;text-decoration:none;">+91 98494 46409</a><br><a href="tel:+918331976555" style="color:#E8A020;text-decoration:none;">+91 83319 76555</a></p>
+              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#7A2828;margin-bottom:0.25rem;font-family:'Jost',sans-serif;">Phone</p>
+              <p style="font-size:0.95rem;color:#2C0F0F;line-height:1.7;"><a href="tel:+919849446409" style="color:#4A1818;text-decoration:none;">+91 98494 46409</a><br><a href="tel:+918331976555" style="color:#4A1818;text-decoration:none;">+91 83319 76555</a></p>
             </div>
           </div>
           <div style="display:flex;gap:1rem;align-items:flex-start;">
-            <div style="width:36px;height:36px;background:#0B0D17;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">âœ‰</div>
+            <div style="width:36px;height:36px;background:#2C0F0F;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">âœ‰</div>
             <div>
-              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.25rem;font-family:'Philosopher',serif;">Email</p>
-              <p style="font-size:0.95rem;"><a href="mailto:suprabhaind@gmail.com" style="color:#E8A020;text-decoration:none;">suprabhaind@gmail.com</a></p>
+              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#7A2828;margin-bottom:0.25rem;font-family:'Jost',sans-serif;">Email</p>
+              <p style="font-size:0.95rem;"><a href="mailto:suprabhaind@gmail.com" style="color:#4A1818;text-decoration:none;">suprabhaind@gmail.com</a></p>
             </div>
           </div>
           <div style="display:flex;gap:1rem;align-items:flex-start;">
-            <div style="width:36px;height:36px;background:#0B0D17;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸŒ</div>
+            <div style="width:36px;height:36px;background:#2C0F0F;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸŒ</div>
             <div>
-              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.25rem;font-family:'Philosopher',serif;">Website</p>
-              <p style="font-size:0.95rem;"><a href="https://www.suprabha-trust.in" style="color:#E8A020;text-decoration:none;">www.suprabha-trust.in</a></p>
+              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#7A2828;margin-bottom:0.25rem;font-family:'Jost',sans-serif;">Website</p>
+              <p style="font-size:0.95rem;"><a href="https://www.suprabha-trust.in" style="color:#4A1818;text-decoration:none;">www.suprabha-trust.in</a></p>
             </div>
           </div>
           <div style="display:flex;gap:1rem;align-items:flex-start;">
-            <div style="width:36px;height:36px;background:#0B0D17;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“‹</div>
+            <div style="width:36px;height:36px;background:#2C0F0F;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">ðŸ“‹</div>
             <div>
-              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.25rem;font-family:'Philosopher',serif;">Registration</p>
-              <p style="font-size:0.95rem;color:#0B0D17;line-height:1.7;">Reg. No. 176/IU/2016<br>Established 2010 &middot; Hyderabad, Telangana</p>
+              <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#7A2828;margin-bottom:0.25rem;font-family:'Jost',sans-serif;">Registration</p>
+              <p style="font-size:0.95rem;color:#2C0F0F;line-height:1.7;">Reg. No. 176/IU/2016<br>Established 2010 Â· Hyderabad, Telangana</p>
             </div>
           </div>
         </div>
@@ -278,8 +280,8 @@
 
       <!-- Contact form -->
       <div>
-        <h3 style="font-family:'Philosopher',serif;font-size:1.75rem;color:#E8A020;margin-bottom:1.5rem;font-weight:400;">Send a Message</h3>
-        <div id="contact-status" style="display:none;padding:1rem;margin-bottom:1rem;border-radius:2px;font-family:'Philosopher',serif;font-size:0.9rem;"></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;color:#4A1818;margin-bottom:1.5rem;font-weight:400;">Send a Message</h3>
+        <div id="contact-status" style="display:none;padding:1rem;margin-bottom:1rem;border-radius:2px;font-family:'Jost',sans-serif;font-size:0.9rem;"></div>
         <form onsubmit="handleContact(event)" style="display:flex;flex-direction:column;gap:0.85rem;">
           <!-- Honeypot -->
           <div style="display:none;">
@@ -287,21 +289,21 @@
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
             <div>
-              <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Name *</label>
-              <input type="text" name="name" required placeholder="Your full name" style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:#0B0D17;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+              <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#7A2828;margin-bottom:0.35rem;font-family:'Jost',sans-serif;">Name *</label>
+              <input type="text" name="name" required placeholder="Your full name" style="width:100%;background:white;border:1px solid rgba(74,24,24,0.2);color:#2C0F0F;padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:0.92rem;border-radius:2px;outline:none;">
             </div>
             <div>
-              <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Email *</label>
-              <input type="email" name="email" required placeholder="your@email.com" style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:#0B0D17;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+              <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#7A2828;margin-bottom:0.35rem;font-family:'Jost',sans-serif;">Email *</label>
+              <input type="email" name="email" required placeholder="your@email.com" style="width:100%;background:white;border:1px solid rgba(74,24,24,0.2);color:#2C0F0F;padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:0.92rem;border-radius:2px;outline:none;">
             </div>
           </div>
           <div>
-            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Phone</label>
-            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:#0B0D17;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#7A2828;margin-bottom:0.35rem;font-family:'Jost',sans-serif;">Phone</label>
+            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" style="width:100%;background:white;border:1px solid rgba(74,24,24,0.2);color:#2C0F0F;padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:0.92rem;border-radius:2px;outline:none;">
           </div>
           <div>
-            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Subject *</label>
-            <select name="subject" required style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:#0B0D17;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#7A2828;margin-bottom:0.35rem;font-family:'Jost',sans-serif;">Subject *</label>
+            <select name="subject" required style="width:100%;background:white;border:1px solid rgba(74,24,24,0.2);color:#2C0F0F;padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:0.92rem;border-radius:2px;outline:none;">
               <option value="">Select a subject</option>
               <option>General Enquiry</option>
               <option>Article / Video Submission</option>
@@ -314,10 +316,10 @@
             </select>
           </div>
           <div>
-            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Message *</label>
-            <textarea name="message" required rows="5" placeholder="Tell us how we can help..." style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:#0B0D17;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;resize:vertical;"></textarea>
+            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#7A2828;margin-bottom:0.35rem;font-family:'Jost',sans-serif;">Message *</label>
+            <textarea name="message" required rows="5" placeholder="Tell us how we can help..." style="width:100%;background:white;border:1px solid rgba(74,24,24,0.2);color:#2C0F0F;padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:0.92rem;border-radius:2px;outline:none;resize:vertical;"></textarea>
           </div>
-          <button type="submit" id="contact-btn" style="background:#E8A020;color:white;padding:0.9rem 2rem;font-family:'Philosopher',serif;font-size:0.88rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;border:none;border-radius:2px;cursor:pointer;transition:background 0.2s;">Send Message &rarr;</button>
+          <button type="submit" id="contact-btn" style="background:#4A1818;color:white;padding:0.9rem 2rem;font-family:'Jost',sans-serif;font-size:0.88rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;border:none;border-radius:2px;cursor:pointer;transition:background 0.2s;">Send Message â†’</button>
         </form>
         <script>
         async function handleContact(e) {
@@ -345,7 +347,7 @@
             status.style.background = 'rgba(22,101,52,0.08)';
             status.style.border = '1px solid rgba(22,101,52,0.3)';
             status.style.color = '#166534';
-            status.textContent = 'âœ… Message sent! We will get back to you within 2&ldquo;3 working days.';
+            status.textContent = 'âœ… Message sent! We will get back to you within 2â€“3 working days.';
             e.target.reset();
           } catch(err) {
             status.style.display = 'block';
@@ -354,7 +356,7 @@
             status.style.color = '#991B1B';
             status.textContent = 'âŒ Could not send. Please email us at suprabhaind@gmail.com directly.';
           }
-          btn.textContent = 'Send Message &rarr;'; btn.disabled = false;
+          btn.textContent = 'Send Message â†’'; btn.disabled = false;
         }
         </script>
       </div>
@@ -364,60 +366,57 @@
 </div><!-- /page-contact -->
 
 </main>
-<footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
+<footer style="background:#2C0F0F;padding:4rem 2rem 2rem;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;">
+    <div>
       <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
-        <svg viewBox="0 0 680 520" class="footer-logo-svg"><use href="#suprabha-logo"/></svg>
+        <svg style="width:48px;height:48px;"><use href="#suprabha-logo"/></svg>
         <div>
-          <div class="footer-brand-name">Suprabha Trust</div>
-          <div class="mpt-logo-sub">Mystic Sciences of Ancient India &middot; Est. 2006</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:#B8860B;">Suprabha Trust</div>
+          <div style="font-size:0.58rem;color:rgba(255,252,244,0.35);font-family:'Jost',sans-serif;letter-spacing:0.15em;text-transform:uppercase;">Mystic Sciences of Ancient India</div>
         </div>
       </div>
-      <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
-      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
+      <p style="font-size:0.9rem;color:rgba(255,252,244,0.5);line-height:1.8;max-width:280px;">Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
+      <p style="font-size:0.75rem;color:rgba(255,252,244,0.25);margin-top:0.75rem;font-family:'Jost',sans-serif;">Established 2010 · Registered 2016 — 176/IU/2016</p>
     </div>
-    <div class="footer-col">
-      <h4>About</h4>
-      <ul>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="aspects.html">Sanatana Dharma</a></li>
-        <li><a href="impact.html">Impact Areas</a></li>
-        <li><a href="partnership.html">Partnerships</a></li>
+    <div>
+      <h4 style="font-family:'Jost',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#B8860B;margin-bottom:1rem;">About</h4>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+        <li><a onclick="mptShow('about')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Our Story</a></li>
+        <li><a onclick="mptShow('aspects')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Sanatana Dharma</a></li>
+        <li><a onclick="mptShow('impact')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Impact Areas</a></li>
+        <li><a onclick="mptShow('partnership')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Partnerships</a></li>
       </ul>
     </div>
-    <div class="footer-col">
-      <h4>Knowledge</h4>
-      <ul>
-        <li><a href="knowledge.html">Knowledge Bank</a></li>
-        <li><a href="lifesciences.html">Life Sciences</a></li>
-        <li><a href="vedicsciences.html">Vedic Sciences</a></li>
-        <li><a href="metaphysics.html">Meta-Physics</a></li>
-        <li><a href="articles.html">Submit Article</a></li>
-        <li><a href="videos.html">Submit Video</a></li>
+    <div>
+      <h4 style="font-family:'Jost',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#B8860B;margin-bottom:1rem;">Knowledge</h4>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+        <li><a onclick="mptShow('knowledge')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Knowledge Bank</a></li>
+        <li><a onclick="mptShow('lifesciences')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Life Sciences</a></li>
+        <li><a onclick="mptShow('vedicsciences')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Vedic Sciences</a></li>
+        <li><a onclick="mptShow('metaphysics')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Meta-Physics</a></li>
+        <li><a onclick="mptShow('articles')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Submit Article</a></li>
+        <li><a onclick="mptShow('videos')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Submit Video</a></li>
       </ul>
     </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="renewable.html">Renewable Energy</a></li>
-        <li><a href="programs.html">Programs</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+    <div>
+      <h4 style="font-family:'Jost',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#B8860B;margin-bottom:1rem;">Connect</h4>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+        <li><a onclick="mptShow('renewable')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Renewable Energy</a></li>
+        <li><a onclick="mptShow('programs')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Programs</a></li>
+        <li><a onclick="mptShow('donate')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Donate</a></li>
+        <li><a onclick="mptShow('contact')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Contact Us</a></li>
       </ul>
-      <div class="footer-contact">
-        <p>info@suprabha-trust.in<br>+91 98494 46409<br>www.suprabha-trust.in</p>
+      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(184,134,11,0.12);">
+        <p style="font-size:0.72rem;color:rgba(255,252,244,0.35);font-family:'Jost',sans-serif;line-height:1.6;">info@suprabha-trust.in<br>+91 98494 46409<br>www.suprabha-trust.in</p>
       </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2026 Suprabha Trust. All rights reserved. · Reg. 176/IU/2016 · Hyderabad, India</p>
-    <p>www.suprabha-trust.in</p>
+  <div style="max-width:1100px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(184,134,11,0.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+    <p style="font-size:0.82rem;color:rgba(255,252,244,0.25);font-family:'Jost',sans-serif;">© 2026 Suprabha Trust. All rights reserved. · Reg. 176/IU/2016 · Hyderabad, India</p>
+    <p style="font-size:0.78rem;color:rgba(184,134,11,0.4);font-family:'Jost',sans-serif;">www.suprabha-trust.in</p>
   </div>
 </footer>
 
 </body>
 </html>
-
-
-

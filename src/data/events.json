@@ -1,0 +1,12 @@
+[
+  {
+    "id": "evt-001",
+    "title": "Annual Vedic Heritage Conference",
+    "date": "2026-08-15",
+    "time": "10:00 AM - 05:00 PM",
+    "location": "Suprabha Trust Center, Hyderabad",
+    "description": "A comprehensive symposium on preserving the mystic sciences of ancient India.",
+    "image": "assets/img/events/conference.webp",
+    "registration_link": "/contact.html"
+  }
+]

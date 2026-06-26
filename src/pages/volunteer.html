@@ -1,0 +1,110 @@
+<!-- INCLUDE header -->
+<!-- INCLUDE sidebar -->
+<!-- SET_TITLE: Volunteer | Suprabha Trust -->
+<!-- SET_DESC: Join us in preserving the mystic sciences of Ancient India. Volunteer today. -->
+
+<main id="spt-main">
+<div class="mpt-page-badge">
+  <span class="mpt-badge-icon">🤝</span>
+  <div style="flex:1;">
+    <div class="mpt-badge-name">Suprabha Trust — Volunteer</div>
+    <div class="mpt-badge-desc">Join our mission to preserve the mystic sciences.</div>
+  </div>
+</div>
+
+<section class="contact" id="volunteer">
+  <div class="container">
+    <div class="section-eyebrow">Become a Volunteer</div>
+    <h2 class="section-title">Join Our Mission</h2>
+    <div class="gold-line"></div>
+    <div class="contact-layout">
+      
+      <div class="contact-info">
+        <h3>Why Volunteer?</h3>
+        <p class="section-desc" style="color:rgba(255,240,232,0.85); font-size:1.1rem; margin-bottom:2rem;">
+          By volunteering with Suprabha Trust, you become a guardian of India's ancient wisdom. We need dedicated individuals to help organize events, manage digital content, and participate in community outreach.
+        </p>
+        <div class="contact-detail">
+          <strong>Commitment</strong>
+          <p>Flexible hours (Online & Offline opportunities)</p>
+        </div>
+        <div class="contact-detail">
+          <strong>Benefits</strong>
+          <p>Learn directly from traditional scholars, gain certificates of appreciation, and build a network of like-minded individuals.</p>
+        </div>
+      </div>
+
+      <form action="/submit-volunteer" method="POST" class="contact-form" id="volunteer-form" onsubmit="return validateVolunteerForm(event)">
+        <!-- Honeypot for Spam Protection -->
+        <div style="display:none;">
+          <label>Leave this empty: <input type="text" name="honeypot" id="honeypot"></label>
+        </div>
+        
+        <div class="field">
+          <label for="v-name">Full Name *</label>
+          <input type="text" id="v-name" name="name" required placeholder="Enter your full name">
+        </div>
+        <div class="field">
+          <label for="v-email">Email Address *</label>
+          <input type="email" id="v-email" name="email" required placeholder="Enter your email address">
+        </div>
+        <div class="field">
+          <label for="v-phone">Phone Number *</label>
+          <input type="tel" id="v-phone" name="phone" required pattern="[0-9]{10,15}" title="Please enter a valid phone number" placeholder="e.g. 9876543210">
+        </div>
+        <div class="field">
+          <label for="v-interest">Area of Interest *</label>
+          <select id="v-interest" name="interest" required>
+            <option value="">Select an area...</option>
+            <option value="event_management">Event Management</option>
+            <option value="content_creation">Content Creation & Translation</option>
+            <option value="social_media">Social Media & Outreach</option>
+            <option value="field_work">Field Work & Documentation</option>
+            <option value="general">General Volunteering</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="v-message">Why do you want to join? (Optional)</label>
+          <textarea id="v-message" name="message" placeholder="Briefly describe your motivation..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%; margin-top:1rem; cursor:pointer;">Submit Application</button>
+        <div id="form-feedback" style="margin-top:1rem; font-size:0.95rem; display:none;"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+function validateVolunteerForm(e) {
+  e.preventDefault();
+  const honeypot = document.getElementById('honeypot').value;
+  const feedback = document.getElementById('form-feedback');
+  
+  if(honeypot !== "") {
+    feedback.style.color = 'red';
+    feedback.innerText = 'Spam detected. Request denied.';
+    feedback.style.display = 'block';
+    return false;
+  }
+  
+  const phone = document.getElementById('v-phone').value;
+  const phoneRegex = /^[0-9]{10,15}$/;
+  if(!phoneRegex.test(phone)) {
+    feedback.style.color = '#E8C860';
+    feedback.innerText = 'Please enter a valid phone number (10-15 digits).';
+    feedback.style.display = 'block';
+    return false;
+  }
+  
+  // Simulate successful submission
+  feedback.style.color = '#B8860B';
+  feedback.innerText = 'Thank you! Your application has been submitted successfully.';
+  feedback.style.display = 'block';
+  document.getElementById('volunteer-form').reset();
+  
+  return true;
+}
+</script>
+
+<!-- INCLUDE footer -->

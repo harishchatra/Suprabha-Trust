@@ -1,0 +1,1 @@
+{"schema":{"name":"string","pan":"string","amount":"number","upi_ref":"string","date":"date"}}
