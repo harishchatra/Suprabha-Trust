@@ -73,7 +73,7 @@ foreach ($page in $pages) {
     
     # Fix paths in included components if we are in a subdirectory
     if ($depth -gt 0) {
-        $content = $content -replace 'href="(?!(http|#|mailto:|tel:|/))([^"]+)"', "href=`"$prefix`$2`""
+        $content = $content -replace 'href="(?!(http|#|mailto:|tel:|data:|/))([^"]+)"', "href=`"$prefix`$2`""
         $content = $content -replace 'src="(?!(http|data:|/))([^"]+)"', "src=`"$prefix`$2`""
     }
     

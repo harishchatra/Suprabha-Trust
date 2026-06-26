@@ -1,7 +1,7 @@
 $sourceHtml = Get-Content "C:\Users\DELL\Downloads\suprabha-trust (14).html" -Raw
 
 # We need to extract each <div class="kb-overlay" id="kb-..."> ... </div>
-$regex = '(?s)<div class="kb-overlay" id="kb-(.*?)">.*?<div class="kb-modal-header">(.*?)</div>.*?<div class="kb-modal-body">(.*?)<button class="kb-close-btn".*?</div>'
+$regex = '(?s)<div class="kb-overlay" id="kb-(.*?)">.*?<div class="kb-modal-header">(.*?)<div class="kb-modal-body">(.*?)<button class="kb-close-btn".*?</div>'
 
 $matches = [regex]::Matches($sourceHtml, $regex)
 
@@ -11,19 +11,20 @@ foreach ($match in $matches) {
     $bodyHtml = $match.Groups[3].Value
 
     # Extract title from header
-    $titleRegex = '<p style="font-family: ''Cormorant Garamond''.*?>(.*?)</p>'
+    # Extract title from header
+    $titleRegex = '(?s)<p[^>]*font-family:\s*''Cormorant Garamond''[^>]*font-size:\s*2\.4rem[^>]*>(.*?)</p>'
     $titleMatch = [regex]::Match($headerHtml, $titleRegex)
     $title = "Untitled Article"
     if ($titleMatch.Success) {
-        $title = $titleMatch.Groups[1].Value
+        $title = $titleMatch.Groups[1].Value.Trim() -replace '\s+', ' '
     }
 
     # Extract meta from header
-    $metaRegex = '<p style="font-size: 1\.02rem.*?>(.*?)</p>'
+    $metaRegex = '(?s)<p[^>]*font-size:\s*1\.02rem[^>]*>(.*?)</p>'
     $metaMatch = [regex]::Match($headerHtml, $metaRegex)
     $meta = ""
     if ($metaMatch.Success) {
-        $meta = $metaMatch.Groups[1].Value
+        $meta = $metaMatch.Groups[1].Value.Trim() -replace '\s+', ' '
     }
     
     # Extract badges
