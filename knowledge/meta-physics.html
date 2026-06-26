@@ -15,12 +15,13 @@
 <meta name="canonical" content="https://www.suprabha-trust.in">
 <link rel="canonical" href="https://www.suprabha-trust.in">
 <!-- Favicon — gold OM symbol on maroon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%232C0F0F'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23B8860B' font-family='serif'>ॐ</text></svg>">
-<meta name="theme-color" content="#2C0F0F">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230B0D17'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23E8A020' font-family='serif'>ॐ</text></svg>">
+<meta name="theme-color" content="#0B0D17">
 <meta name="apple-mobile-web-app-title" content="Suprabha Trust">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
+<script defer src="../assets/js/main.js"></script>
 </head>
 <body>
 
@@ -116,7 +117,6 @@
      Pattern: Deep Maroon + Antique Gold + Parchment
      Layout:  Fixed topbar + Full-width numbered tab strip
 ═══════════════════════════════════════════ -->
-<link rel="stylesheet" href="../assets/css/main.css">
 
 <!-- ═══ TOP BAR ═══ -->
 <div id="mpt-topbar">
@@ -124,7 +124,7 @@
     <span></span><span></span><span></span>
   </button>
   <div id="mpt-logo" href="../index.html" style="cursor:pointer;">
-    <svg><use href="#suprabha-logo"/></svg>
+    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
     <div>
       <div class="mpt-logo-name">Suprabha Trust</div>
       <span class="mpt-logo-tag">Mystic Sciences of Ancient India · Est. 2006</span>
@@ -144,7 +144,6 @@
   <a class="mpt-tab" data-pid="metaphysics" href="../metaphysics.html"><div class="mpt-tab-icon">◒</div><div class="mpt-tab-label">Meta-Physics</div></a>
   <a class="mpt-tab" data-pid="articles" href="../articles.html"><div class="mpt-tab-icon">✎</div><div class="mpt-tab-label">Articles</div></a>
   <a class="mpt-tab" data-pid="videos" href="../videos.html"><div class="mpt-tab-icon">▶</div><div class="mpt-tab-label">Videos</div></a>
-  <a class="mpt-tab" data-pid="renewable" href="../renewable.html"><div class="mpt-tab-icon">⚡</div><div class="mpt-tab-label">Renewable</div></a>
   <a class="mpt-tab" data-pid="impact" href="../impact.html"><div class="mpt-tab-icon">◆</div><div class="mpt-tab-label">Impact</div></a>
   <a class="mpt-tab" data-pid="partnership" href="../partnership.html"><div class="mpt-tab-icon">◇</div><div class="mpt-tab-label">Partners</div></a>
   <a class="mpt-tab" data-pid="programs" href="../programs.html"><div class="mpt-tab-icon">◈</div><div class="mpt-tab-label">Programs</div></a>
@@ -164,7 +163,7 @@
 <!-- ═══ SIDEBAR ═══ -->
 <div id="mpt-sidebar">
   <div class="mpt-sidebar-header">
-    <svg><use href="#suprabha-logo"/></svg>
+    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
     <div>
       <div class="mpt-sb-name">Suprabha Trust</div>
       <span class="mpt-sb-tag">Mystic Sciences · Est. 2006</span>
@@ -184,17 +183,21 @@
     <a class="mpt-sb-link" data-pid="articles" href="../articles.html">    ✎ Submit Article</a>
     <a class="mpt-sb-link" data-pid="videos" href="../videos.html">      ▶ Submit Video</a>
     <span class="mpt-sb-section">Initiatives</span>
-    <a class="mpt-sb-link" data-pid="renewable" href="../renewable.html">   ⚡ Renewable Energy</a>
     <a class="mpt-sb-link" data-pid="impact" href="../impact.html">      ◆ Impact Areas</a>
     <a class="mpt-sb-link" data-pid="partnership" href="../partnership.html"> ◇ Partnerships</a>
     <a class="mpt-sb-link" data-pid="programs" href="../programs.html">    ◈ Programs</a>
     <span class="mpt-sb-section">Connect</span>
     <a class="mpt-sb-link" data-pid="contact" href="../contact.html">     ✉ Contact</a>
   </nav>
-  <a class="mpt-sb-donate" onclick="mptShow('donate')">🙏 &nbsp;14 — Donate Now</a>
+  <a class="mpt-sb-donate" href="../donate.html">🙏 &nbsp;14 — Donate Now</a>
 </div>
 
 
+
+
+
+
+<main id="spt-main">
 
 
 
@@ -267,58 +270,63 @@
     </div>
   </article>
 </main>
-<footer style="background:#2C0F0F;padding:4rem 2rem 2rem;">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;">
-    <div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
       <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
-        <svg style="width:48px;height:48px;"><use href="#suprabha-logo"/></svg>
+        <svg viewBox="0 0 680 520" class="footer-logo-svg"><use href="#suprabha-logo"/></svg>
         <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:#B8860B;">Suprabha Trust</div>
-          <div style="font-size:0.58rem;color:rgba(255,252,244,0.35);font-family:'Jost',sans-serif;letter-spacing:0.15em;text-transform:uppercase;">Mystic Sciences of Ancient India</div>
+          <div class="footer-brand-name">Suprabha Trust</div>
+          <div class="mpt-logo-sub">Mystic Sciences of Ancient India &middot; Est. 2006</div>
         </div>
       </div>
-      <p style="font-size:0.9rem;color:rgba(255,252,244,0.5);line-height:1.8;max-width:280px;">Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
-      <p style="font-size:0.75rem;color:rgba(255,252,244,0.25);margin-top:0.75rem;font-family:'Jost',sans-serif;">Established 2010 · Registered 2016 — 176/IU/2016</p>
+      <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
+      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
     </div>
-    <div>
-      <h4 style="font-family:'Jost',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#B8860B;margin-bottom:1rem;">About</h4>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-        <li><a onclick="mptShow('about')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Our Story</a></li>
-        <li><a onclick="mptShow('aspects')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Sanatana Dharma</a></li>
-        <li><a onclick="mptShow('impact')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Impact Areas</a></li>
-        <li><a onclick="mptShow('partnership')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Partnerships</a></li>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="../about.html">Our Story</a></li>
+        <li><a href="../aspects.html">Sanatana Dharma</a></li>
+        <li><a href="../impact.html">Impact Areas</a></li>
+        <li><a href="../partnership.html">Partnerships</a></li>
       </ul>
     </div>
-    <div>
-      <h4 style="font-family:'Jost',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#B8860B;margin-bottom:1rem;">Knowledge</h4>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-        <li><a onclick="mptShow('knowledge')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Knowledge Bank</a></li>
-        <li><a onclick="mptShow('lifesciences')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Life Sciences</a></li>
-        <li><a onclick="mptShow('vedicsciences')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Vedic Sciences</a></li>
-        <li><a onclick="mptShow('metaphysics')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Meta-Physics</a></li>
-        <li><a onclick="mptShow('articles')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Submit Article</a></li>
-        <li><a onclick="mptShow('videos')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Submit Video</a></li>
+    <div class="footer-col">
+      <h4>Knowledge</h4>
+      <ul>
+        <li><a href="../knowledge.html">Knowledge Bank</a></li>
+        <li><a href="../lifesciences.html">Life Sciences</a></li>
+        <li><a href="../vedicsciences.html">Vedic Sciences</a></li>
+        <li><a href="../metaphysics.html">Meta-Physics</a></li>
+        <li><a href="../articles.html">Submit Article</a></li>
+        <li><a href="../videos.html">Submit Video</a></li>
       </ul>
     </div>
-    <div>
-      <h4 style="font-family:'Jost',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#B8860B;margin-bottom:1rem;">Connect</h4>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-        <li><a onclick="mptShow('renewable')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Renewable Energy</a></li>
-        <li><a onclick="mptShow('programs')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Programs</a></li>
-        <li><a onclick="mptShow('donate')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Donate</a></li>
-        <li><a onclick="mptShow('contact')" style="font-size:0.88rem;color:rgba(255,252,244,0.5);cursor:pointer;text-decoration:none;" onmouseover="this.style.color='#B8860B'" onmouseout="this.style.color='rgba(255,252,244,0.5)'">Contact Us</a></li>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="../renewable.html">Renewable Energy</a></li>
+        <li><a href="../programs.html">Programs</a></li>
+        <li><a href="../donate.html">Donate</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
       </ul>
-      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(184,134,11,0.12);">
-        <p style="font-size:0.72rem;color:rgba(255,252,244,0.35);font-family:'Jost',sans-serif;line-height:1.6;">info@suprabha-trust.in<br>+91 98494 46409<br>www.suprabha-trust.in</p>
+      <div class="footer-contact">
+        <p>info@suprabha-trust.in<br>+91 98494 46409<br>www.suprabha-trust.in</p>
       </div>
     </div>
   </div>
-  <div style="max-width:1100px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(184,134,11,0.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
-    <p style="font-size:0.82rem;color:rgba(255,252,244,0.25);font-family:'Jost',sans-serif;">© 2026 Suprabha Trust. All rights reserved. · Reg. 176/IU/2016 · Hyderabad, India</p>
-    <p style="font-size:0.78rem;color:rgba(184,134,11,0.4);font-family:'Jost',sans-serif;">www.suprabha-trust.in</p>
+  <div class="footer-bottom">
+    <p>© 2026 Suprabha Trust. All rights reserved. · Reg. 176/IU/2016 · Hyderabad, India</p>
+    <p>www.suprabha-trust.in</p>
   </div>
 </footer>
 
 </body>
 </html>
+
+
+
+
 
