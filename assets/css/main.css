@@ -1,4 +1,4 @@
-﻿/* ═══════════════════════════════════════════════════════
+/* ═══════════════════════════════════════════════════════
    SUPRABHA TRUST — MAIN STYLESHEET
    Design: Cosmic Mystic · Midnight Blue · Gold · Glassmorphism
    Phase 4 Visual Identity · mpt-* Navigation System
@@ -684,34 +684,34 @@ section { padding: 6rem 2rem; position: relative; background: var(--color-bg); }
 }
 
 .cat-pill {
-  padding: 10px 24px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  background: rgba(21,25,43,0.4);
-  border: var(--glass-border);
-  border-radius: var(--radius-lg);
-  color: var(--color-muted);
+  padding: 0.6rem 1.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  font-family: var(--font-body);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 .cat-pill:hover {
-  background: rgba(232,160,32,0.1);
-  border-color: rgba(232,160,32,0.3);
-  color: var(--color-text);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #FFF;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
 }
+
 .cat-pill.active {
-  background: var(--gradient-primary);
-  border-color: transparent;
-  color: var(--color-deep);
-  box-shadow: var(--shadow-glow);
-  font-weight: 600;
+  background: rgba(232, 160, 32, 0.15);
+  border-color: rgba(232, 160, 32, 0.5);
+  color: #E8A020;
+  box-shadow: 0 0 20px rgba(232, 160, 32, 0.2);
 }
 
 /* Knowledge Bank full-page grid */
