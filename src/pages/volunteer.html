@@ -1,8 +1,6 @@
-<!-- INCLUDE header -->
+﻿<!-- INCLUDE header -->
 <!-- INCLUDE sidebar -->
-<!-- SET_TITLE: Volunteer | Suprabha Trust -->
-<!-- SET_DESC: Join us in preserving the mystic sciences of Ancient India. Volunteer today. -->
-
+<!-- SET_TITLE: Volunteer | Suprabha Trust | Suprabha Trust -->
 <main id="spt-main">
 <div class="mpt-page-badge">
   <span class="mpt-badge-icon">🤝</span>
@@ -74,37 +72,4 @@
   </div>
 </section>
 </main>
-
-<script>
-function validateVolunteerForm(e) {
-  e.preventDefault();
-  const honeypot = document.getElementById('honeypot').value;
-  const feedback = document.getElementById('form-feedback');
-  
-  if(honeypot !== "") {
-    feedback.style.color = 'red';
-    feedback.innerText = 'Spam detected. Request denied.';
-    feedback.style.display = 'block';
-    return false;
-  }
-  
-  const phone = document.getElementById('v-phone').value;
-  const phoneRegex = /^[0-9]{10,15}$/;
-  if(!phoneRegex.test(phone)) {
-    feedback.style.color = '#E8C860';
-    feedback.innerText = 'Please enter a valid phone number (10-15 digits).';
-    feedback.style.display = 'block';
-    return false;
-  }
-  
-  // Simulate successful submission
-  feedback.style.color = '#B8860B';
-  feedback.innerText = 'Thank you! Your application has been submitted successfully.';
-  feedback.style.display = 'block';
-  document.getElementById('volunteer-form').reset();
-  
-  return true;
-}
-</script>
-
 <!-- INCLUDE footer -->

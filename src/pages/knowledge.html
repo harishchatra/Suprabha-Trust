@@ -1,6 +1,6 @@
 <!-- INCLUDE header -->
 <!-- INCLUDE sidebar -->
-<!-- SET_TITLE: knowledge | Suprabha Trust -->
+<!-- SET_TITLE: Knowledge | Suprabha Trust | Suprabha Trust -->
 <main id="spt-main">
 <div class="mpt-page-badge">
   <span class="mpt-badge-icon">◉</span>
@@ -14,7 +14,7 @@
 <!-- Knowledge Bank — Ancient India Image Strip -->
 <div style="display:flex;gap:4px;height:140px;overflow:hidden;">
   <div style="flex:1.8;position:relative;overflow:hidden;background:#2C0F0F;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Rigveda_MS2097.jpg/640px-Rigveda_MS2097.jpg"
+    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Rigveda_MS2097.jpg/640px-Rigveda_MS2097.jpg"
       alt="Rigveda Sanskrit Manuscript" loading="lazy"
       style="width:100%;height:100%;object-fit:cover;">
     <div style="position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(26,8,8,0.6));"></div>
@@ -23,28 +23,28 @@
     </div>
   </div>
   <div style="flex:1;position:relative;overflow:hidden;background:#2C0F0F;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nataraja_at_CERN.jpg/480px-Nataraja_at_CERN.jpg"
+    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nataraja_at_CERN.jpg/480px-Nataraja_at_CERN.jpg"
       alt="Nataraja CERN" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
     <div style="position:absolute;bottom:0.5rem;left:0.75rem;">
       <p style="font-size:0.62rem;color:#D4A017;font-family:'Jost',sans-serif;">Nataraj · Cosmic Science</p>
     </div>
   </div>
   <div style="flex:1;position:relative;overflow:hidden;background:#2C0F0F;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jantar_Mantar_Jaipur_March_2004.jpg/480px-Jantar_Mantar_Jaipur_March_2004.jpg"
+    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jantar_Mantar_Jaipur_March_2004.jpg/480px-Jantar_Mantar_Jaipur_March_2004.jpg"
       alt="Jantar Mantar" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
     <div style="position:absolute;bottom:0.5rem;left:0.75rem;">
       <p style="font-size:0.62rem;color:#D4A017;font-family:'Jost',sans-serif;">Vedic Astronomy</p>
     </div>
   </div>
   <div style="flex:1;position:relative;overflow:hidden;background:#2C0F0F;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ellora_cave_16.jpg/480px-Ellora_cave_16.jpg"
+    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ellora_cave_16.jpg/480px-Ellora_cave_16.jpg"
       alt="Ellora Caves" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
     <div style="position:absolute;bottom:0.5rem;left:0.75rem;">
       <p style="font-size:0.62rem;color:#D4A017;font-family:'Jost',sans-serif;">Rock-cut Heritage</p>
     </div>
   </div>
   <div style="flex:1;position:relative;overflow:hidden;background:#2C0F0F;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Brihadeeswarar_Temple_2.jpg/480px-Brihadeeswarar_Temple_2.jpg"
+    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Brihadeeswarar_Temple_2.jpg/480px-Brihadeeswarar_Temple_2.jpg"
       alt="Brihadeeswarar Temple" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
     <div style="position:absolute;bottom:0.5rem;left:0.75rem;">
       <p style="font-size:0.62rem;color:#D4A017;font-family:'Jost',sans-serif;">Temple Architecture</p>
@@ -59,6 +59,17 @@
     <div class="gold-line"></div>
     <p class="section-desc" style="margin-bottom: 3rem;">Browse our collection of articles, research, and insights on India's traditional and cultural sciences — organized by discipline. Click any article to read it in full.</p>
 
+    <!-- Search -->
+    <div style="margin-bottom: 1.5rem; position: relative;">
+      <input id="kb-search" type="search" placeholder="Search articles�" oninput="searchKB(this.value)"
+        style="width:100%;box-sizing:border-box;padding:0.75rem 1rem 0.75rem 2.75rem;background:rgba(255,252,244,0.06);border:1px solid rgba(184,134,11,0.25);border-radius:3px;color:#F5F0E8;font-family:'Jost',sans-serif;font-size:0.92rem;outline:none;transition:border-color 0.2s;"
+        onfocus="this.style.borderColor='#B8860B'" onblur="this.style.borderColor='rgba(184,134,11,0.25)'">
+      <svg style="position:absolute;left:0.85rem;top:50%;transform:translateY(-50%);opacity:0.4;pointer-events:none;" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <circle cx="6.5" cy="6.5" r="5" stroke="#F5F0E8" stroke-width="1.5"/>
+        <path d="M10.5 10.5L14 14" stroke="#F5F0E8" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
     <!-- Category filter pills -->
     <div class="categories" style="margin-bottom: 3rem;">
       <button class="cat-pill active" onclick="filterKB('all', this)">All Categories</button>
@@ -69,7 +80,7 @@
       <button class="cat-pill" onclick="filterKB('sanatana', this)">Sanatana Dharma</button>
       <button class="cat-pill" onclick="filterKB('life', this)">Life Sciences</button>
       <button class="cat-pill" onclick="filterKB('meta', this)">Meta-Physics</button>
-      <button class="cat-pill" onclick="filterKB('tantra', this)">Tantra, Mantra & Yatra</button>
+      <button class="cat-pill" onclick="filterKB('tantra', this)">Tantra, Mantra & Yantra</button>
     </div>
 
     <style>
@@ -124,7 +135,7 @@
             <p class="kb-meta">Suprabha Trust Research Team &nbsp;·&nbsp; Vedic Sciences Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">46 topics · 4 Vedas · 6 Darshanas · 27 Nakshatras</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/vedic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -144,7 +155,7 @@
             <p class="kb-meta">Suprabha Trust Research Team &nbsp;·&nbsp; Life Sciences Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">18 Models · 7 Chakras · 9 Planets · 16 Samskaras</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/humanistic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -163,7 +174,7 @@
             <p class="kb-meta">Suprabha Trust Research Team &nbsp;·&nbsp; Mystic Sciences Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">3 Planes · Matter → Form → Consciousness</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/meta-physics.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -182,12 +193,12 @@
             <p class="kb-meta">Suprabha Trust Editorial Team &nbsp;·&nbsp; Indian Life Sciences Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">Rigveda · Sankhya · Yoga · Cognitive Science</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/vedic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
       <!-- CARD 5: Ancient Indian Scientific Heritage / ILS Meta-Physics PPT -->
-      <div class="kb-card" data-cats="meta vedic humanistic sanatana" onclick="window.location.href='knowledge/ils-meta-physics.html'">
+      <div class="kb-card" data-cats="meta vedic humanistic sanatana tantra" onclick="window.location.href='knowledge/ils-meta-physics.html'">
         <div class="kb-card-top">
           <div>
             <span class="kb-cat-badge" style="background: rgba(184,134,11,0.18); color: #E8C860; border: 1px solid rgba(184,134,11,0.3);">Meta-Physics</span>
@@ -202,7 +213,7 @@
             <p class="kb-meta">Suprabha Trust &nbsp;·&nbsp; ILS Meta-Physics Presentation Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">12 topics · Tantra · Yantra · Mantra · Ayurveda · Astrology</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/tantra-mantra-yantra.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -221,7 +232,7 @@
             <p class="kb-meta">Suprabha Trust &nbsp;·&nbsp; Humanistic Sciences Presentation Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">11 slides · Geometry · Frequency · Bio-field · Cosmic cycles</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/humanistic-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -241,7 +252,7 @@
             <p class="kb-meta">Suprabha Trust &nbsp;·&nbsp; Indian Life Sciences Documentary Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">17 slides · 13 subjects · 4 perspectives · Pancha Bhuthas</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/life-sciences.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -260,7 +271,7 @@
             <p class="kb-meta">Dr Sujata Vaidya &nbsp;·&nbsp; Bio Field Sciences Research &nbsp;·&nbsp; drsujatavaidya.com</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">43 slides · Kirlian · PIP · Chakras · Aura · Energy Healing</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/biofield.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -280,7 +291,7 @@
             <p class="kb-meta">Harish &nbsp;·&nbsp; Suprabha Trust &nbsp;·&nbsp; Sanatana Dharma Series</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">15 slides · Dharma · Karma · Aura · Moksha · Cosmic Constitution</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/sanatan-dharma.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -300,7 +311,7 @@
             <p class="kb-meta">Harish &nbsp;·&nbsp; Sanatana Dharma Research &nbsp;·&nbsp; Suprabha Trust</p>
             <p class="kb-meta" style="margin-top: 0.2rem;">15 slides · Aura · Karma · Dharma · Moksha · Universal Constitution</p>
           </div>
-          <span class="kb-read">Read →</span>
+          <a href="knowledge/sanatan-dharma.html" class="kb-read" onclick="event.stopPropagation()">Read →</a>
         </div>
       </div>
 
@@ -1272,6 +1283,8 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function filterKB(cat, btn) {
+  const si = document.getElementById('kb-search');
+  if (si) si.value = '';
   document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('.kb-card').forEach(card => {
@@ -1282,6 +1295,17 @@ function filterKB(cat, btn) {
       if (cats.includes(cat)) card.removeAttribute('data-hidden');
       else card.setAttribute('data-hidden', 'true');
     }
+  });
+}
+function searchKB(q) {
+  const term = q.trim().toLowerCase();
+  document.querySelectorAll('.cat-pill').forEach((p, i) => p.classList.toggle('active', i === 0));
+  document.querySelectorAll('.kb-card').forEach(card => {
+    if (!term) { card.removeAttribute('data-hidden'); return; }
+    const title = (card.querySelector('.kb-title')?.textContent || '').toLowerCase();
+    const excerpt = (card.querySelector('.kb-excerpt')?.textContent || '').toLowerCase();
+    if (title.includes(term) || excerpt.includes(term)) card.removeAttribute('data-hidden');
+    else card.setAttribute('data-hidden', 'true');
   });
 }
 function openKB(id) {
@@ -1309,6 +1333,5 @@ document.querySelectorAll('.kb-overlay').forEach(ov => {
 
 </div><!-- /page-lifesciences -->
 <!-- LIFE SCIENCES -->
-
 </main>
 <!-- INCLUDE footer -->
