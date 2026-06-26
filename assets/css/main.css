@@ -1511,3 +1511,9 @@ footer {
   transform: translateY(0);
 }
 
+
+
+/*  FIX FIRST SECTION GAP ON SUBPAGES  */
+#spt-main > section:first-of-type:not(.hero) {
+  padding-top: 2.5rem !important;
+}
