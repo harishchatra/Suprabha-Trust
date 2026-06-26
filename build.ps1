@@ -73,14 +73,14 @@ foreach ($page in $pages) {
     
     # Fix paths in included components if we are in a subdirectory
     if ($depth -gt 0) {
-        $content = $content -replace 'href="(?!(http|#|mailto:|tel:|data:|/|\.\./))([^"]+)"', "href=`"$prefix`$2`""
-        $content = $content -replace 'src="(?!(http|data:|/|\.\./))([^"]+)"', "src=`"$prefix`$2`""
+        $content = $content -replace 'href="(?!(http|#|mailto:|tel:|data:|/))([^"]+)"', "href=`"$prefix`$2`""
+        $content = $content -replace 'src="(?!(http|data:|/))([^"]+)"', "src=`"$prefix`$2`""
     }
     
     # Active class logic: replace the class string for the current page
     $pageName = $page.BaseName
-    $content = $content.Replace("class=`"mpt-tab`" data-pid=`"$pageName`"", "class=`"mpt-tab active`" data-pid=`"$pageName`"")
-    $content = $content.Replace("class=`"mpt-sb-link`" data-pid=`"$pageName`"", "class=`"mpt-sb-link active`" data-pid=`"$pageName`"")
+    $content = $content.Replace("data-pid=""$pageName"" class=""mpt-tab""", "data-pid=""$pageName"" class=""mpt-tab active""")
+    $content = $content.Replace("data-pid=""$pageName"" class=""mpt-sb-link""", "data-pid=""$pageName"" class=""mpt-sb-link active""")
     
     # Lazy loading optimization
     $content = $content -replace '(<img(?!.*?loading="lazy").*?>)', '$1' -replace '<img ', '<img loading="lazy" '
