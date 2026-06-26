@@ -144,7 +144,7 @@
     </div>
 
     <!-- Category filter pills -->
-    <div class="categories" style="margin-bottom: 3rem;">
+    <div class="categories" style="margin-bottom: 3.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
       <button class="cat-pill active" onclick="filterKB('all', this)">All Categories</button>
       <button class="cat-pill" onclick="filterKB('bio', this)">Bio Field Sciences</button>
       <button class="cat-pill" onclick="filterKB('humanistic', this)">Humanistic Sciences</button>
@@ -176,6 +176,7 @@
         flex-direction: column;
       }
       .kb-card:hover { border-color: rgba(232,160,32,0.4); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+      .kb-card[data-hidden="true"] { display: none !important; }
       
       .kb-card-top { padding: 2rem 2rem 1.5rem; flex: 1; overflow: hidden; display: flex; flex-direction: column; }
       .kb-cat-badge { display: inline-block; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #E8A020; font-family: system-ui, -apple-system, sans-serif; margin-bottom: 1.2rem; margin-right: 0.8rem; }
@@ -215,10 +216,7 @@
       <!-- CARD 1: Vedic Sciences -->
       <div class="kb-card" data-cats="vedic sanatana" onclick="window.location.href='knowledge/vedic-sciences.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Vedic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Sanatana Dharma</span>
-          </div>
+          
           <p class="kb-title">Sanatana Dharma & Vedic Sciences &mdash; The Cosmic Knowledge System</p>
           <p class="kb-excerpt">Sanatana Dharma and Vedic Sciences are age-old traditional cultures observed across Jambudweepa &mdash; developed by Rishis, Munis, Acharyas, and Sages who observed the patterns of the Universe and Nature. An elaborate illustration of energy, mathematics, algorithms, sciences, symbols, geometry, and frequencies forming the Ultimate Truth.</p>
         </div>
@@ -234,11 +232,7 @@
       <!-- CARD 2: Humanistic Sciences / Life Sciences -->
       <div class="kb-card" data-cats="humanistic life bio" onclick="window.location.href='knowledge/life-sciences.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Humanistic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Life Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.12); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.2);">Bio Field Sciences</span>
-          </div>
+          
           <p class="kb-title">Life Sciences &mdash; 18 Models of Human & Natural Systems</p>
           <p class="kb-excerpt">Humanistic sciences work to understand the workings of the human body with nature, society, and everyday activities. From the five Pancha Bhoothas and seven chakras to cellular intelligence, DNA, organ frequencies, Ayurveda, Navagrahas, Shastras, Sutras, and the 16 sacred Samskaras &mdash; an integrated framework of 18 models.</p>
         </div>
@@ -254,10 +248,7 @@
       <!-- CARD 3: Meta-Physics -->
       <div class="kb-card" data-cats="meta vedic sanatana" onclick="window.location.href='knowledge/meta-physics.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Meta-Physics</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Vedic Sciences</span>
-          </div>
+          
           <p class="kb-title">Meta-Physics &mdash; Ancient Indian Mystic Sciences</p>
           <p class="kb-excerpt">Ancient Indian history is mysterious and very different from the rest of the world. The physiology of the human being can be projected in Physical, Super-Physical, and Meta-Physical planes. This document practically demonstrates mystic sciences &mdash; Ayurveda, Astrology, Yoga, Vaasthu Shastra &mdash; through logical reasoning accessible to every common man.</p>
         </div>
@@ -273,10 +264,7 @@
       <!-- CARD 4: ILS / Vedic Sciences Broadcast -->
       <div class="kb-card" data-cats="vedic humanistic bio" onclick="window.location.href='knowledge/vedic-blueprint.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Vedic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Humanistic Sciences</span>
-          </div>
+          
           <p class="kb-title">Vedic Sciences &mdash; The Blueprint of Human & Natural Systems</p>
           <p class="kb-excerpt">What are Vedic sciences and how they apply to human and natural systems remains a great mystery yet to unfold. From the sound values of the Vedas and the chronology of Rigveda (prior to 3100 BCE) to the five elements, cellular function, Vedic cognitive science, and the mathematical magic of 9 &mdash; a comprehensive broadcast series exploration.</p>
         </div>
@@ -292,11 +280,7 @@
       <!-- CARD 5: Ancient Indian Scientific Heritage / ILS Meta-Physics PPT -->
       <div class="kb-card" data-cats="meta vedic humanistic sanatana tantra" onclick="window.location.href='knowledge/ils-meta-physics.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Meta-Physics</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Vedic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.12); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.2);">Humanistic Sciences</span>
-          </div>
+          
           <p class="kb-title">Ancient Indian Scientific Heritage &mdash; ILS Meta-Physics</p>
           <p class="kb-excerpt">Indian history is a science, not a myth. This illustrated presentation unveils the subtle scientific approach embedded in India's culture and traditions &mdash; covering Meta-Physics in Engineering, Tantra-Yantra-Mantra, Vedantas, Homa & Yagna frequencies, Astrology, Ayurvedic healing, and the metaphysics of God and Spirituality. Suprabha Trust's foundational ILS research series.</p>
         </div>
@@ -312,10 +296,7 @@
       <!-- CARD 7: Humanistic Energy Sciences PPT -->
       <div class="kb-card" data-cats="humanistic bio life" onclick="window.location.href='knowledge/humanistic-energy.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Humanistic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Bio Field Sciences</span>
-          </div>
+          
           <p class="kb-title">Humanistic Energy Sciences &mdash; Human, Nature & Cosmos</p>
           <p class="kb-excerpt">An exploration of energy sciences from a humanistic perspective &mdash; how every living and non-living form carries energy that interacts subtly with the cosmos. Covers the nine forms of human energy (Eyes, Nose, Touch, Taste, Hear, Speech, Gesture, Thought, Bio-fields), sacred geometry of the human body, the mathematics of cosmic cycles (21,600 &middot; 432 &middot; 108), cellular energy at 0.007V, and the role of frequency in health and consciousness.</p>
         </div>
@@ -331,11 +312,7 @@
       <!-- CARD 8: Indian Life Sciences Documentary -->
       <div class="kb-card" data-cats="life vedic humanistic ritual sanatana" onclick="window.location.href='knowledge/life-sciences-documentary.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Life Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Vedic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.12); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.2);">Ritual Sciences</span>
-          </div>
+          
           <p class="kb-title">Indian Life Sciences &mdash; Documentary Series Overview</p>
           <p class="kb-excerpt">A comprehensive documentary series unveiling the subtle scientific aspects of Indian Life Sciences. Covers 13 subjects: Yoga, Astrology, Temples of India, Traditional Worshipping (Puja), Ayurveda, Spirituality, Agori System, Hinduism, Dance & Music, Vastu Shastra, Kamasutra, Vedic Sciences, and Traditions & Festivals &mdash; each analyzed from four perspectives: Scientific, Spiritual, Historical, and Natural.</p>
         </div>
@@ -351,10 +328,7 @@
       <!-- CARD 9: Biofield Sciences &mdash; Aura & Unseen Energy Fields -->
       <div class="kb-card" data-cats="bio humanistic life" onclick="window.location.href='knowledge/biofield-sciences.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Bio Field Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Humanistic Sciences</span>
-          </div>
+          
           <p class="kb-title">Aura & Unseen Energy Fields &mdash; The Kosha System</p>
           <p class="kb-excerpt">A landmark scientific presentation by Dr Sujata Vaidya on the measurable bio-field energies surrounding all living and non-living entities. Covers Kirlian photography, PIP aura imaging, the seven major chakras, Phantom Leaf experiments, food energy depletion by microwaves, effects of pranayama and meditation on the aura, Agnihotra on the environment, energy healing through hands, and spiritual energy transfers through Yantra, Tantra, and Mantra. 43 research slides with clinical case studies.</p>
         </div>
@@ -370,11 +344,7 @@
       <!-- CARD 10: Sanatana Dharma &mdash; Harish PPT -->
       <div class="kb-card" data-cats="sanatana vedic humanistic" onclick="window.location.href='knowledge/sanatana-dharma.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Sanatana Dharma</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Vedic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.12); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.2);">Humanistic Sciences</span>
-          </div>
+          
           <p class="kb-title">Sanatana Dharma &mdash; Ultimate Truth & Universal Constitution</p>
           <p class="kb-excerpt">A clear and compelling presentation on why the human system needs Dharma. Covers Sanatana Dharma as the Universal Application and Ecological Constitution &mdash; explaining how the human being is a replica of Earth and universal patterns, how energies change through activity, how cosmos, Earth, and human systems are interconnected, the eight Dharmic systems (Devotion, Songs, Dance, Food, Nature, Astrology, Yoga, Vastu), the role of Karma and Aura, and the consequences of truth vs untruth in society.</p>
         </div>
@@ -390,11 +360,7 @@
       <!-- CARD 11: Sanatana Dharma PPT -->
       <div class="kb-card" data-cats="sanatana vedic humanistic" onclick="window.location.href='knowledge/sanatana-dharma.html'">
         <div class="kb-card-top">
-          <div>
-            <span class="kb-cat-badge" style="background: rgba(232,160,32,0.18); color: #E8C860; border: 1px solid rgba(232,160,32,0.3);">Sanatana Dharma</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.18); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.3);">Vedic Sciences</span>
-            <span class="kb-cat-badge" style="background: rgba(184,200,212,0.12); color: #C8D4DC; border: 1px solid rgba(184,200,212,0.2);">Humanistic Sciences</span>
-          </div>
+          
           <p class="kb-title">Sanatana Dharma &mdash; Ultimate Truth & Universal Constitution</p>
           <p class="kb-excerpt">A foundational presentation on Sanatana Dharma as the Universal Constitution &mdash; the cosmic operating system for human beings. Explores how human beings are replicas of Earth and Universal patterns, why the human system needs Dharma, how aura and karmic energies respond to truthful and untruthful living, the 8 Dharmic systems (Devotion, Songs, Dance, Food, Nature, Astrology, Yoga, Vastu), and how adopting Sanatana Dharma leads to a healthy society and Moksha.</p>
         </div>
@@ -1481,6 +1447,7 @@ document.querySelectorAll('.kb-overlay').forEach(ov => {
 
 </body>
 </html>
+
 
 
 
