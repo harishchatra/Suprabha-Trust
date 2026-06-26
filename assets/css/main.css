@@ -425,6 +425,12 @@ section { padding: 6rem 2rem; position: relative; background: var(--color-bg); }
   background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(232,160,32,0.3);
+}
+.hero h1 .hero-white {
+  color: #fff;
+  background: none;
+  -webkit-text-fill-color: #fff;
 }
 
 .hero-sub {
@@ -1593,6 +1599,7 @@ footer {
 #spt-main > section:first-of-type:not(.hero) {
   padding-top: 2.5rem !important;
 }
+
 
 
 
