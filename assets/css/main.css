@@ -1292,31 +1292,67 @@ footer {
   margin-left: auto;
 }
 #mpt-desktop-nav a {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-muted);
+  color: rgba(255,255,255,0.7);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
 }
-#mpt-desktop-nav a:hover {
-  color: var(--color-primary);
+#mpt-desktop-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #E8A020;
+  transition: width 0.3s ease;
+  border-radius: 2px;
 }
-#mpt-desktop-nav a.nav-highlight {
-  color: var(--color-primary);
-  border: 1px solid rgba(232,160,32,0.3);
-  padding: 0.4rem 1rem;
+#mpt-desktop-nav a:not(.btn-primary):hover {
+  color: #FFF;
+}
+#mpt-desktop-nav a:not(.btn-primary):hover::after {
+  width: 100%;
+}
+
+#mpt-desktop-nav a.btn-primary {
+  background: rgba(232,160,32,0.15) !important;
+  border: 1px solid rgba(232,160,32,0.4) !important;
+  color: #E8A020 !important;
   border-radius: 50px;
+  padding: 0.5rem 1.5rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease;
 }
-#mpt-desktop-nav a.nav-highlight:hover {
-  background: rgba(232,160,32,0.1);
+#mpt-desktop-nav a.btn-primary::after { display: none; }
+#mpt-desktop-nav a.btn-primary:hover {
+  background: #E8A020 !important;
+  color: #0B0D17 !important;
+  box-shadow: 0 0 20px rgba(232,160,32,0.4);
+  transform: translateY(-2px);
 }
 
 @media (min-width: 1024px) {
   #mpt-hamburger { display: none !important; }
-  #mpt-topbar { height: 72px; padding: 0 3rem; }
+  #mpt-topbar { 
+    top: 20px; 
+    left: 2rem; 
+    right: 2rem; 
+    height: 72px; 
+    padding: 0 2.5rem; 
+    border-radius: 50px; 
+    border: 1px solid rgba(255,255,255,0.08); 
+    background: rgba(11,13,23,0.7); 
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 1023px) {
   #mpt-desktop-nav { display: none !important; }
