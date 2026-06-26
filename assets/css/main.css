@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════════
    SUPRABHA TRUST — MAIN STYLESHEET
    Design: Cosmic Mystic · Midnight Blue · Gold · Glassmorphism
    Phase 4 Visual Identity · mpt-* Navigation System
@@ -505,12 +505,12 @@ section { padding: 6rem 2rem; position: relative; background: var(--color-bg); }
 }
 
 .hero-logo-svg {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 1.5rem;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 2rem;
   display: block;
-  animation: slowSpin 40s linear infinite, floatAnim 8s ease-in-out infinite;
-  filter: drop-shadow(0 0 30px rgba(232,160,32,0.35));
+  filter: drop-shadow(0 0 20px rgba(232,160,32,0.4));
+  animation: floatAnim 8s ease-in-out infinite;
 }
 
 .hero-eyebrow {
@@ -524,13 +524,15 @@ section { padding: 6rem 2rem; position: relative; background: var(--color-bg); }
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  color: var(--color-primary);
   background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
 .hero h1 em {
@@ -1388,7 +1390,17 @@ footer {
   .mission-layout { grid-template-columns: 1fr; gap: 3rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .hero h1 { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+  .hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  color: var(--color-primary);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
   section { padding: 4rem 1.5rem; }
   .about-strip { padding: 3rem 1.5rem; }
   .mpt-logo-name { font-size: 0.95rem; }
@@ -1408,3 +1420,4 @@ footer {
 .om { font-size: 1.2rem; }
 .text-primary { color: var(--color-primary); }
 .bg-surface { background: var(--color-surface); }
+
