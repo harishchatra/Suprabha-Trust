@@ -59,13 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelector('.nav-links');
 
   // Sticky scroll effect
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
+  const topbar = document.getElementById('mpt-topbar');
+  if (topbar) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        topbar.classList.add('scrolled');
+      } else {
+        topbar.classList.remove('scrolled');
+      }
+    });
+  }
 
   // Mobile toggle
   if (navToggle && navLinks) {
@@ -293,3 +296,4 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(container);
   });
 });
+
