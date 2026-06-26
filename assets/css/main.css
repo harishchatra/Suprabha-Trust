@@ -367,7 +367,7 @@ a:hover { color: var(--color-primary-hover); }
 }
 
 /* ═══ PAGE MAIN OFFSET ═══════════════════════════════════════ */
-#spt-main { padding-top: 106px; }
+#spt-main { padding-top: 72px; }
 
 /* ═══ GLOBAL BUTTONS ═════════════════════════════════════════ */
 .btn-primary {
@@ -1420,4 +1420,5 @@ footer {
 .om { font-size: 1.2rem; }
 .text-primary { color: var(--color-primary); }
 .bg-surface { background: var(--color-surface); }
+
 
