@@ -157,16 +157,34 @@
     </div>
 
     <style>
-      .kb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
-      .kb-card { background: rgba(11,13,23,0.6); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(232,160,32,0.15); border-radius: 8px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative; z-index: 1; }
+      .kb-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+      @media (min-width: 768px) { .kb-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (min-width: 1024px) { .kb-grid { grid-template-columns: repeat(3, 1fr); } }
+      
+      .kb-card {
+        background: rgba(11,13,23,0.6);
+        backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(232,160,32,0.15);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+      }
       .kb-card:hover { border-color: rgba(232,160,32,0.4); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-      .kb-card-top { padding: 1.8rem 1.6rem 1.2rem; }
-      .kb-card-bottom { padding: 1rem 1.6rem; background: rgba(232,160,32,0.03); border-top: 1px solid rgba(232,160,32,0.1); display: flex; justify-content: space-between; align-items: center; }
-      .kb-cat-badge { display: inline-block; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 50px; font-family: var(--font-body); margin-bottom: 1rem; margin-right: 0.4rem; }
-      .kb-title { font-family: var(--font-display); font-size: 1.35rem; color: var(--color-primary); margin-bottom: 0.6rem; font-weight: 400; line-height: 1.35; }
-      .kb-excerpt { font-size: 0.9rem; color: var(--color-muted); line-height: 1.7; font-family: var(--font-body); }
-      .kb-meta { font-size: 0.75rem; color: rgba(240,242,248,0.4); font-family: var(--font-body); letter-spacing: 0.05em; }
-      .kb-read { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-primary); font-family: var(--font-body); text-decoration: none; transition: color 0.2s; }
+      
+      .kb-card-top { padding: 2rem 2rem 1.5rem; flex: 1; overflow: hidden; display: flex; flex-direction: column; }
+      .kb-cat-badge { display: inline-block; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #E8A020; font-family: system-ui, -apple-system, sans-serif; margin-bottom: 1.2rem; margin-right: 0.8rem; }
+      .kb-title { font-family: var(--font-display); font-size: 1.5rem; color: #F5F0E8; margin-bottom: 1rem; font-weight: 400; line-height: 1.35; }
+      .kb-excerpt { font-size: 0.95rem; color: rgba(255,255,255,0.65); line-height: 1.6; font-family: system-ui, -apple-system, sans-serif; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+      
+      .kb-card-bottom { padding: 1.2rem 2rem; background: rgba(0,0,0,0.2); border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+      .kb-meta { font-size: 0.75rem; color: rgba(255,255,255,0.4); font-family: system-ui, -apple-system, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }
+      .kb-read { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #E8A020; font-family: system-ui, -apple-system, sans-serif; text-decoration: none; transition: color 0.2s; display: flex; align-items: center; gap: 0.5rem; }
       .kb-card:hover .kb-read { color: #FFF; }
       .kb-card[data-hidden="true"] { display: none; }
 
