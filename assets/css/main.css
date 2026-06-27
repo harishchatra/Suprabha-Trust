@@ -1,4 +1,4 @@
-﻿
+
 .hero { position: relative; overflow: hidden; }
 .hero::before {
   content: "";
@@ -1104,10 +1104,21 @@ footer {
 
 /* Tab navigation */
 .tab-nav {
-  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(232,160,32,0.12);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+.tab-nav::-webkit-scrollbar {
+  display: none; /* Safari/Chrome */
+}
+.tab-nav .tab-btn {
+  flex-shrink: 0;
 }
 .tab-btn {
   padding: 0.45rem 1.1rem;
@@ -1236,11 +1247,11 @@ footer {
 /* Chakra interactive */
 .chakra-node { cursor: pointer; transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); }
 .chakra-glow { transition: r 0.4s ease, filter 0.4s ease; }
-.chakra-node:hover .chakra-glow { r: 24; filter: drop-shadow(0 0 25px currentColor) brightness(1.5); }
+.chakra-node:hover .chakra-glow, .chakra-node.active .chakra-glow { r: 24; filter: drop-shadow(0 0 25px currentColor) brightness(1.5); }
 .chakra-line { transition: x2 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
-.chakra-node:hover .chakra-line { x2: 170; }
+.chakra-node:hover .chakra-line, .chakra-node.active .chakra-line { x2: 170; }
 .chakra-info { transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s; }
-.chakra-node:hover .chakra-info { opacity: 1; transform: translate(190, 0); }
+.chakra-node:hover .chakra-info, .chakra-node.active .chakra-info { opacity: 1; transform: translate(190, 0); }
 
 /* ═══ RESPONSIVE ═════════════════════════════════════════════ */
 @media (max-width: 900px) {

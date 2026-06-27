@@ -83,7 +83,7 @@ foreach ($page in $pages) {
     $content = $content.Replace("data-pid=""$pageName"" class=""mpt-sb-link""", "data-pid=""$pageName"" class=""mpt-sb-link active""")
     
     # Lazy loading optimization
-    $content = $content -replace '(<img(?!.*?loading="lazy").*?>)', '$1' -replace '<img ', '<img loading="lazy" '
+    $content = $content -replace '<img(?!\s[^>]*loading=)\s', '<img loading="lazy" '
     
     # Clean up SET commands
     $content = $content -replace "(?s)<!-- SET_TITLE:.*?-->", ""

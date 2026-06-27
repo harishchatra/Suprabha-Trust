@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://www.suprabha-trust.in">
 <meta property="og:image" content="https://www.suprabha-trust.in/assets/img/suprabha-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="canonical" content="https://www.suprabha-trust.in">
+
 <link rel="canonical" href="https://www.suprabha-trust.in">
 <!-- Favicon — gold OM symbol on maroon -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230B0D17'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23E8A020' font-family='serif'>ॐ</text></svg>">
@@ -111,7 +111,7 @@
     <span class="mpt-sb-section">Connect</span>
     <a class="mpt-sb-link" data-pid="contact" href="contact.html">     ✉ Contact</a>
   </nav>
-  <a class="mpt-sb-donate" href="donate.html">🙏 &nbsp;14 — Donate Now</a>
+  <a class="mpt-sb-donate" href="donate.html">Donate Now</a>
 </div>
 
 
@@ -170,32 +170,32 @@
         <!-- Status banner -->
         <div id="video-status" style="display:none; padding: 1rem 1.25rem; border-radius: 2px; margin-bottom: 1.25rem; font-size: 0.98rem; font-family: 'Philosopher', serif;"></div>
 
-        <form id="video-form" onsubmit="handleVideoSubmit(event)" style="display: flex; flex-direction: column; gap: 0.9rem;">
+        <form id="video-form" onsubmit="handleVideoSubmit(event)" class="contact-form">
           <input type="hidden" name="_formspree_id" value="YOUR_VIDEO_FORM_ID">
           <input type="hidden" name="_subject" id="video-subject" value="New Video Submission &mdash; Suprabha Trust">
           <input type="hidden" name="_replyto" id="video-replyto">
           <input type="hidden" name="submission_type" value="Video">
           <input type="hidden" name="submitted_at" id="video-timestamp">
 
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Your Name *</label>
-            <input type="text" name="submitter_name" required placeholder="Full name" style="width: 100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="video-name">Your Name *</label>
+            <input type="text" id="video-name" name="submitter_name" required placeholder="Full name">
           </div>
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Email Address *</label>
-            <input type="email" name="email" required placeholder="your@email.com" oninput="document.getElementById('video-replyto').value=this.value" style="width: 100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="video-email">Email Address *</label>
+            <input type="email" id="video-email" name="email" required placeholder="your@email.com" oninput="document.getElementById('video-replyto').value=this.value">
           </div>
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Phone Number</label>
-            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" style="width: 100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="video-phone">Phone Number</label>
+            <input type="tel" id="video-phone" name="phone" placeholder="+91 XXXXX XXXXX">
           </div>
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Video Title *</label>
-            <input type="text" name="video_title" required placeholder="Title of your video" oninput="document.getElementById('video-subject').value='Video Submission: '+this.value+' &mdash; Suprabha Trust'" style="width: 100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="video-title">Video Title *</label>
+            <input type="text" id="video-title" name="video_title" required placeholder="Title of your video" oninput="document.getElementById('video-subject').value='Video Submission: '+this.value+' &mdash; Suprabha Trust'">
           </div>
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Video Category *</label>
-            <select name="category" required style="width: 100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="video-category">Video Category *</label>
+            <select id="video-category" name="category" required>
               <option value="">Select a category</option>
               <option>Documentary Film</option>
               <option>Ritual Recording</option>
@@ -209,8 +209,8 @@
               <option>Other</option>
             </select>
           </div>
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Video Link *</label>
+          <div class="field">
+            <label for="video-link-input">Video Link *</label>
 
             <!-- Platform selector tabs -->
             <div style="display: flex; gap: 0; margin-bottom: 0.5rem; border: 1px solid rgba(232,160,32,0.2); border-radius: 2px; overflow: hidden;">
@@ -224,10 +224,9 @@
             <div style="position: relative; display: flex; gap: 0.5rem; align-items: stretch;">
               <input type="url" name="video_link" id="video-link-input" required
                 placeholder="Paste your video link here..."
-                oninput="onVideoLinkInput(this.value)"
-                style="flex:1; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
-              <button type="button" onclick="validateVideoLink()" id="vlink-btn"
-                style="background: #0B0D17; color: #E8A020; border: none; padding: 0 1rem; font-family: 'Philosopher', serif; font-size: 0.98rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; cursor: pointer; white-space: nowrap;">
+                oninput="onVideoLinkInput(this.value)">
+              <button type="button" onclick="validateVideoLink()" id="vlink-btn" class="btn-primary"
+                style="padding: 0 1.5rem; border: none; cursor: pointer; white-space: nowrap; margin-bottom: 1rem;">
                 Preview â–¶
               </button>
             </div>
@@ -259,7 +258,7 @@
               </div>
               <!-- Thumbnail for YouTube -->
               <div id="vpreview-thumb" style="display:none; text-align: center; padding: 0.75rem;">
-                <img loading="lazy" loading="lazy" id="vpreview-img" style="max-width: 100%; border-radius: 2px;" alt="Video thumbnail">
+                <img loading="lazy" id="vpreview-img" style="max-width: 100%; border-radius: 2px;" alt="Video thumbnail">
               </div>
             </div>
 
@@ -469,22 +468,22 @@
               }
             }
           </script>
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Duration & Language</label>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <input type="text" name="duration" placeholder="e.g. 12 minutes" style="background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none;">
-              <input type="text" name="language" placeholder="e.g. Telugu, Hindi, English" style="background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label>Duration & Language</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <input type="text" name="duration" placeholder="e.g. 12 minutes">
+              <input type="text" name="language" placeholder="e.g. Telugu, Hindi, English">
             </div>
           </div>
-          <div>
-            <label style="display: block; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem;">Description *</label>
-            <textarea name="description" placeholder="Briefly describe the content, location, tradition, and significance of the video..." required style="width: 100%; height: 130px; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 300; border-radius: 2px; outline: none; resize: vertical;"></textarea>
+          <div class="field">
+            <label for="video-description">Description *</label>
+            <textarea name="description" id="video-description" placeholder="Briefly describe the content, location, tradition, and significance of the video..." required></textarea>
           </div>
-          <div style="display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 0.25rem;">
+          <div style="display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 0.25rem; margin-bottom: 1rem;">
             <input type="checkbox" id="video-consent" required style="margin-top: 3px; accent-color: #E8A020; width: 14px; height: 14px; flex-shrink: 0;">
-            <label for="video-consent" style="font-size: 1.05rem; color: rgba(20,50,75,0.6); line-height: 1.6; cursor: pointer;">I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it on their platform.</label>
+            <label for="video-consent" style="font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.6; cursor: pointer;">I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it on their platform.</label>
           </div>
-          <button type="submit" id="video-submit-btn" style="margin-top: 0.5rem; background: #E8A020; color: #0B0D17; padding: 0.85rem 2rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s;">Submit Video &rarr;</button>
+          <button type="submit" id="video-submit-btn" class="btn-primary" style="margin-top: 0.5rem; border: none; cursor: pointer;">Submit Video &rarr;</button>
         </form>
       </div>
 
@@ -556,7 +555,7 @@
         </div>
       </div>
       <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
-      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
+      <p class="reg">Established 2006 · Registered 2016 — 176/IU/2016</p>
     </div>
     <div class="footer-col">
       <h4>About</h4>

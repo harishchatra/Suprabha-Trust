@@ -1,4 +1,4 @@
-﻿// ─── MPT NAVIGATION SYSTEM ─────────────────────────────────────
+// ─── MPT NAVIGATION SYSTEM ─────────────────────────────────────
 function mptToggle() {
   var sidebar = document.getElementById('mpt-sidebar');
   var overlay = document.getElementById('mpt-overlay');
@@ -93,6 +93,20 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // Trigger on load
+
+  // IntersectionObserver-based scroll reveal (.visible class)
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
+    revealObserver.observe(el);
+  });
 });
 
 // Category Tabs

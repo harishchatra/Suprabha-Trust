@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://www.suprabha-trust.in">
 <meta property="og:image" content="https://www.suprabha-trust.in/assets/img/suprabha-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="canonical" content="https://www.suprabha-trust.in">
+
 <link rel="canonical" href="https://www.suprabha-trust.in">
 <!-- Favicon — gold OM symbol on maroon -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230B0D17'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23E8A020' font-family='serif'>ॐ</text></svg>">
@@ -111,7 +111,7 @@
     <span class="mpt-sb-section">Connect</span>
     <a class="mpt-sb-link" data-pid="contact" href="contact.html">     ✉ Contact</a>
   </nav>
-  <a class="mpt-sb-donate" href="donate.html">🙏 &nbsp;14 — Donate Now</a>
+  <a class="mpt-sb-donate" href="donate.html">Donate Now</a>
 </div>
 
 
@@ -199,28 +199,28 @@
       <div>
         <h3 style="font-family:'Philosopher',serif;font-size:1.75rem;color:#E8A020;margin-bottom:1.5rem;font-weight:400;">Send a Message</h3>
         <div id="contact-status" style="display:none;padding:1rem;margin-bottom:1rem;border-radius:2px;font-family:'Philosopher',serif;font-size:0.9rem;"></div>
-        <form onsubmit="handleContact(event)" style="display:flex;flex-direction:column;gap:0.85rem;">
+        <form onsubmit="handleContact(event)" class="contact-form">
           <!-- Honeypot -->
           <div style="display:none;">
             <label>Leave empty: <input type="text" name="honeypot" id="contact-honeypot"></label>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
-            <div>
-              <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Name *</label>
-              <input type="text" name="name" required placeholder="Your full name" style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:rgba(255,255,255,0.7);font-family:system-ui,sans-serif;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.5rem;">
+            <div class="field">
+              <label for="contact-name">Name *</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Your full name">
             </div>
-            <div>
-              <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Email *</label>
-              <input type="email" name="email" required placeholder="your@email.com" style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:rgba(255,255,255,0.7);font-family:system-ui,sans-serif;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+            <div class="field">
+              <label for="contact-email">Email *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
             </div>
           </div>
-          <div>
-            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Phone</label>
-            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:rgba(255,255,255,0.7);font-family:system-ui,sans-serif;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+          <div class="field">
+            <label for="contact-phone">Phone</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="+91 XXXXX XXXXX">
           </div>
-          <div>
-            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Subject *</label>
-            <select name="subject" required style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:rgba(255,255,255,0.7);font-family:system-ui,sans-serif;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;">
+          <div class="field">
+            <label for="contact-subject">Subject *</label>
+            <select id="contact-subject" name="subject" required>
               <option value="">Select a subject</option>
               <option>General Enquiry</option>
               <option>Article / Video Submission</option>
@@ -232,12 +232,11 @@
               <option>Media &amp; Press</option>
             </select>
           </div>
-          <div>
-            <label style="display:block;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,242,248,0.6);margin-bottom:0.35rem;font-family:'Philosopher',serif;">Message *</label>
-            <textarea name="message" required rows="5" placeholder="Tell us how we can help..." style="width:100%;background:rgba(21,25,43,0.6);border:1px solid rgba(74,24,24,0.2);color:rgba(255,255,255,0.7);font-family:system-ui,sans-serif;padding:0.75rem 1rem;font-family:'Philosopher',serif;font-size:0.92rem;border-radius:2px;outline:none;resize:vertical;"></textarea>
+          <div class="field">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="message" required rows="5" placeholder="Tell us how we can help..."></textarea>
           </div>
-          <button type="submit" id="contact-btn" style="background:#E8A020;color:white;padding:0.9rem 2rem;font-family:'Philosopher',serif;font-size:0.88rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;border:none;border-radius:2px;cursor:pointer;transition:background 0.2s;">Send Message &rarr;</button>
-        </form>
+          <button type="submit" id="contact-btn" class="btn-primary" style="margin-top:0.5rem;border:none;cursor:pointer;">Send Message &rarr;</button>
         <script>
         async function handleContact(e) {
           e.preventDefault();
@@ -294,7 +293,7 @@
         </div>
       </div>
       <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
-      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
+      <p class="reg">Established 2006 · Registered 2016 — 176/IU/2016</p>
     </div>
     <div class="footer-col">
       <h4>About</h4>

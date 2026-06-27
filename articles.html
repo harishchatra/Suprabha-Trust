@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://www.suprabha-trust.in">
 <meta property="og:image" content="https://www.suprabha-trust.in/assets/img/suprabha-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="canonical" content="https://www.suprabha-trust.in">
+
 <link rel="canonical" href="https://www.suprabha-trust.in">
 <!-- Favicon — gold OM symbol on maroon -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230B0D17'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23E8A020' font-family='serif'>ॐ</text></svg>">
@@ -111,7 +111,7 @@
     <span class="mpt-sb-section">Connect</span>
     <a class="mpt-sb-link" data-pid="contact" href="contact.html">     ✉ Contact</a>
   </nav>
-  <a class="mpt-sb-donate" href="donate.html">🙏 &nbsp;14 — Donate Now</a>
+  <a class="mpt-sb-donate" href="donate.html">Donate Now</a>
 </div>
 
 
@@ -127,7 +127,7 @@
 
 
 <main id="spt-main">
-<section id="articles" style="background: #ECE8DC; padding: 6rem 2rem;">
+<section id="articles" class="reveal" style="background: #15192B; padding: 6rem 2rem;">
   <div class="container">
     <p class="section-eyebrow">Contribute to the Archive</p>
     <h2 class="section-title">Submit Your Articles</h2>
@@ -151,7 +151,7 @@
               <span style="background: rgba(74,103,65,0.15); border: 1px solid rgba(74,103,65,0.3); color: #4A7090; font-size: 0.98rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.2rem 0.7rem; border-radius: 2px; font-family: 'Philosopher', serif;">Bio Field Sciences</span>
             </div>
             <h3 style="font-family: 'Philosopher', serif; font-size: 1.9rem; color: #F0F2F8; font-weight: 400; margin-bottom: 0.4rem; line-height: 1.2;">Vedic Sciences &mdash; The Blueprint of Human & Natural Systems</h3>
-            <p style="font-size: 1.02rem; color: rgba(50,20,20,0.7); font-family: 'Philosopher', serif; letter-spacing: 0.05em;">Research Article &nbsp;&middot;&nbsp; Suprabha Trust Editorial Team &nbsp;&middot;&nbsp; Indian Life Sciences Series</p>
+            <p style="font-size: 1.02rem; color: rgba(255,255,255,0.5); font-family: 'Philosopher', serif; letter-spacing: 0.05em;">Research Article &nbsp;&middot;&nbsp; Suprabha Trust Editorial Team &nbsp;&middot;&nbsp; Indian Life Sciences Series</p>
           </div>
         </div>
 
@@ -185,11 +185,11 @@
             <p style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.85;">The Vedic science provides support to the human body in inheriting potential to its maximum utilisation. A person cannot utilise their potential beyond 5 to 25% in a lifetime &mdash; Vedic sciences aim to bridge that gap. One charged person through spirituality leaves an impression on thousands, helping make society a better place.</p>
 
             <!-- fade overlay -->
-            <div id="article-fade" style="position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, transparent, white);"></div>
+            <div id="article-fade" style="position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, transparent, #15192B);"></div>
           </div>
 
           <div style="text-align: center; margin-top: 1.5rem;">
-            <button id="read-toggle" onclick="toggleArticle()" style="background: transparent; border: 1px solid rgba(232,160,32,0.4); color: rgba(240,242,248,0.6); padding: 0.6rem 2rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: all 0.2s;">Read Full Article â†“</button>
+            <button id="read-toggle" onclick="toggleArticle()" style="background: transparent; border: 1px solid rgba(232,160,32,0.4); color: rgba(240,242,248,0.6); padding: 0.6rem 2rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: all 0.2s;">Read Full Article &darr;</button>
           </div>
         </div>
       </div>
@@ -205,7 +205,7 @@
         <!-- Submission status banner -->
         <div id="article-status" style="display:none; padding: 1rem 1.25rem; border-radius: 2px; margin-bottom: 1.25rem; font-size: 0.98rem; font-family: 'Philosopher', serif;"></div>
 
-        <form id="article-form" onsubmit="handleArticleSubmit(event)" style="display: flex; flex-direction: column; gap: 0.9rem;">
+        <form id="article-form" onsubmit="handleArticleSubmit(event)" class="contact-form">
           <!-- Formspree endpoint &mdash; replace YOUR_ARTICLE_FORM_ID with ID from formspree.io -->
           <input type="hidden" name="_formspree_id" value="YOUR_ARTICLE_FORM_ID">
           <input type="hidden" name="_subject" id="article-subject" value="New Article Submission &mdash; Suprabha Trust">
@@ -213,31 +213,31 @@
           <input type="hidden" name="submission_type" value="Article">
           <input type="hidden" name="submitted_at" id="article-timestamp">
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-            <div>
-              <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Author Name *</label>
-              <input type="text" name="author_name" id="article-author" required placeholder="Full name" style="width:100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 0.5rem;">
+            <div class="field">
+              <label for="article-author">Author Name *</label>
+              <input type="text" name="author_name" id="article-author" required placeholder="Full name">
             </div>
-            <div>
-              <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Qualification</label>
-              <input type="text" name="qualification" placeholder="e.g. PhD, Vedic Scholar" style="width:100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
+            <div class="field">
+              <label for="article-qualification">Qualification</label>
+              <input type="text" name="qualification" id="article-qualification" placeholder="e.g. PhD, Vedic Scholar">
             </div>
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Email Address *</label>
-            <input type="email" name="email" id="article-email" required placeholder="your@email.com" oninput="document.getElementById('article-replyto').value=this.value" style="width:100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="article-email">Email Address *</label>
+            <input type="email" name="email" id="article-email" required placeholder="your@email.com" oninput="document.getElementById('article-replyto').value=this.value">
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Phone Number</label>
-            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" style="width:100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="article-phone">Phone Number</label>
+            <input type="tel" name="phone" id="article-phone" placeholder="+91 XXXXX XXXXX">
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Article Title *</label>
-            <input type="text" name="article_title" id="article-title-inp" required placeholder="Title of your article" oninput="document.getElementById('article-subject').value='Article Submission: '+this.value+' &mdash; Suprabha Trust'" style="width:100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="article-title-inp">Article Title *</label>
+            <input type="text" name="article_title" id="article-title-inp" required placeholder="Title of your article" oninput="document.getElementById('article-subject').value='Article Submission: '+this.value+' &mdash; Suprabha Trust'">
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Category *</label>
-            <select name="category" required style="width:100%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
+          <div class="field">
+            <label for="article-category">Category *</label>
+            <select name="category" id="article-category" required>
               <option value="">Select a category</option>
               <option>Bio Field Sciences</option>
               <option>Humanistic Sciences</option>
@@ -251,28 +251,27 @@
               <option>Tantra, Mantra &amp; Yatra</option>
             </select>
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Abstract / Summary *</label>
-            <textarea name="abstract" required placeholder="A brief summary of your article (100&ldquo;200 words)..." style="width:100%; height: 110px; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none; resize: vertical;"></textarea>
+          <div class="field">
+            <label for="article-abstract">Abstract / Summary *</label>
+            <textarea name="abstract" id="article-abstract" required placeholder="A brief summary of your article (100–200 words)..."></textarea>
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Full Article *</label>
-            <textarea name="full_article" required placeholder="Paste your full article here, including references and citations where applicable..." style="width:100%; height: 200px; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none; resize: vertical;"></textarea>
+          <div class="field">
+            <label for="article-full">Full Article *</label>
+            <textarea name="full_article" id="article-full" required placeholder="Paste your full article here, including references and citations where applicable..."></textarea>
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">References / Citations</label>
-            <textarea name="references" placeholder="List your references here (optional but encouraged)..." style="width:100%; height: 80px; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none; resize: vertical;"></textarea>
+          <div class="field">
+            <label for="article-references">References / Citations</label>
+            <textarea name="references" id="article-references" placeholder="List your references here (optional but encouraged)..."></textarea>
           </div>
-          <div>
-            <label style="display: block; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.4rem; font-family: 'Philosopher', serif;">Supporting File Link</label>
+          <div class="field">
+            <label for="article-file-link">Supporting File Link</label>
             <div style="display: flex; gap: 0.5rem; align-items: stretch;">
               <input type="url" name="file_link" id="article-file-link"
                 placeholder="Paste Google Drive / Dropbox link to PDF, PPT, images..."
-                oninput="validateArticleLink(this.value)"
-                style="flex:1; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.25); color: #0B0D17; padding: 0.8rem 1rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 300; border-radius: 2px; outline: none;">
-              <button type="button" onclick="verifyArticleLink()" id="article-link-btn"
-                style="background: #0B0D17; color: #E8A020; border: none; padding: 0 1rem; font-family: 'Philosopher', serif; font-size: 0.98rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; cursor: pointer; white-space: nowrap;">
-                Verify âœ“
+                oninput="validateArticleLink(this.value)">
+              <button type="button" onclick="verifyArticleLink()" id="article-link-btn" class="btn-primary"
+                style="padding: 0 1.5rem; border: none; cursor: pointer; white-space: nowrap; margin-bottom: 1rem;">
+                Verify ✓
               </button>
             </div>
             <p id="article-link-hint" style="font-size: 0.94rem; color: #7A90A0; margin-top: 0.4rem; font-family: 'Philosopher', serif; line-height: 1.5;">
@@ -407,7 +406,7 @@
             <input type="checkbox" id="article-consent" required style="margin-top: 3px; accent-color: #E8A020; flex-shrink: 0; width: 14px; height: 14px;">
             <label for="article-consent" style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.6; cursor: pointer;">I confirm this article is my original work, not previously published, and I consent to Suprabha Trust publishing it in the Knowledge Bank.</label>
           </div>
-          <button type="submit" id="article-submit-btn" style="margin-top: 0.5rem; background: #E8A020; color: #0B0D17; padding: 0.9rem 2rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s;">Submit Article &rarr;</button>
+          <button type="submit" id="article-submit-btn" style="margin-top: 0.5rem; background: #E8A020; color: rgba(255,255,255,0.9); padding: 0.9rem 2rem; font-family: 'Philosopher', serif; font-size: 1.02rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s;">Submit Article &rarr;</button>
         </form>
       </div>
 
@@ -431,35 +430,35 @@
         <!-- Guideline steps -->
         <div style="display: flex; flex-direction: column; gap: 0;">
           <div style="display: flex; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(232,160,32,0.15);">
-            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #FFF8DC; border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">1</div>
+            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">1</div>
             <div>
               <p style="font-size: 1rem; font-weight: 500; color: #E8A020; margin-bottom: 0.25rem; font-family: 'Philosopher', serif;">Original, unpublished work only</p>
               <p style="font-size: 0.94rem; color: #9CA3AF; line-height: 1.65;">Articles must not have been published in any other platform, journal, or website.</p>
             </div>
           </div>
           <div style="display: flex; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(232,160,32,0.15);">
-            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #FFF8DC; border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">2</div>
+            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">2</div>
             <div>
               <p style="font-size: 1rem; font-weight: 500; color: #E8A020; margin-bottom: 0.25rem; font-family: 'Philosopher', serif;">Relevant to traditional Indian sciences</p>
               <p style="font-size: 0.94rem; color: #9CA3AF; line-height: 1.65;">Content must focus on any aspect of India's cultural, spiritual, ritual, or scientific heritage.</p>
             </div>
           </div>
           <div style="display: flex; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(232,160,32,0.15);">
-            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #FFF8DC; border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">3</div>
+            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">3</div>
             <div>
               <p style="font-size: 1rem; font-weight: 500; color: #E8A020; margin-bottom: 0.25rem; font-family: 'Philosopher', serif;">Include citations where applicable</p>
               <p style="font-size: 0.94rem; color: #9CA3AF; line-height: 1.65;">References to Vedic texts, scholars, or research papers strengthen your submission significantly.</p>
             </div>
           </div>
           <div style="display: flex; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(232,160,32,0.15);">
-            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #FFF8DC; border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">4</div>
+            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">4</div>
             <div>
               <p style="font-size: 1rem; font-weight: 500; color: #E8A020; margin-bottom: 0.25rem; font-family: 'Philosopher', serif;">Editorial review within 10 working days</p>
               <p style="font-size: 0.94rem; color: #9CA3AF; line-height: 1.65;">All submissions are reviewed by our editorial panel. You will be notified of the decision by email.</p>
             </div>
           </div>
           <div style="display: flex; gap: 1rem; padding: 1.25rem 0;">
-            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #FFF8DC; border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">5</div>
+            <div style="min-width: 28px; height: 28px; border-radius: 50%; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); border: 1px solid rgba(232,160,32,0.35); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1.08rem; color: rgba(240,242,248,0.6); flex-shrink: 0;">5</div>
             <div>
               <p style="font-size: 1rem; font-weight: 500; color: #E8A020; margin-bottom: 0.25rem; font-family: 'Philosopher', serif;">Author credit & profile</p>
               <p style="font-size: 0.94rem; color: #9CA3AF; line-height: 1.65;">Your name, qualification, and organisation will be published with your article in the Knowledge Bank.</p>
@@ -468,7 +467,7 @@
         </div>
 
         <!-- What we look for -->
-        <div style="margin-top: 2rem; background: #FFF8DC; border: 1px solid rgba(232,160,32,0.25); padding: 1.5rem; border-radius: 2px;">
+        <div style="margin-top: 2rem; background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.2); border: 1px solid rgba(232,160,32,0.25); padding: 1.5rem; border-radius: 2px;">
           <p style="font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.75rem; font-family: 'Philosopher', serif;">What we look for</p>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
             <li style="font-size: 1.08rem; color: #9CA3AF; display: flex; gap: 0.5rem; align-items: flex-start;"><span style="color: #E8A020; margin-top: 2px;">&#9670;</span> Deep research or practitioner insight</li>
@@ -504,7 +503,7 @@
         </div>
       </div>
       <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
-      <p class="reg">Established 2010 · Registered 2016 — 176/IU/2016</p>
+      <p class="reg">Established 2006 · Registered 2016 — 176/IU/2016</p>
     </div>
     <div class="footer-col">
       <h4>About</h4>
@@ -547,6 +546,7 @@
 
 </body>
 </html>
+
 
 
 
