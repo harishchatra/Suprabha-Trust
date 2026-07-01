@@ -1770,8 +1770,8 @@ footer {
   transition: all 0.3s ease;
 }
 .frequency-btn.active {
-  background: var(--accent-gold);
-  color: #0B0D17;
+  background: var(--accent-gold) !important;
+  color: #0B0D17 !important;
 }
 
 .preset-grid {
