@@ -296,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          entry.target.classList.add('active');
           const children = Array.from(entry.target.children);
           children.forEach((child, index) => {
             setTimeout(() => {

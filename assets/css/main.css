@@ -1262,6 +1262,7 @@ footer {
   .mission-layout { grid-template-columns: 1fr; gap: 3rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .chakra-container { min-height: auto !important; }
   .hero h1 {
   font-size: clamp(2.2rem, 5vw, 4.2rem);
   color: var(--color-primary);
@@ -1567,7 +1568,8 @@ footer {
   transform: translateY(30px);
   transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.reveal-stagger.active {
+.reveal-stagger.active,
+.reveal-stagger.visible {
   opacity: 1;
   transform: translateY(0);
 }
