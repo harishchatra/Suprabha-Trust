@@ -312,3 +312,43 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Collapsible Sidebar Groups Accordion
+function toggleSbGroup(btn) {
+  const group = btn.parentElement;
+  const content = group.querySelector('.mpt-sb-group-content');
+  if (!group || !content) return;
+  
+  if (group.classList.contains('open')) {
+    group.classList.remove('open');
+    content.style.maxHeight = '0px';
+  } else {
+    group.classList.add('open');
+    content.style.maxHeight = content.scrollHeight + 'px';
+  }
+}
+
+// Initialise accordion heights on load
+document.addEventListener('DOMContentLoaded', () => {
+  const path = window.location.pathname;
+  const filename = path.split('/').pop().replace('.html', '') || 'index';
+  
+  document.querySelectorAll('.mpt-sb-group').forEach(group => {
+    const content = group.querySelector('.mpt-sb-group-content');
+    if (!content) return;
+    
+    const hasActiveLink = Array.from(content.querySelectorAll('.mpt-sb-link')).some(link => {
+      return link.getAttribute('data-pid') === filename;
+    });
+    
+    if (hasActiveLink) {
+      group.classList.add('open');
+    }
+    
+    if (group.classList.contains('open')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = '0px';
+    }
+  });
+});

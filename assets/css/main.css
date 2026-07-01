@@ -1378,35 +1378,35 @@ footer {
   #mpt-desktop-nav { display: none !important; }
 }
 
-/* ── SIDEBAR ── */
+/* --- SIDEBAR --- */
 
 #mpt-sidebar {
   position: fixed;
   top: 0; left: 0; bottom: 0;
   z-index: 300;
   width: 320px;
-  background: rgba(11,13,23,0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(11,13,23,0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-right: 1px solid rgba(255,255,255,0.05);
   display: flex;
   flex-direction: column;
   transform: translateX(-100%);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  overflow-y: auto;
   box-shadow: 20px 0 50px rgba(0,0,0,0.5);
+  overflow: hidden;
 }
 #mpt-sidebar.open { transform: translateX(0); }
 
 .mpt-sidebar-header {
   display: flex;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem;
   border-bottom: 1px solid rgba(255,255,255,0.05);
   flex-shrink: 0;
 }
 .mpt-sidebar-header svg {
-  width: 46px; height: 46px; margin-right: 14px;
+  filter: drop-shadow(0 0 6px rgba(232,160,32,0.3));
 }
 .mpt-sb-name {
   font-family: var(--font-display);
@@ -1419,63 +1419,95 @@ footer {
   color: rgba(255,255,255,0.4);
 }
 
-.mpt-sb-section {
-  font-size: 0.65rem;
-  font-family: system-ui, sans-serif;
+.mpt-sb-group {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.mpt-sb-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  border: none;
+  color: rgba(232,160,32,0.85);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(232,160,32,0.6);
-  padding: 2rem 2rem 0.75rem;
-  display: block;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s;
+}
+.mpt-sb-group-header:hover {
+  color: var(--accent-gold);
+}
+.mpt-sb-group.open .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.mpt-sb-group-content {
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .mpt-sb-link {
   display: flex;
   align-items: center;
-  padding: 0.8rem 2rem;
-  font-size: 0.95rem;
-  font-family: system-ui, sans-serif;
-  color: rgba(255,255,255,0.65);
+  padding: 0.75rem 1.5rem 0.75rem 2rem;
+  font-size: 0.94rem;
+  font-family: var(--font-body);
+  color: rgba(240,242,248,0.7);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   border-left: 2px solid transparent;
 }
 .mpt-sb-link:hover {
   color: #fff;
-  background: rgba(255,255,255,0.02);
+  background: rgba(232,160,32,0.03);
   transform: translateX(4px);
   border-left: 2px solid rgba(232,160,32,0.4);
 }
 .mpt-sb-link.active {
   color: var(--accent-gold);
-  background: rgba(232,160,32,0.05);
+  background: rgba(232,160,32,0.06);
   border-left: 2px solid var(--accent-gold);
+  font-weight: 600;
 }
 
+.mpt-sidebar-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  background: rgba(11,13,23,0.96);
+  flex-shrink: 0;
+  padding-bottom: calc(1.25rem + env(safe-area-inset-bottom));
+}
 .mpt-sb-donate {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem;
-  margin: 2rem;
-  background: rgba(232,160,32,0.1);
-  color: var(--accent-gold);
-  border: 1px solid rgba(232,160,32,0.2);
-  border-radius: 8px;
-  font-family: system-ui, sans-serif;
-  font-weight: 600;
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--accent-gold);
+  color: #0B0D17;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
+  font-size: 0.88rem;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(232,160,32,0.18);
 }
 .mpt-sb-donate:hover {
-  background: var(--accent-gold);
-  color: #000;
-  box-shadow: 0 0 20px rgba(232,160,32,0.3);
+  background: var(--color-primary-hover);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232,160,32,0.35);
+  color: #0B0D17;
 }
+
 /* ═══ PREMIUM ARCHITECTURE UPGRADES ═══════════════════════════ */
 
 /* Custom Scrollbar */
